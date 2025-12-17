@@ -17,20 +17,20 @@ export const aboutLinks: AboutTypes[] = [
   {
     src: "images/education.png",
     alt: "education.jpg",
-    title: "Education", // Changed 'Educations' to 'Education'
-    content: "Bachelor's Degree in Management Informatics", // Translated 'Licence en Informatique de Gestion'
+    title: "Education",
+    content: "Bachelor's Degree in Management Informatics",
   },
   {
     src: "images/books.png",
     alt: "books.jpg",
-    title: "Trainings", // Translated 'Formations'
-    content: "Certificate in PHP Backend Developer", // Translated 'Attesttion en Developper Backend PHP'
+    title: "Trainings",
+    content: "Certificate in PHP Backend Developer",
   },
   {
     src: "images/projet.png",
     alt: "projet.jng",
     title: "Projects",
-    content: "+ 10 personal projects completed", // Translated '+ 10 projet realiser personnel'
+    content: "+ 10 personal projects completed",
   },
 ]
 
@@ -46,6 +46,7 @@ export const experiences = [
   { id: 10, name: "Symfony", image: "/images/symfony.webp" },
   { id: 11, name: "SQL", image: "/images/sql.webp" },
   { id: 12, name: "PortgreSQL", image: "/images/pgsql.webp" },
+  { id: 13, name: "Flutter", image: "../../../public/images/Flutter.jpg" },
 ]
 
 export const ListExperiences = [
