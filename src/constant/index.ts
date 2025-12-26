@@ -3,7 +3,9 @@ import type { AboutTypes, LinkType } from "../components/types"
 export const headerLinks: LinkType[] = [
   { href: "/#home", label: "Home" },
   { href: "/#about", label: "About Us" },
-  { href: "/#Skils", label: "Skills" }, // Changed 'Skils' to 'Skills'
+  { href: "/#Skils", label: "Skills" }, 
+  { href: "/#Projects", label: "Projects" },
+  { href: "/#Experience", label: "Education" },
   { href: "/#Contact", label: "Contact" },
 ]
 

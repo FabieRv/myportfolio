@@ -8,7 +8,11 @@ function Project() {
   return (
     <div>
       <Container>
-        <Title label="Projects"></Title>
+        <div className="flex flex-col items-center">
+          <Title label="Projects"></Title>
+          {/* <hr className="w-40 border-2 border-blue-500 rounded mb-6" /> */}
+        </div>
+
         <div className="grid grid-col-1 md:grid-cols-2 gap-4">
           {projets.map((project) => (
             <div
