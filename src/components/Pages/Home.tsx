@@ -1,17 +1,17 @@
-import Contact from "./Contact/Contact"
-import About from "./Education/About"
-import Apropos from "./Education/Apropos"
-import Experience from "./Experiences/Experience"
+// import Profile from "./Profile/Profile"
+
+import About from "./About/About"
+// import Logoexpe from "./LogoExpe/Logoexpe"
+import Profile from "./Profile/Profile"
 import Project from "./projet/Project"
 
 function Home() {
   return (
     <div>
+      <Profile />
+      {/* <Logoexpe /> */}
       <About />
-      <Experience />
-      <Apropos />
       <Project />
-      <Contact />
     </div>
   )
 }

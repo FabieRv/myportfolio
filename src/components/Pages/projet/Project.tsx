@@ -1,7 +1,7 @@
 import { BiVideo } from "react-icons/bi"
 import Container from "../../common/Container"
 import Title from "../../common/Title"
-import { projets } from "../../constant/index"
+import { projets } from "../../../constant/index"
 import Button from "../../common/Button"
 
 function Project() {

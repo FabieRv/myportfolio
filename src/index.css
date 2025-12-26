@@ -4,15 +4,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #eb34e5;
-  --color-button: #eb34e5;
+  --color-primary: #004fff;
+  --color-secondary: #e6d4d4;
 
-  --font-primary: "Vonca", sans-serif;
-  --font-vonca: "Lato", sans-serif;
-  --font-mosteria: "Alan Sans", sans-serif;
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Lato", sans-serif;
+
+  --font-header: "Oswald", sans-serif;
+  --font-italic: "Playfair Display", serif;
 }
 
 body,
 html {
   @apply min-h-screen w-full overflow-x-hidden scroll-smooth text-sm md:text-base lg:text-lg font-primary;
+}
+
+h1 {
+  @apply font-primary;
 }

@@ -1,4 +1,4 @@
-import type { AboutTypes, LinkType } from "../types"
+import type { AboutTypes, LinkType } from "../components/types"
 
 export const headerLinks: LinkType[] = [
   { href: "/#home", label: "Home" },
