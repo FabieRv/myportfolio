@@ -10,9 +10,11 @@ function Home() {
   return (
     <div>
       <Profile />
-      <Logoexpe />
+
       <About />
+      <Logoexpe />
       <Skils />
+
       <Project />
     </div>
   )

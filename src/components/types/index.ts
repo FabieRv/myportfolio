@@ -9,3 +9,8 @@ export type AboutTypes = {
   title: string
   content: string
 }
+
+export type Skill = {
+  id: number
+  name: string
+}

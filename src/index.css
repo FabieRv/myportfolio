@@ -6,6 +6,8 @@
 @theme {
   --color-primary: #004fff;
   --color-secondary: #e6d4d4;
+  --color-tertiary: #f4edea;
+  --color-header: #5da9e9;
 
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Lato", sans-serif;
@@ -21,4 +23,8 @@ html {
 
 h1 {
   @apply font-primary;
+}
+
+p {
+  @apply font-primary  text-gray-700;
 }

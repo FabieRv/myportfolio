@@ -3,7 +3,7 @@ import type { AboutTypes, LinkType } from "../components/types"
 export const headerLinks: LinkType[] = [
   { href: "/#home", label: "Home" },
   { href: "/#about", label: "About Us" },
-  { href: "/#Skils", label: "Skills" }, 
+  { href: "/#Skils", label: "Skills" },
   { href: "/#Projects", label: "Projects" },
   { href: "/#Experience", label: "Education" },
   { href: "/#Contact", label: "Contact" },
@@ -137,4 +137,46 @@ export const projets = [
     image: "../../../public/images/coin-gadgets.webp",
     alt: "coin",
   },
+]
+
+// Frontend
+export const frontendSkills = ["HTML", "CSS", "JS", "TailwindCSS", "React.JS"]
+
+// Backend
+export const backendSkills = ["PHP", "Laravel", "Symfony", "JAVA", "Python"]
+
+// Mobile
+export const mobileSkills = ["Flutter"]
+
+// Base de données
+export const databaseSkills = ["SQL", "PostgreSQL"]
+
+// Outils
+export const toolsSkills = ["GIT", "Postman"]
+
+export const skills = [
+  { name: "BackEnd", level: 80 },
+  { name: "FrontEnd", level: 70 },
+  { name: "Mobile", level: 60 },
+  { name: "DataBase", level: 90 },
+  { name: "Outils", level: 70 },
+]
+
+export const tags = [
+  "HTML",
+  "CSS",
+  "JS",
+  "Taillwind",
+  "React.JS",
+
+  "PHP",
+  "Laravel",
+  "Symfony",
+  "JAVA",
+  "Python",
+  "Flutter",
+  "SQL",
+  "PostgreSQL",
+  "GIT",
+  "Postman",
 ]

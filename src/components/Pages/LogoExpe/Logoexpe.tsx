@@ -3,8 +3,8 @@ import { experiences } from "../../../constant"
 
 function Logoexpe() {
   return (
-    <div className="bg-[#F4EDEA] py-8 overflow-hidden">
-      <Container className="py-0!">
+    <div className="overflow-hidden">
+      <Container className="">
         <div className="w-full relative">
           <div className="flex flex-nowrap items-center gap-10 scroll-horizontal font-primary">
             {experiences.map((item) => (

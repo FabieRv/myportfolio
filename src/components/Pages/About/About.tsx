@@ -5,11 +5,10 @@ import Title from "../../common/Title"
 function About() {
   return (
     <div>
-      <Container>
+      <Container className="mb-10">
         {/* Titre */}
         <div className="flex flex-col items-center">
           <Title label="About Me" />
-          {/* <hr className="w-50 border-2 border-blue-500 rounded mb-6" /> */}
         </div>
 
         {/* Contenu principal */}
@@ -28,7 +27,7 @@ function About() {
               <h1 className="font-header text-xl sm:text-xl md:text-2xl font-bold mb-">
                 I'm Fabienne
               </h1>
-              <p className=" sm:text-lg md:text-lg mb-6 text-lg">
+              <p className=" sm:text-lg md:text-lg mb-6 font-primary font-medium">
                 Développeur passionné, motivé et curieux, capable de s’adapter à
                 différentes technologies et projets. J’aime créer des solutions
                 performantes et efficaces tout en apprenant continuellement et
