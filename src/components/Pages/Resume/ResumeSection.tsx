@@ -34,16 +34,17 @@ const ResumeSection = () => {
 
         <div className="flex justify-center">
           {/* --- SECTION EXPERIENCE --- */}
-          <div className="flex flex-col md:flex-row justify-between items-start w-full max-w-4xl gap-8">
-            <h3 className="font-header text-2xl font-bold text-gray-800 uppercase tracking-wide mt-2 md:mt-0">
+          {/* Changed to always be flex-col for the title and the experience list */}
+          <div className="flex flex-col items-start w-full max-w-4xl gap-8">
+            <h3 className="font-header text-2xl font-bold text-gray-800 uppercase tracking-wide mt-2">
               Experience
             </h3>
-            {/* Changed from space-y-10 to flex flex-wrap with gaps */}
-            <div className="flex flex-wrap gap-x-8 gap-y-10 w-full md:w-3/4">
+            {/* This div still uses flex flex-wrap for individual items */}
+            <div className="flex flex-wrap gap-x-8 gap-y-10 w-full">
               {experiences.map((item, index) => (
                 <div
                   key={index}
-                  className="group relative pl-6 border-l-4 border-primary-dark hover:border-primary transition-colors duration-300 w-full md:w-[calc(50%-1rem)]" // Added width for wrapping
+                  className="group relative pl-6 border-l-4 border-primary-dark hover:border-primary transition-colors duration-300 w-full md:w-[calc(50%-1rem)]"
                 >
                   <span className="absolute -left-2 top-0 w-4 h-4 bg-primary-dark rounded-full group-hover:bg-primary transition-colors duration-300"></span>
                   <p className="font-primary text-sm text-gray-500 mb-1">
