@@ -6,7 +6,7 @@ export const headerLinks: LinkType[] = [
   { href: "/#Skils", label: "Skills" },
   { href: "/#Projects", label: "Projects" },
   { href: "/#Experience", label: "Education" },
-  { href: "/#Contact", label: "Contact" }, // Added Contact link
+  { href: "/#Contact", label: "Contact" }, // Corrected Contact link to point to section ID
 ]
 
 export const aboutLinks: AboutTypes[] = [

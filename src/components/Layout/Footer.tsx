@@ -1,5 +1,6 @@
 import Container from "../common/Container";
-import Linkedin from "../icons/Linkedin"; // Assuming you want to use your custom Linkedin icon
+import Linkedin from "../icons/Linkedin";
+import Facebook from "../icons/Facebook"; // Import the new Facebook icon
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,10 +21,16 @@ function Footer() {
           >
             <Linkedin className="w-6 h-6" />
           </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100087600000000" // Placeholder URL, please replace with your actual Facebook profile link
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Facebook profile"
+            className="text-gray-700 hover:text-primary transition-colors"
+          >
+            <Facebook className="w-6 h-6" />
+          </a>
           {/* Add other social icons here if needed, e.g., GitHub */}
-          {/* <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub profile" className="text-gray-700 hover:text-primary transition-colors">
-            <GitHub className="w-6 h-6" />
-          </a> */}
         </div>
       </Container>
     </footer>
