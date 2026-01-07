@@ -25,22 +25,6 @@ const ResumeSection = () => {
     },
   ];
 
-  // The education data is no longer needed if the section is removed
-  // const education = [
-  //   {
-  //     year: "2024 — 2025",
-  //     title: "Bachelor Degree",
-  //     place: "IS-INFO ",
-  //     desc: "Institut Superieur d'Informatique",
-  //   },
-  //   {
-  //     year: "2015 — 2016",
-  //     title: "Baccalaureat",
-  //     place: "Lycée Marovoay",
-  //     desc: "Excepteur sint occaecat cupidatat non proident.",
-  //   },
-  // ];
-
   return (
     <section className="bg-white py-16 lg:py-24">
       <Container>
@@ -48,9 +32,10 @@ const ResumeSection = () => {
           <Title label="History"></Title>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12">
+        {/* Adjusted the layout to make the experience section take full width */}
+        <div className="flex justify-center"> {/* Using flex to center if needed, or just remove grid classes */}
           {/* --- SECTION EXPERIENCE --- */}
-          <div className="space-y-10">
+          <div className="space-y-10 w-full max-w-2xl"> {/* Added max-w-2xl for better readability on large screens */}
             <h3 className="font-header text-2xl font-bold text-gray-800 uppercase tracking-wide mb-6">
               Experience
             </h3>
@@ -75,9 +60,6 @@ const ResumeSection = () => {
               </div>
             ))}
           </div>
-
-          {/* --- SECTION EDUCATION --- */}
-          {/* This section has been removed as requested */}
         </div>
       </Container>
     </section>
