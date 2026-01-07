@@ -49,7 +49,7 @@ export const projets = [
   {
     id: 1,
     title: "Soary Project",
-    descriptio:
+    description:
       "Design and Development of a modern and responsive showcase website, Design and Development of a modern and responsive showcase website",
     technologies: ["Symfony", "tailwind CSS", "PostgreSql"],
     demoLink: "#",
@@ -60,7 +60,7 @@ export const projets = [
   {
     id: 2,
     title: "MalagasyCraft",
-    descriptio:
+    description:
       "Design and Development of a modern and responsive showcase website, Design and Development of a modern and responsive showcase website", // Translated
     technologies: ["Laravel", "ReactJS", "MySQL"],
     demoLink: "#",
@@ -71,7 +71,7 @@ export const projets = [
   {
     id: 3,
     title: "E-parle",
-    descriptio:
+    description:
       "Design and Development of a modern and responsive showcase website, Design and Development of a modern and responsive showcase website", // Translated
     technologies: ["PHP", "CSS", "JS", "MySQL"],
     demoLink: "#",
@@ -82,7 +82,7 @@ export const projets = [
   {
     id: 4,
     title: "Coin des Gadjets",
-    descriptio:
+    description:
       "Design and Development of a modern and responsive showcase website, Design and Development of a modern and responsive showcase website", // Translated
     technologies: ["ReactJS", "Tailwindcss", "NodeJS", "MySQL"],
     demoLink: "#",
