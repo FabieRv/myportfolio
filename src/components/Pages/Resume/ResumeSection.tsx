@@ -25,20 +25,21 @@ const ResumeSection = () => {
     },
   ];
 
-  const education = [
-    {
-      year: "2024 — 2025",
-      title: "Bachelor Degree",
-      place: "IS-INFO ",
-      desc: "Institut Superieur d'Informatique",
-    },
-    {
-      year: "2015 — 2016",
-      title: "Baccalaureat",
-      place: "Lycée Marovoay",
-      desc: "Excepteur sint occaecat cupidatat non proident.",
-    },
-  ];
+  // The education data is no longer needed if the section is removed
+  // const education = [
+  //   {
+  //     year: "2024 — 2025",
+  //     title: "Bachelor Degree",
+  //     place: "IS-INFO ",
+  //     desc: "Institut Superieur d'Informatique",
+  //   },
+  //   {
+  //     year: "2015 — 2016",
+  //     title: "Baccalaureat",
+  //     place: "Lycée Marovoay",
+  //     desc: "Excepteur sint occaecat cupidatat non proident.",
+  //   },
+  // ];
 
   return (
     <section className="bg-white py-16 lg:py-24">
@@ -76,31 +77,7 @@ const ResumeSection = () => {
           </div>
 
           {/* --- SECTION EDUCATION --- */}
-          <div className="space-y-10">
-            <h3 className="font-header text-2xl font-bold text-gray-800 uppercase tracking-wide mb-6">
-              Education
-            </h3>
-            {education.map((item, index) => (
-              <div
-                key={index}
-                className="group relative pl-6 border-l-4 border-primary-dark hover:border-primary transition-colors duration-300"
-              >
-                <span className="absolute -left-2 top-0 w-4 h-4 bg-primary-dark rounded-full group-hover:bg-primary transition-colors duration-300"></span>
-                <p className="font-primary text-sm text-gray-500 mb-1">
-                  {item.year}
-                </p>
-                <h4 className="font-primary font-bold text-xl text-gray-900 leading-tight mb-1">
-                  {item.title}
-                </h4>
-                <p className="font-primary text-base italic text-gray-600 mb-2">
-                  {item.place}
-                </p>
-                <p className="text-sm text-gray-700 leading-relaxed font-primary">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
+          {/* This section has been removed as requested */}
         </div>
       </Container>
     </section>
