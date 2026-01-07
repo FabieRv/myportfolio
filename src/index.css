@@ -9,11 +9,9 @@
   --color-tertiary: #f4edea;
   --color-header: #5da9e9;
 
-  --font-primary: "Inter", sans-serif;
-  --font-secondary: "Lato", sans-serif;
-
-  --font-header: "Oswald", sans-serif;
-  --font-italic: "Playfair Display", serif;
+  --font-primary: "Lato", sans-serif;
+  --font-header: "Montserrat", sans-serif;
+  --font-serif: "Playfair Display", serif;
 }
 
 body,

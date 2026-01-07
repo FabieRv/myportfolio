@@ -6,7 +6,7 @@ export const headerLinks: LinkType[] = [
   { href: "/#Skils", label: "Skills" },
   { href: "/#Projects", label: "Projects" },
   { href: "/#Experience", label: "Education" },
-  { href: "/#Contact", label: "Contact" },
+  { href: "/#Contact", label: "Contact" }, // Added Contact link
 ]
 
 export const aboutLinks: AboutTypes[] = [
@@ -36,61 +36,14 @@ export const aboutLinks: AboutTypes[] = [
   },
 ]
 
-export const experiences = [
-  { id: 1, name: "JS", image: "images/JavaScript-logo.webp" },
-  { id: 2, name: "Taillwind", image: "/images/tailwind.webp" },
-  { id: 3, name: "ReactJS", image: "/images/react.webp" },
-  { id: 5, name: "NodeJS", image: "/images/node.webp" },
-  { id: 6, name: "JAVA", image: "/images/java.webp" },
-  { id: 7, name: "Python", image: "/images/pyhon.webp" },
-  { id: 8, name: "PHP", image: "/images/php.png" },
-  { id: 9, name: "laravel", image: "/images/laravel.webp" },
-  { id: 10, name: "Symfony", image: "/images/symfony.webp" },
-  { id: 11, name: "SQL", image: "/images/sql.webp" },
-  { id: 12, name: "PortgreSQL", image: "/images/pgsql.webp" },
-  { id: 13, name: "Flutter", image: "../../../public/images/Flutter.jpg" },
-]
-
-export const ListExperiences = [
-  {
-    id: 1,
-    role: "ReactJs Developer",
-    company: "Cherry Tech&Design",
-    period: "November 2025 - January 2026",
-    description: [
-      "Design and Development of a modern and responsive showcase website",
-      "Complete responsibility for the UI Design.",
-    ],
-
-    src: "images/cherry.webp",
-    alt: "cherry",
-  },
-  {
-    id: 2,
-    role: "Symfony Developer",
-    company: "Tolia Madagascar",
-    period: "November 2025 - January 2026",
-    description: [
-      "Development and improvement of business functionalities (sales, inventory, purchases)",
-      "Bug fixing and ensuring new functionality",
-    ],
-    src: "images/tolia.webp",
-    alt: "Tolia",
-  },
-
-  {
-    id: 3,
-    role: "Laravel Developer",
-    company: "MalagasyCraft",
-    period: "November 2025 - January 2026",
-    description: [
-      "Participation in the development of application functionalities (sales, inventory, purchases)",
-      "Management of export and import of artisanal products",
-    ],
-    src: "images/craft.webp",
-    alt: "MalagasyCraft",
-  },
-]
+export const atous = [
+  { id: 1, label: "AUTONOME" },          
+  { id: 2, label: "CURIEUX" },           
+  { id: 3, label: "RIGOUREUX" },         
+  { id: 4, label: "ESPRIT D'ÉQUIPE" },   
+  { id: 5, label: "PERSÉVÉRANT" },       
+  { id: 6, label: "FORCE DE PROPOSITION" } 
+];
 
 export const projets = [
   {
@@ -139,44 +92,41 @@ export const projets = [
   },
 ]
 
-// Frontend
-export const frontendSkills = ["HTML", "CSS", "JS", "TailwindCSS", "React.JS"]
+// FRONTEND : On transforme les strings en objets avec le chemin image
+export const frontendSkills = [
+  { name: "JS", image: "/images/JavaScript-logo.webp" },
+  { name: "TailwindCSS", image: "/images/tailwind.webp" },
+  { name: "React.JS", image: "/images/react.webp" },
+]
 
-// Backend
-export const backendSkills = ["PHP", "Laravel", "Symfony", "JAVA", "Python"]
+// BACKEND
+export const backendSkills = [
+  { name: "PHP", image: "/images/php.png" },
+  { name: "Laravel", image: "/images/laravel.webp" },
+  { name: "Symfony", image: "/images/symfony.webp" },
+  { name: "JAVA", image: "/images/java.webp" },
+  { name: "Python", image: "/images/pyhon.webp" },
+]
 
-// Mobile
-export const mobileSkills = ["Flutter"]
+// MOBILE
+export const mobileSkills = [{ name: "Flutter", image: "/images/Flutter.jpg" }]
 
-// Base de données
-export const databaseSkills = ["SQL", "PostgreSQL"]
+// DATABASE
+export const databaseSkills = [
+  { name: "SQL", image: "/images/sql.webp" },
+  { name: "PostgreSQL", image: "/images/pgsql.webp" },
+]
 
-// Outils
-export const toolsSkills = ["GIT", "Postman"]
+// OUTILS
+export const toolsSkills = [
+  { name: "GIT", image: "/images/git.png" }, // Assure-toi d'avoir cette image
+  { name: "Postman", image: "/images/postman.png" },
+]
 
 export const skills = [
-  { name: "BackEnd", level: 80 },
+  { name: "BackEnd", level: 90 },
   { name: "FrontEnd", level: 70 },
   { name: "Mobile", level: 60 },
   { name: "DataBase", level: 90 },
-  { name: "Outils", level: 70 },
-]
-
-export const tags = [
-  "HTML",
-  "CSS",
-  "JS",
-  "Taillwind",
-  "React.JS",
-
-  "PHP",
-  "Laravel",
-  "Symfony",
-  "JAVA",
-  "Python",
-  "Flutter",
-  "SQL",
-  "PostgreSQL",
-  "GIT",
-  "Postman",
+  { name: "Outils", level: 95 },
 ]

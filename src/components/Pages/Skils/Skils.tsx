@@ -1,55 +1,79 @@
-import { skills, tags } from "../../../constant"
+import {
+  skills,
+  frontendSkills,
+  backendSkills,
+  mobileSkills,
+  databaseSkills,
+  toolsSkills,
+} from "../../../constant"
 import Container from "../../common/Container"
 import Title from "../../common/Title"
 
 const SkillsSection = () => {
+  const techMapping = {
+    BackEnd: backendSkills,
+    FrontEnd: frontendSkills,
+    Mobile: mobileSkills,
+    DataBase: databaseSkills,
+    Outils: toolsSkills,
+  }
+
   return (
-    <Container>
-      <div>
-        <Title label="My Skills"></Title>
-      </div>
-      <div className="  text-white p-10  flex flex-col md:flex-row items-center gap-12 border-2">
-        {/* SECTION GAUCHE : Nuage de Tags */}
-        <div className="flex flex-wrap justify-end gap-3 w-full md:w-1/2 p-6">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="bg-header px-4 py-4 rounded-lg text-sm font-bold uppercase tracking-wider"
-            >
-              {tag}
-            </span>
-          ))}
+    <div className=" mb-10">
+      <Container>
+        <div className=" text-center">
+          <Title label="My Skills" />
         </div>
 
-        {/* SECTION DROITE : Barres de Progression */}
-        <div className="w-full md:w-1/2 space-y-8">
-          {skills.map((skill) => (
-            <div key={skill.name} className="relative pt-1">
-              <div className="flex mb-2 items-center justify-between">
-                <span className="text-sm font-semibold">{skill.name}</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col border bg-[#F4EDEA] transition-all duration-300 gap-4 p-4"
+            >
+              {/* TITRE DE LA CATEGORIE */}
+              <h3 className="font-header text-xl font-bold uppercase tracking-tight text-gray-700">
+                {skill.name}
+              </h3>
+
+              {/* GRILLE DES LOGOS (4 par ligne max) */}
+              <div className="flex flex-wrap gap-4">
+                {techMapping[skill.name]?.map((tech, index) => (
+                  <div key={index} className="flex flex-col items-center ">
+                    <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full">
+                      <img
+                        src={tech.image}
+                        alt={tech.name}
+                        className="w-full h-full object-contain rounded-full"
+                        onError={(e) => {
+                          e.target.src = "https://via.placeholder.com/40"
+                        }}
+                      />
+                    </div>
+                    <span className="text-[10px] font-bold text-gray-500 uppercase text-center leading-tight">
+                      {tech.name}
+                    </span>
+                  </div>
+                ))}
               </div>
 
-              {/* Conteneur de la barre */}
-              <div className="relative w-full h-2 bg-gray-700">
-                {/* Remplissage de la barre */}
-                <div
-                  style={{ width: `${skill.level}%` }}
-                  className="absolute top-0 left-0 h-full bg-primary  transition-all duration-1000"
-                />
-
-                {/* Tooltip du pourcentage */}
-                <div
-                  style={{ left: `${skill.level}%` }}
-                  className="absolute -top-8 -translate-x-1/2 bg-primary  text-[10px] px-2 py-1 rounded-sm after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-t-[rgb(0,79,255)]"
-                >
-                  {skill.level}%
+              {/* PIED DE CARTE : POURCENTAGE ET BARRE */}
+              <div className="mt-auto">
+                <div className="flex justify-between items-end mt-3">
+                  <span className="text-xl text-white">{skill.level}%</span>
+                </div>
+                <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    style={{ width: `${skill.level}%` }}
+                    className="h-full bg-[#5DA9E9] rounded-full transition-all duration-1000"
+                  />
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   )
 }
 
