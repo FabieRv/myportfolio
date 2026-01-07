@@ -32,33 +32,34 @@ const ResumeSection = () => {
           <Title label="History"></Title>
         </div>
 
-        {/* Adjusted the layout to make the experience section take full width */}
-        <div className="flex justify-center"> {/* Using flex to center if needed, or just remove grid classes */}
+        <div className="flex justify-center">
           {/* --- SECTION EXPERIENCE --- */}
-          <div className="space-y-10 w-full max-w-2xl"> {/* Added max-w-2xl for better readability on large screens */}
-            <h3 className="font-header text-2xl font-bold text-gray-800 uppercase tracking-wide mb-6">
+          <div className="flex flex-col md:flex-row justify-between items-start w-full max-w-4xl gap-8"> {/* Adjusted for flex layout */}
+            <h3 className="font-header text-2xl font-bold text-gray-800 uppercase tracking-wide mt-2 md:mt-0">
               Experience
             </h3>
-            {experiences.map((item, index) => (
-              <div
-                key={index}
-                className="group relative pl-6 border-l-4 border-primary-dark hover:border-primary transition-colors duration-300"
-              >
-                <span className="absolute -left-2 top-0 w-4 h-4 bg-primary-dark rounded-full group-hover:bg-primary transition-colors duration-300"></span>
-                <p className="font-primary text-sm text-gray-500 mb-1">
-                  {item.year}
-                </p>
-                <h4 className="font-primary font-bold text-xl text-gray-900 leading-tight mb-1">
-                  {item.title}
-                </h4>
-                <p className="font-primary text-base italic text-gray-600 mb-2">
-                  {item.place}
-                </p>
-                <p className="text-sm text-gray-700 leading-relaxed font-primary">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
+            <div className="space-y-10 w-full md:w-3/4"> {/* Wrapper for experience items */}
+              {experiences.map((item, index) => (
+                <div
+                  key={index}
+                  className="group relative pl-6 border-l-4 border-primary-dark hover:border-primary transition-colors duration-300"
+                >
+                  <span className="absolute -left-2 top-0 w-4 h-4 bg-primary-dark rounded-full group-hover:bg-primary transition-colors duration-300"></span>
+                  <p className="font-primary text-sm text-gray-500 mb-1">
+                    {item.year}
+                  </p>
+                  <h4 className="font-primary font-bold text-xl text-gray-900 leading-tight mb-1">
+                    {item.title}
+                  </h4>
+                  <p className="font-primary text-base italic text-gray-600 mb-2">
+                    {item.place}
+                  </p>
+                  <p className="text-sm text-gray-700 leading-relaxed font-primary">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </Container>
