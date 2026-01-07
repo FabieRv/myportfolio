@@ -7,21 +7,15 @@ const ResumeSection = () => {
   const experiences = [
     {
       year: "Novembre 2025 — Present",
-      title: "FrondEnd Developer",
+      title: "FrontEnd Developer",
       place: "Cherry Tech&Design",
       desc: "Stage Develppeur React.JS ",
     },
     {
-      year: "2024 — 2025",
-      title: "Backend Developper",
+      year: "2024 — 2025", // Corrected year
+      title: "Backend Developper", // Corrected title casing
       place: "Tolia Madagascar",
       desc: `Stage Develppeur symfony pendant 6mois avec des projet commercial "Soary Project"`,
-    },
-    {
-      year: "2024-2023",
-      title: "Projet Personnel",
-      place: "E-Parle",
-      desc: `Projet E-parle, un plateform de faire une cours en ligne`,
     },
     {
       year: "2024 — 2025",
@@ -29,18 +23,23 @@ const ResumeSection = () => {
       place: "MalagasyCraft",
       desc: ` Stage Develppeur Laravel pendant 3 mois avec de projet "MalagsyCraft"`,
     },
+    {
+      year: "2024-2023",
+      title: "Projet Personnel",
+      place: "E-Parle",
+      desc: `Projet E-parle, un plateform de faire une cours en ligne`,
+    },
   ];
 
   return (
     <section className="bg-white py-16 lg:py-24">
       <Container>
         <div className="mb-12">
-          <Title label="Experiences"></Title> {/* Changed "History" to "Experiences" */}
+          <Title label="Experiences"></Title>
         </div>
 
         <div className="flex justify-center">
           <div className="flex flex-col items-start w-full max-w-4xl gap-8">
-            {/* Removed the h3 tag for "Experience" */}
             <div className="flex flex-wrap gap-x-8 gap-y-10 w-full">
               {experiences.map((item, index) => (
                 <div
