@@ -18,6 +18,12 @@ const ResumeSection = () => {
       desc: `Stage Develppeur symfony pendant 6mois avec des projet commercial "Soary Project"`,
     },
     {
+      year: "2024-2023",
+      title: "Projet Personnel",
+      place: "E-Parle",
+      desc: `Projet E-parle, un plateform de faire une cours en ligne`,
+    },
+    {
       year: "2024 — 2025",
       title: "Backend Developper",
       place: "MalagasyCraft",
