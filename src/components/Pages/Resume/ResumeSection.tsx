@@ -35,17 +35,12 @@ const ResumeSection = () => {
     <section className="bg-white py-16 lg:py-24">
       <Container>
         <div className="mb-12">
-          <Title label="History"></Title>
+          <Title label="Experiences"></Title> {/* Changed "History" to "Experiences" */}
         </div>
 
         <div className="flex justify-center">
-          {/* --- SECTION EXPERIENCE --- */}
-          {/* Changed to always be flex-col for the title and the experience list */}
           <div className="flex flex-col items-start w-full max-w-4xl gap-8">
-            <h3 className="font-header text-2xl font-bold text-gray-800 uppercase tracking-wide mt-2">
-              Experience
-            </h3>
-            {/* This div still uses flex flex-wrap for individual items */}
+            {/* Removed the h3 tag for "Experience" */}
             <div className="flex flex-wrap gap-x-8 gap-y-10 w-full">
               {experiences.map((item, index) => (
                 <div
