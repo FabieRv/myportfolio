@@ -3,10 +3,8 @@ import Container from "../../common/Container"
 
 const AboutMe = () => {
   return (
-    <section className="bg-white">
-      {/* Container avec le même padding que ton Hero pour l'alignement */}
+    <section id="about" className="bg-white">
       <Container className="relative py-24 overflow-hidden">
-        {/* Glow discret pour le rappel tech (Optionnel) */}
         <div className="absolute top-10 -left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
 
         <div className="max-w-6xl mx-auto">
@@ -14,7 +12,7 @@ const AboutMe = () => {
             {/* 1. L'IMAGE (Style cohérent avec le Hero : bords arrondis et shadow) */}
             <div className="w-full md:w-5/12 relative">
               <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
-                <div className="w-full h-[450px] md:h-[550px] overflow-hidden">
+                <div className="w-full h-[350px] sm:h-[450px] md:h-[550px] overflow-hidden"> {/* Adjusted height for better responsiveness */}
                   <img
                     src="/images/desckt.webp"
                     alt="Fabienne Coding"
@@ -97,8 +95,6 @@ const AboutMe = () => {
                   <h5 className="font-primary text-sm font-bold uppercase tracking-wider">
                     LinkedIn
                   </h5>
-                  <Button label=""></Button>
-
                   <a
                     href="https://www.linkedin.com/in/fabienne-razafimaharavo-911520309"
                     target="_blank"
