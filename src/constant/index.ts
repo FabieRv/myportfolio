@@ -37,13 +37,13 @@ export const aboutLinks: AboutTypes[] = [
 ]
 
 export const atous = [
-  { id: 1, label: "AUTONOME" },          
-  { id: 2, label: "CURIEUX" },           
-  { id: 3, label: "RIGOUREUX" },         
-  { id: 4, label: "ESPRIT D'ÉQUIPE" },   
-  { id: 5, label: "PERSÉVÉRANT" },       
-  { id: 6, label: "FORCE DE PROPOSITION" } 
-];
+  { id: 1, label: "AUTONOME" },
+  { id: 2, label: "CURIEUX" },
+  { id: 3, label: "RIGOUREUX" },
+  { id: 4, label: "ESPRIT D'ÉQUIPE" },
+  { id: 5, label: "PERSÉVÉRANT" },
+  { id: 6, label: "FORCE DE PROPOSITION" },
+]
 
 export const projets = [
   {
@@ -129,4 +129,31 @@ export const skills = [
   { name: "Mobile", level: 60 },
   { name: "DataBase", level: 90 },
   { name: "Outils", level: 95 },
+]
+
+export const experiences = [
+  {
+    year: "2025 — Present",
+    title: "FrontEnd Developer",
+    place: "Cherry Tech&Design",
+    desc: "Stage Développeur React.JS, contribuant à la création d'interfaces utilisateur modernes et réactives.",
+  },
+  {
+    year: "2024 — 2025",
+    title: "Backend Developer",
+    place: "Tolia Madagascar",
+    desc: "Stage Développeur Symfony pendant 6 mois, travaillant sur des projets commerciaux comme 'Soary Project'.",
+  },
+  {
+    year: "2024 — 2025",
+    title: "Backend Developer",
+    place: "MalagasyCraft",
+    desc: "Stage Développeur Laravel pendant 3 mois, avec le projet 'MalagasyCraft'.",
+  },
+  {
+    year: "2023 — 2024",
+    title: "Projet Personnel",
+    place: "E-Parle",
+    desc: "Projet E-parle, une plateforme de cours en ligne, gérant le développement complet du backend.",
+  },
 ]

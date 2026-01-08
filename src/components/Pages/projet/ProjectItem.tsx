@@ -1,25 +1,12 @@
 "use client"
 
-import React, { useRef } from "react"
 import { motion } from "framer-motion"
 import { projets } from "../../../constant/index"
-import { BiVideo, BiChevronLeft, BiChevronRight } from "react-icons/bi"
+import { BiVideo } from "react-icons/bi"
 import Container from "../../common/Container"
 
 const Project = () => {
   // Référence pour contrôler le défilement horizontal
-  const scrollRef = useRef<HTMLDivElement>(null)
-
-  const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      const { scrollLeft, clientWidth } = scrollRef.current
-      const scrollTo =
-        direction === "left"
-          ? scrollLeft - clientWidth / 2
-          : scrollLeft + clientWidth / 2
-      scrollRef.current.scrollTo({ left: scrollTo, behavior: "smooth" })
-    }
-  }
 
   return (
     <div className="relative w-full  ">
@@ -27,10 +14,7 @@ const Project = () => {
 
       {/* Conteneur de défilement sans barre de scroll visible */}
       <Container className="px-0! py-0!">
-        <div
-          ref={scrollRef}
-          className="w-full overflow-x-auto hide-scrollbar scroll-smooth"
-        >
+        <div className="w-full overflow-x-auto hide-scrollbar scroll-smooth">
           <div className="relative min-w-[2200px] h-[600px] mx-auto px-40">
             {/* Timeline Sinusoïdale Bleue */}
             <svg
@@ -64,10 +48,7 @@ const Project = () => {
                           whileInView={{ opacity: 1, scale: 1 }}
                           className="space-y-3"
                         >
-                          <span className="inline-block px-3 py-1 border border-blue rounded-full text-[8px] font-bold uppercase tracking-widest text-blue">
-                            {index + 1} / {projets.length}
-                          </span>
-                          <h3 className="text-3xl text-blue-700 italic font-serif   font-bold leading-tight">
+                          <h3 className="text-2xl text-black-700 italic font-serif   font-bold leading-tight">
                             {project.title}
                           </h3>
                           <p className="text-sm text-gray-500 leading-snug font-serif ">
@@ -92,7 +73,7 @@ const Project = () => {
                     </div>
 
                     {/* POINT D'ANCRAGE SUR LA COURBE */}
-                    <div className="w-2.5 h-2.5 bg-black rounded-full z-20 shadow-sm" />
+                    <div className="w-2.5 h-2.5 bg-blue-700 rounded-full z-20 shadow-sm" />
 
                     {/* ZONE BASSE (Creux) */}
                     <div className="h-[250px] flex flex-col justify-start items-center text-center pt-8">
@@ -102,10 +83,7 @@ const Project = () => {
                           whileInView={{ opacity: 1, scale: 1 }}
                           className="space-y-3"
                         >
-                          <span className="inline-block px-3 py-1 border border-black rounded-full text-[8px] font-bold uppercase tracking-widest text-black">
-                            {index + 1} / {projets.length}
-                          </span>
-                          <h3 className="text-3xl text-blue-700 italic font-serif   font-bold leading-tight">
+                          <h3 className="text-3xl text-black-700 italic font-serif   font-bold leading-tight">
                             {project.title}
                           </h3>
                           <p className="text-sm text-gray-500 leading-snug font-serif ">
