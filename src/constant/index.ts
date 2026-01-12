@@ -37,12 +37,12 @@ export const aboutLinks: AboutTypes[] = [
 ]
 
 export const atous = [
-  { id: 1, label: "AUTONOME" },
-  { id: 2, label: "CURIEUX" },
-  { id: 3, label: "RIGOUREUX" },
-  { id: 4, label: "ESPRIT D'ÉQUIPE" },
-  { id: 5, label: "PERSÉVÉRANT" },
-  { id: 6, label: "FORCE DE PROPOSITION" },
+  { id: 1, label: "AUTONOMOUS" },       
+  { id: 2, label: "CURIOUS" },          
+  { id: 3, label: "DETAIL-ORIENTED" },  
+  { id: 4, label: "TEAM PLAYER" },      
+  { id: 5, label: "PERSEVERANT" },      
+  { id: 6, label: "PROACTIVE" },       
 ]
 
 export const projets = [
@@ -157,3 +157,5 @@ export const experiences = [
     desc: "Projet E-parle, une plateforme de cours en ligne, gérant le développement complet du backend.",
   },
 ]
+
+
