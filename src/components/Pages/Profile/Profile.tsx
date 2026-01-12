@@ -5,9 +5,11 @@ function Profile() {
   return (
     <div className="bg-[#F4EDEA] overflow-hidden">
       <Container className="py-0!">
-        {/* Le conteneur parent passe en flex-col (mobile) et flex-row (tablette) */}
-        <div className="flex flex-col md:flex-row items-center justify-center lg:block lg:relative min-h-fit lg:min-h-[580px]  lg:py-0 gap-10 md:gap-16">
-          <div className="md:col-span-10 md:col-start-2 flex justify-center z-10 order-1 md:order-2">
+        {/* Correction Tablette: md:flex-row et items-center pour un alignement propre */}
+        <div className="flex flex-col md:flex-row items-center justify-center lg:block lg:relative min-h-fit lg:min-h-[540px] lg:py-0 gap-10 md:gap-16">
+          {/* 1. L'IMAGE */}
+          {/* md:w-1/2 sur tablette pour partager l'espace avec le texte */}
+          <div className="flex justify-center z-10 order-1 md:order-2 md:w-1/2 lg:w-full">
             <div className="lg:relative w-[180px] md:w-[280px] lg:w-[380px] bg-secondary rounded-b-full overflow-hidden">
               <img
                 src="/images/prof-removebg-preview.webp"
@@ -17,8 +19,9 @@ function Profile() {
             </div>
           </div>
 
-          {/* 2. LE TEXTE EN ABSOLUTE (Chevauche l'image en version Desktop uniquement) */}
-          <div className="flex flex-col gap-4 lg:absolute lg:top-20 lg:left-0 z-20 pointer-events-none order-2 md:order-1">
+          {/* 2. LE TEXTE */}
+          {/* md:w-1/2 et md:items-start pour l'alignement tablette */}
+          <div className="flex flex-col gap-4 lg:absolute lg:top-20 lg:left-0 z-20 pointer-events-none order-2 md:order-1 md:w-1/2 lg:w-full">
             <div className="pointer-events-auto text-center md:text-left lg:text-base">
               <p className="text-xs lg:text-sm font-primary mb-2">
                 Hey, I'm Fabienne
@@ -42,12 +45,12 @@ function Profile() {
             </div>
 
             {/* Correction du bouton : centré sur mobile, à gauche sur md et lg */}
-            <div className="pointer-events-auto flex justify-center md:justify-start lg:block">
+            <div className="pointer-events-auto flex justify-center md:justify-start lg:block mb-10 md:mb-0">
               <Button label="Contact Me" />
             </div>
           </div>
 
-          {/* 3. LES STATS (Cachées sur mobile et tablette, visible sur desktop) */}
+          {/* 3. LES STATS */}
           <div className="absolute top-45 lg:top-20 right-0 z-20 hidden lg:flex flex-col items-end space-y-12 text-right pr-12 lg:pl-0!">
             <div>
               <p className="text-lg lg:text-4xl font-bold ">1+</p>
@@ -69,26 +72,29 @@ function Profile() {
         </div>
 
         {/* BARRE DE SERVICES (RESTE EN BAS) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-gray-400  border-t md:border-t-0 mb-10 ">
+        {/* md:mt-10 pour espacer de la section flex du dessus sur tablette */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-gray-400  md:mt-10 pb-10 ">
           <div className="border-l pl-4 border-gray-400">
             <h5 className="text-sm font-bold uppercase">FrontEnd Developper</h5>
             <p className="text-gray-700 text-sm">
-              Interfaces claires et responsives.
+              Crafting intuitive, high-performance, and fully responsive user
+              interfaces.
             </p>
           </div>
 
           <div className="border-l pl-4 border-gray-400">
             <h5 className="text-sm font-bold uppercase">BackEnd Developper</h5>
             <p className="text-gray-700 text-sm">
-              Gestion de la logique applicative, des données et des
-              fonctionnalités serveur.
+              Building robust server-side logic, databases, and secure API
+              architectures.
             </p>
           </div>
 
           <div className="border-l pl-4 border-gray-400">
             <h5 className="text-sm font-bold uppercase">Mobile Developper</h5>
             <p className="text-gray-700 text-sm">
-              Applications mobiles fluides et intuitives.
+              Developing seamless and engaging cross-platform mobile
+              applications.
             </p>
           </div>
         </div>

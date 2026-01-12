@@ -54,10 +54,7 @@ function Header() {
             {/* 3. BOUTON (Parfaitement aligné avec les li) */}
             <li className="flex items-center mt-6 lg:mt-0">
               <a href="/cv.pdf" download onClick={() => setOpen(false)}>
-                <Button
-                  label="Upload CV"
-                  className="text-lg lg:text-sm text-white px-6 py-2 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all"
-                />
+                <Button label="Upload CV"></Button>
               </a>
             </li>
           </ul>
