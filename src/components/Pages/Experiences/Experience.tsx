@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react"
+import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Container from "../../common/Container"
@@ -44,10 +44,10 @@ const ExperienceTimeline = ({
           transition={{ type: "spring", stiffness: 40, damping: 20 }}
         >
           {/* 1. CERCLE EXTÉRIEUR (PLUS GRAS) */}
-          <div className="absolute inset-0 rounded-full border-[2px] border-gray-200" />
+          <div className="absolute inset-0 rounded-full border-2 border-gray-200" />
 
           {/* 2. CERCLE INTÉRIEUR (DOUBLÉ) */}
-          <div className="absolute inset-10 rounded-full border-[1px] border-gray-100" />
+          <div className="absolute inset-10 rounded-full border border-gray-100" />
 
           {/* REPERES ET ANNÉES */}
           {experiences.map((exp, i) => {
@@ -59,7 +59,7 @@ const ExperienceTimeline = ({
                 style={{ transform: `rotate(${rotation}deg)` }}
               >
                 {/* Le trait vertical (plus épais/gras) */}
-                <div className="w-[2px] h-16 bg-gray-300" />
+                <div className="w-0.5 h-16 bg-gray-300" />
 
                 <motion.span
                   animate={{
