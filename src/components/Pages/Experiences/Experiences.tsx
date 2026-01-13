@@ -1,5 +1,5 @@
-import Container from "../../common/Container"
-import Title from "../../common/Title"
+import Container from "../../../common/Container"
+import Title from "../../../common/Title"
 import { experiences } from "./../../../constant/index"
 
 function Experiences() {

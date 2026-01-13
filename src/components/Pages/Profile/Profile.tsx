@@ -1,5 +1,5 @@
-import Button from "../../common/Button"
-import Container from "../../common/Container"
+import Button from "../../../common/Button"
+import Container from "../../../common/Container"
 
 function Profile() {
   return (

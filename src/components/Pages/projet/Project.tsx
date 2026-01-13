@@ -1,7 +1,7 @@
 "use client"
 
-import Container from "../../common/Container"
-import Title from "../../common/Title"
+import Container from "../../../common/Container"
+import Title from "../../../common/Title"
 import { projets } from "../../../constant/index"
 import ProjectItem from "./ProjectItem"
 import { useState } from "react"

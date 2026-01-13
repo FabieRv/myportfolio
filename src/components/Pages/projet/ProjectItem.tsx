@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { projets } from "../../../constant/index"
 import { BiVideo } from "react-icons/bi"
-import Container from "../../common/Container"
+import Container from "../../../common/Container"
 
 const Project = () => {
   // Référence pour contrôler le défilement horizontal

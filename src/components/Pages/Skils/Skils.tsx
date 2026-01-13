@@ -9,8 +9,8 @@ import {
   databaseSkills,
   toolsSkills,
 } from "../../../constant"
-import Container from "../../common/Container"
-import Title from "../../common/Title"
+import Container from "../../../common/Container"
+import Title from "../../../common/Title"
 
 const SkillsSection: FC = () => {
   const techMapping: Record<string, any[]> = {

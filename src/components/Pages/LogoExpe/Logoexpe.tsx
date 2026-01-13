@@ -1,4 +1,4 @@
-import Container from "../../common/Container"
+import Container from "../../../common/Container"
 import { atous } from "../../../constant"
 import { useRef, useEffect } from "react"
 import { gsap } from "gsap"
