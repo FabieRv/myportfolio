@@ -1,6 +1,7 @@
 "use client"
 
 import type { FC } from "react"
+import { useTranslation } from "react-i18next"
 import {
   skills,
   frontendSkills,
@@ -13,6 +14,8 @@ import Container from "../../../common/Container"
 import Title from "../../../common/Title"
 
 const SkillsSection: FC = () => {
+  const { t } = useTranslation()
+
   const techMapping: Record<string, any[]> = {
     BackEnd: backendSkills,
     FrontEnd: frontendSkills,
@@ -24,61 +27,62 @@ const SkillsSection: FC = () => {
   return (
     <section className="py-12 bg-gray-50/50">
       <Container>
-        <div className="text-center mb-10">
-          <Title label="My Skills" />
+        <div className="text-center mb-8">
+          <Title label={t("My Skills")} />
         </div>
 
-        {/* Flexbox centralisé - Cartes courtes et compactes */}
-        <div className="flex flex-wrap justify-center gap-5 max-w-5xl mx-auto">
+        {/* Grille Flex optimisée */}
+        <div className="flex flex-wrap justify-center gap-5 max-w-7xl mx-auto">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col w-full sm:w-[450px] border border-gray-100 rounded-2xl shadow-sm p-5 transition-all hover:shadow-md hover:-translate-y-1"
+              /* Largeur fixée à 320px pour un aspect plus "moyen" et compact */
+              className="flex flex-col w-full sm:w-[320px] border border-gray-200 rounded-xl shadow-sm p-4 bg-white transition-all hover:shadow-md hover:-translate-y-1"
             >
-              {/* HEADER : Titre de la catégorie */}
-              <div className="mb-4">
-                <h3 className="text-sm font-black text-gray-800 uppercase tracking-widest">
-                  {skill.name}
+              {/* HEADER CATEGORIE - Plus compact */}
+              <div className="mb-4 border-b border-gray-100 pb-2">
+                <h3 className="text-lg  font-primary font-bold text-gray-800 uppercase tracking-tighter">
+                  {t(skill.name)}
                 </h3>
               </div>
 
-              {/* LISTE DES TECHNOS : Style Badges compacts  */}
-              <div className="flex flex-wrap gap-2 mb-6">
+              {/* LISTE DES TECHNOS */}
+              <div className="flex flex-wrap gap-2 mb-4">
                 {techMapping[skill.name]?.map((tech, techIndex) => (
                   <div
                     key={techIndex}
-                    className="flex items-center gap-1.5 bg-gray-50 border border-gray-100 px-2 py-1 rounded-lg"
+                    /* Taille réduite pour densifier le contenu */
+                    className="flex flex-col items-center justify-center gap-1.5 bg-blue-50/50 border border-blue-100 p-2 rounded-lg hover:bg-white hover:border-blue-300 transition-all w-[75px]"
                   >
-                    <img
-                      src={tech.image}
-                      alt={tech.name}
-                      className="w-6 h-6 "
-                    />
-                    <span className="text-[14px] font-bold text-gray-600 uppercase">
+                    <div className="bg-white p-1 rounded-full shadow-sm border border-gray-100">
+                      <img
+                        src={tech.image}
+                        alt={tech.name}
+                        /* Image parfaitement ronde et centrée */
+                        className="w-7 h-7 object-contain rounded-full"
+                      />
+                    </div>
+                    <span className="text-[10px] font-bold text-gray-600 uppercase text-center leading-none">
                       {tech.name}
                     </span>
                   </div>
                 ))}
               </div>
 
-              {/* PROGRESS BAR & LEVEL EN BAS */}
-              {/* FOOTER DE CARTE : ESPACEMENT ASSURÉ PAR FLEX + GAP */}
-              <div className="mt-auto flex flex-col gap-2">
-                {/* Ligne d'infos : Level et Pourcentage */}
+              {/* PROGRESS BAR - Plus fine */}
+              <div className="mt-auto pt-2 flex flex-col gap-1.5">
                 <div className="flex justify-between items-center">
-                  <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
-                    Level
+                  <span className="text-[12px] font-bold text-gray-400 uppercase">
+                    {t("Level")}
                   </span>
-                  <span className="text-[10px] font-black text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded">
+                  <p className="text-[15px] font-black text-blue-600">
                     {skill.level}%
-                  </span>
+                  </p>
                 </div>
-
-                {/* Barre de progression */}
-                <div className="w-full h-1 bg-gray-100 rounded-full overflow-hidden">
+                <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden ">
                   <div
                     style={{ width: `${skill.level}%` }}
-                    className="h-full bg-blue-500 rounded-full transition-all duration-1000 ease-out"
+                    className="h-full bg-blue-600 rounded-full transition-all duration-1000"
                   />
                 </div>
               </div>

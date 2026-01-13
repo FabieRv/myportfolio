@@ -31,7 +31,7 @@ function Logoexpe() {
   }, [])
 
   return (
-    <div className="overflow-hidden shadow-sm py-10  bg-[#D6E3F8]">
+    <div className="overflow-hidden shadow-sm py-6  bg-[#D6E3F8] ">
       {/* bg-[#F4EDEA] */}
       <Container className="py-0! pt-0!">
         <div className="w-full relative">
@@ -42,7 +42,7 @@ function Logoexpe() {
             {atous.map((atout) => (
               <div
                 key={atout.id}
-                className="text-lg md:text-xl lg:text-xl font-bold text-gray-700 px-5 py-2 rounded-full bg-white shadow-sm"
+                className="text-xs md:text-sm lg:text-lg font-bold text-gray-700 px-5 py-2 rounded-full bg-white shadow-sm"
               >
                 {atout.label}
               </div>
@@ -50,7 +50,7 @@ function Logoexpe() {
             {atous.map((atout) => (
               <div
                 key={`${atout.id}-clone`}
-                className="text-sm md:text-lg lg:text-xl font-bold text-gray-700 px-5 py-2 rounded-full bg-white shadow-sm"
+                className="text-xs md:text-sm lg:text-lg font-bold text-gray-700 px-5 py-2 rounded-full bg-white shadow-sm"
               >
                 {atout.label}
               </div>

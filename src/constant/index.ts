@@ -6,7 +6,7 @@ export const headerLinks: LinkType[] = [
   { href: "/#Skils", label: "Skills" },
   { href: "/#Projects", label: "Projects" },
   { href: "/#Experience", label: "Education" },
-  { href: "/#Contact", label: "Contact" }, // Corrected Contact link to point to section ID
+  { href: "/#Contact", label: "Contact" },
 ]
 
 export const aboutLinks: AboutTypes[] = [
@@ -101,7 +101,7 @@ export const frontendSkills = [
 
 // BACKEND
 export const backendSkills = [
-  { name: "PHP", image: "/images/php.png" },
+  { name: "PHP", image: "/images/php.webp" },
   { name: "Laravel", image: "/images/laravel.webp" },
   { name: "Symfony", image: "/images/symfony.webp" },
   { name: "JAVA", image: "/images/java.webp" },
@@ -116,11 +116,11 @@ export const databaseSkills = [
 
 // OUTILS
 export const toolsSkills = [
-  { name: "GIT", image: "/images/git.png" }, // Assure-toi d'avoir cette image
-  { name: "Postman", image: "/images/postman.png" },
+  { name: "GIT", image: "/images/git.webp" }, // Assure-toi d'avoir cette image
+  { name: "Postman", image: "/images/postman.webp" },
 ]
 
-export const mobileSkills = [{ name: "Flutter", image: "/images/Flutter.jpg" }]
+export const mobileSkills = [{ name: "Flutter", image: "images/Flutter.webp" }]
 
 export const skills = [
   { name: "BackEnd", level: 90 },
@@ -129,33 +129,6 @@ export const skills = [
   { name: "DataBase", level: 90 },
   { name: "Outils", level: 95 },
 ]
-
-// export const experiences = [
-//   {
-//     year: "2025 — Present",
-//     title: "FrontEnd Developer",
-//     place: "Cherry Tech&Design",
-//     desc: "Stage Développeur React.JS, contribuant à la création d'interfaces utilisateur modernes et réactives.",
-//   },
-//   {
-//     year: "2024 — 2025",
-//     title: "Backend Developer",
-//     place: "Tolia Madagascar",
-//     desc: "Stage Développeur Symfony pendant 6 mois, travaillant sur des projets commerciaux comme 'Soary Project'.",
-//   },
-//   {
-//     year: "2024 — 2025",
-//     title: "Backend Developer",
-//     place: "MalagasyCraft",
-//     desc: "Stage Développeur Laravel pendant 3 mois, avec le projet 'MalagasyCraft'.",
-//   },
-//   {
-//     year: "2023 — 2024",
-//     title: "Projet Personnel",
-//     place: "E-Parle",
-//     desc: "Projet E-parle, une plateforme de cours en ligne, gérant le développement complet du backend.",
-//   },
-// ]
 
 export const experiences = [
   {
