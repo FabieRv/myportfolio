@@ -19,8 +19,8 @@ function Experiences() {
         </div>
 
         <div className="relative">
-          {/* Ligne Verticale Centrale */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
+          {/* Ligne Verticale : Mobile à gauche, Desktop au centre */}
+          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
 
           <div className="space-y-12">
             {experiences.map((exp, index) => {
@@ -28,25 +28,38 @@ function Experiences() {
               return (
                 <div
                   key={index}
-                  className={`relative flex items-center justify-between w-full ${
-                    isEven ? "flex-row" : "flex-row-reverse"
+                  className={`relative flex flex-col md:flex-row items-start md:items-center justify-between w-full ${
+                    isEven ? "md:flex-row" : "md:flex-row-reverse"
                   }`}
                 >
-                  {/* Côté Contenu (Texte) */}
-                  <div className="w-[45%]">
-                    <div className={`${isEven ? "text-right" : "text-left"}`}>
-                      <h3 className="text-sm font-bold uppercase tracking-wider text-[#333]">
+                  {/* Côté Contenu */}
+                  <div className="w-full md:w-[45%] pl-12 md:pl-0">
+                    <div
+                      className={`flex flex-col text-left ${
+                        isEven ? "md:text-right" : "md:text-left"
+                      }`}
+                    >
+                      {/* DATE VERSION MOBILE (Même design que desktop) */}
+                      <div className="inline-flex md:hidden mb-4">
+                        <div className="relative bg-primary text-white text-[10px] font-bold px-5 py-2.5 rounded-[4px] shadow-md uppercase tracking-wide">
+                          {exp.year}
+                          {/* Petite flèche pointant vers le bas sur mobile */}
+                          <div className="absolute -bottom-1 left-4 w-3 h-3 bg-primary rotate-45"></div>
+                        </div>
+                      </div>
+
+                      {/* Titres et Descriptions */}
+                      <h1 className="text-sm lg:text-lg font-bold uppercase tracking-wider text-[#333]">
                         {exp.title}
-                      </h3>
-                      <p className="text-[10px] font-bold uppercase text-blue-700 mb-2 tracking-widest">
+                      </h1>
+                      <h3 className="text-xs lg:text-[14px] font-bold uppercase text-blue-700 mb-2 tracking-widest">
                         {exp.place}
-                      </p>
-                      <p className="text-gray-500 text-[11px] font-semibold italic">
+                      </h3>
+                      <p className="text-gray-500 text-[11px] lg:text-[13px] font-semibold italic">
                         {exp.desc1}
                       </p>
-                      {/* Description détaillée (desc2) avec retours à la ligne */}
                       {exp.desc2 && (
-                        <p className="text-gray-400 text-[11px] leading-relaxed italic mt-1">
+                        <p className="text-gray-400 text-[10px] lg:text-[12px] leading-relaxed italic mt-1">
                           {exp.desc2.map((line, i) => (
                             <span key={i} className="block">
                               {line}
@@ -57,24 +70,22 @@ function Experiences() {
                     </div>
                   </div>
 
-                  {/* Point Central avec Icône */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-7 h-7 bg-gray-300 border-4 border-white rounded-full flex items-center justify-center z-10 shadow-sm">
+                  {/* Point Central */}
+                  <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-7 h-7 bg-gray-300 border-4 border-white rounded-full flex items-center justify-center z-10 shadow-sm">
                     <span className="text-white text-[10px] font-bold">
                       {exp.icon}
                     </span>
                   </div>
 
-                  {/* Côté Date (Badge) */}
-                  <div className="w-[45%]">
+                  {/* DATE VERSION DESKTOP (Masquée sur mobile) */}
+                  <div className="hidden md:block w-[45%]">
                     <div
                       className={`flex ${
                         isEven ? "justify-start" : "justify-end"
                       }`}
                     >
-                      {/* Suppression de tracking-tighter pour laisser respirer le texte */}
                       <div className="relative bg-primary text-white text-[10px] font-bold px-5 py-2.5 rounded-[4px] shadow-md whitespace-nowrap uppercase tracking-wide">
                         {exp.year}
-                        {/* Petite flèche du badge */}
                         <div
                           className={`absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rotate-45 ${
                             isEven ? "-left-1" : "-right-1"
