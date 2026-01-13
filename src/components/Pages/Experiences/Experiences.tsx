@@ -1,0 +1,96 @@
+import Container from "../../common/Container"
+import Title from "../../common/Title"
+import { experiences } from "./../../../constant/index"
+
+function Experiences() {
+  return (
+    <section className="py-16 bg-white">
+      <Container>
+        {/* Titre Principal */}
+        <div className="text-center">
+          <Title label="Experiences" />
+          <div className="flex justify-center items-center mb-10">
+            <div className="h-px w-20 bg-gray-300"></div>
+            <div className="mx-4 w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center text-white text-xs">
+              <span className="transform -rotate-45">➤</span>
+            </div>
+            <div className="h-px w-20 bg-gray-300"></div>
+          </div>
+        </div>
+
+        <div className="relative">
+          {/* Ligne Verticale Centrale */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
+
+          <div className="space-y-12">
+            {experiences.map((exp, index) => {
+              const isEven = index % 2 === 0
+              return (
+                <div
+                  key={index}
+                  className={`relative flex items-center justify-between w-full ${
+                    isEven ? "flex-row" : "flex-row-reverse"
+                  }`}
+                >
+                  {/* Côté Contenu (Texte) */}
+                  <div className="w-[45%]">
+                    <div className={`${isEven ? "text-right" : "text-left"}`}>
+                      <h3 className="text-sm font-bold uppercase tracking-wider text-[#333]">
+                        {exp.title}
+                      </h3>
+                      <p className="text-[10px] font-bold uppercase text-blue-700 mb-2 tracking-widest">
+                        {exp.place}
+                      </p>
+                      <p className="text-gray-500 text-[11px] font-semibold italic">
+                        {exp.desc1}
+                      </p>
+                      {/* Description détaillée (desc2) avec retours à la ligne */}
+                      {exp.desc2 && (
+                        <p className="text-gray-400 text-[11px] leading-relaxed italic mt-1">
+                          {exp.desc2.map((line, i) => (
+                            <span key={i} className="block">
+                              {line}
+                            </span>
+                          ))}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Point Central avec Icône */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-7 h-7 bg-gray-300 border-4 border-white rounded-full flex items-center justify-center z-10 shadow-sm">
+                    <span className="text-white text-[10px] font-bold">
+                      {exp.icon}
+                    </span>
+                  </div>
+
+                  {/* Côté Date (Badge) */}
+                  <div className="w-[45%]">
+                    <div
+                      className={`flex ${
+                        isEven ? "justify-start" : "justify-end"
+                      }`}
+                    >
+                      {/* Suppression de tracking-tighter pour laisser respirer le texte */}
+                      <div className="relative bg-primary text-white text-[10px] font-bold px-5 py-2.5 rounded-[4px] shadow-md whitespace-nowrap uppercase tracking-wide">
+                        {exp.year}
+                        {/* Petite flèche du badge */}
+                        <div
+                          className={`absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rotate-45 ${
+                            isEven ? "-left-1" : "-right-1"
+                          }`}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </Container>
+    </section>
+  )
+}
+
+export default Experiences

@@ -3,7 +3,7 @@ import Container from "../../common/Container"
 
 function Profile() {
   return (
-    <div className="bg-[#F4EDEA] overflow-hidden">
+    <div className="bg-[#F4EDEA]  overflow-hidden">
       <Container className="py-0!">
         {/* Correction Tablette: md:flex-row et items-center pour un alignement propre */}
         <div className="flex flex-col md:flex-row items-center justify-center lg:block lg:relative min-h-fit lg:min-h-[540px] lg:py-0 gap-10 md:gap-16">

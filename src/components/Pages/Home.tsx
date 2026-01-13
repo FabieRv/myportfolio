@@ -1,12 +1,11 @@
 // import Profile from "./Profile/Profile"
 
 import About from "./About/About"
-import ExperienceTimeline from "./Experiences/Experience"
+import Experiences from "./Experiences/Experiences"
 import Logoexpe from "./LogoExpe/Logoexpe"
 import Profile from "./Profile/Profile"
 import Skils from "./Skils/Skils"
 import Project from "./projet/Project"
-import { experiences } from "../../constant/index"
 
 function Home() {
   return (
@@ -16,7 +15,7 @@ function Home() {
       <Logoexpe />
       <Skils />
       <Project />
-      <ExperienceTimeline experiences={experiences} />
+      <Experiences />
     </div>
   )
 }

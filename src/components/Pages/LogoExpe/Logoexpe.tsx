@@ -31,7 +31,8 @@ function Logoexpe() {
   }, [])
 
   return (
-    <div className="overflow-hidden shadow-sm py-10 bg-[#F4EDEA]">
+    <div className="overflow-hidden shadow-sm py-10  bg-[#D6E3F8]">
+      {/* bg-[#F4EDEA] */}
       <Container className="py-0! pt-0!">
         <div className="w-full relative">
           <div

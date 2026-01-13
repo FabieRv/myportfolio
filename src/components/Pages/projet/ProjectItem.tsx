@@ -9,13 +9,13 @@ const Project = () => {
   // Référence pour contrôler le défilement horizontal
 
   return (
-    <div className="relative w-full  ">
+    <div className="relative w-full ">
       {/* Boutons de Navigation (Icônes Suivant/Précédent) */}
 
       {/* Conteneur de défilement sans barre de scroll visible */}
       <Container className="px-0! py-0!">
         <div className="w-full overflow-x-auto hide-scrollbar scroll-smooth">
-          <div className="relative min-w-[2200px] h-[600px] mx-auto px-40">
+          <div className="relative min-w-[2200px] h-[550px] mx-auto px-40">
             {/* Timeline Sinusoïdale Bleue */}
             <svg
               className="absolute top-1/2 left-0 w-full h-[220px] -translate-y-1/2 pointer-events-none opacity-40"

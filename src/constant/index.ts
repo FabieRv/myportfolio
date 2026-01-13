@@ -37,12 +37,12 @@ export const aboutLinks: AboutTypes[] = [
 ]
 
 export const atous = [
-  { id: 1, label: "AUTONOMOUS" },       
-  { id: 2, label: "CURIOUS" },          
-  { id: 3, label: "DETAIL-ORIENTED" },  
-  { id: 4, label: "TEAM PLAYER" },      
-  { id: 5, label: "PERSEVERANT" },      
-  { id: 6, label: "PROACTIVE" },       
+  { id: 1, label: "AUTONOMOUS" },
+  { id: 2, label: "CURIOUS" },
+  { id: 3, label: "DETAIL-ORIENTED" },
+  { id: 4, label: "TEAM PLAYER" },
+  { id: 5, label: "PERSEVERANT" },
+  { id: 6, label: "PROACTIVE" },
 ]
 
 export const projets = [
@@ -108,9 +108,6 @@ export const backendSkills = [
   { name: "Python", image: "/images/pyhon.webp" },
 ]
 
-// MOBILE
-export const mobileSkills = [{ name: "Flutter", image: "/images/Flutter.jpg" }]
-
 // DATABASE
 export const databaseSkills = [
   { name: "SQL", image: "/images/sql.webp" },
@@ -123,6 +120,8 @@ export const toolsSkills = [
   { name: "Postman", image: "/images/postman.png" },
 ]
 
+export const mobileSkills = [{ name: "Flutter", image: "/images/Flutter.jpg" }]
+
 export const skills = [
   { name: "BackEnd", level: 90 },
   { name: "FrontEnd", level: 70 },
@@ -131,31 +130,79 @@ export const skills = [
   { name: "Outils", level: 95 },
 ]
 
+// export const experiences = [
+//   {
+//     year: "2025 — Present",
+//     title: "FrontEnd Developer",
+//     place: "Cherry Tech&Design",
+//     desc: "Stage Développeur React.JS, contribuant à la création d'interfaces utilisateur modernes et réactives.",
+//   },
+//   {
+//     year: "2024 — 2025",
+//     title: "Backend Developer",
+//     place: "Tolia Madagascar",
+//     desc: "Stage Développeur Symfony pendant 6 mois, travaillant sur des projets commerciaux comme 'Soary Project'.",
+//   },
+//   {
+//     year: "2024 — 2025",
+//     title: "Backend Developer",
+//     place: "MalagasyCraft",
+//     desc: "Stage Développeur Laravel pendant 3 mois, avec le projet 'MalagasyCraft'.",
+//   },
+//   {
+//     year: "2023 — 2024",
+//     title: "Projet Personnel",
+//     place: "E-Parle",
+//     desc: "Projet E-parle, une plateforme de cours en ligne, gérant le développement complet du backend.",
+//   },
+// ]
+
 export const experiences = [
   {
-    year: "2025 — Present",
+    year: "Octobre 2025 — PRESENT",
     title: "FrontEnd Developer",
     place: "Cherry Tech&Design",
-    desc: "Stage Développeur React.JS, contribuant à la création d'interfaces utilisateur modernes et réactives.",
+    desc1: "Stage Développeur React.JS",
+    desc2: [
+      "Contribuant à la création d'interfaces utilisateur modernes et réactives,",
+      "Optimisation de l'expérience utilisateur sur mobile.",
+    ],
+    icon: "✓",
   },
   {
     year: "2024 — 2025",
     title: "Backend Developer",
     place: "Tolia Madagascar",
-    desc: "Stage Développeur Symfony pendant 6 mois, travaillant sur des projets commerciaux comme 'Soary Project'.",
+    desc1: "Stage Développeur Symfony pendant 6 mois",
+    desc2: [
+      "Travaillant sur des projets commerciaux comme 'Soary Project',",
+      "Faire une gestion de stock,",
+      "Gère l'export et import.",
+    ],
+    icon: "✓",
   },
   {
     year: "2024 — 2025",
     title: "Backend Developer",
     place: "MalagasyCraft",
-    desc: "Stage Développeur Laravel pendant 3 mois, avec le projet 'MalagasyCraft'.",
+    desc1: "Stage Développeur Laravel",
+    desc2: [
+      "Travaillant sur des projets commerciaux comme 'MalagasyCraft',",
+      "Développe des fonctionnalités de l’application (ventes, stock, achats),",
+      "Gestion d’export et d’import des produits artisanaux,",
+    ],
+    icon: "✓",
   },
   {
     year: "2023 — 2024",
     title: "Projet Personnel",
     place: "E-Parle",
-    desc: "Projet E-parle, une plateforme de cours en ligne, gérant le développement complet du backend.",
+    desc1: "Projet personnel 'E-parle'",
+    desc2: [
+      "Développement d’une application de cours de français,",
+      "Conception et mise en œuvre des principales fonctionnalités,",
+      "Assure le bon fonctionnement de l’application (cours, paiement, chat en temps réel).",
+    ],
+    icon: "✓",
   },
 ]
-
-
