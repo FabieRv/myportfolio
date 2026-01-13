@@ -1,12 +1,12 @@
 import { useState } from "react"
-import Button from "../../common/Button"
-import Container from "../../common/Container"
-import MyMenu from "../../common/MyMenu"
-import { headerLinks } from "../../constant"
+import Button from "../common/Button"
+import Container from "../common/Container"
+import MyMenu from "../common/MyMenu"
+import { headerLinks } from "../constant"
 
 // --- AJOUTS ---
 import { useTranslation } from "react-i18next"
-import { useDarkMode } from "../../hooks/useDarkMode" // Chemin vers votre hook
+import { useDarkMode } from "./../Hooks/useDarkMode" // Chemin vers votre hook
 import { Sun, Moon, Languages } from "lucide-react"
 
 function Header() {
