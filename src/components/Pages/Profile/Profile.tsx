@@ -6,11 +6,11 @@ function Profile() {
     <div className="bg-[#F4EDEA]  overflow-hidden">
       <Container className="py-0!">
         {/* Correction Tablette: md:flex-row et items-center pour un alignement propre */}
-        <div className="flex flex-col md:flex-row items-center justify-center lg:block lg:relative min-h-fit lg:min-h-[540px] lg:py-0 gap-10 md:gap-16">
+        <div className="flex flex-col md:flex-row items-center justify-center lg:block lg:relative min-h-fit lg:min-h-135 lg:py-0 gap-10 md:gap-16">
           {/* 1. L'IMAGE */}
           {/* md:w-1/2 sur tablette pour partager l'espace avec le texte */}
           <div className="flex justify-center z-10 order-1 md:order-2 md:w-1/2 lg:w-full">
-            <div className="lg:relative w-[180px] md:w-[280px] lg:w-[380px] bg-secondary rounded-b-full overflow-hidden">
+            <div className="lg:relative w-45 md:w-70 lg:w-95 bg-secondary rounded-b-full overflow-hidden">
               <img
                 src="/images/prof-removebg-preview.webp"
                 alt="Profile"

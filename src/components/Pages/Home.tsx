@@ -1,6 +1,7 @@
 // import Profile from "./Profile/Profile"
 
 import About from "./About/About"
+import Contact from "./Contact/Contact"
 import Experiences from "./Experiences/Experiences"
 import Logoexpe from "./LogoExpe/Logoexpe"
 import Profile from "./Profile/Profile"
@@ -16,6 +17,7 @@ function Home() {
       <Skils />
       <Project />
       <Experiences />
+      <Contact />
     </div>
   )
 }

@@ -25,7 +25,7 @@ const SkillsSection: FC = () => {
   }
 
   return (
-    <section className="py-12 bg-gray-50/50">
+    <section className=" bg-gray-50/50">
       <Container>
         <div className="text-center mb-8">
           <Title label={t("My Skills")} />
@@ -59,7 +59,7 @@ const SkillsSection: FC = () => {
                         src={tech.image}
                         alt={tech.name}
                         /* Image parfaitement ronde et centrée */
-                        className="w-7 h-7 object-contain rounded-full"
+                        className="w-8 h-8 object-contain rounded-full"
                       />
                     </div>
                     <span className="text-[10px] font-bold text-gray-600 uppercase text-center leading-none">

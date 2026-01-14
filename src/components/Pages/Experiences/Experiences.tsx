@@ -4,7 +4,7 @@ import { experiences } from "./../../../constant/index"
 
 function Experiences() {
   return (
-    <section >
+    <section>
       <Container>
         {/* Titre Principal */}
         <div className="text-center">
@@ -41,7 +41,7 @@ function Experiences() {
                     >
                       {/* DATE VERSION MOBILE (Même design que desktop) */}
                       <div className="inline-flex md:hidden mb-4">
-                        <div className="relative bg-primary text-white text-[10px] font-bold px-5 py-2.5 rounded-[4px] shadow-md uppercase tracking-wide">
+                        <div className="relative bg-primary text-white text-[10px] font-bold px-5 py-2.5 rounded-sm shadow-md uppercase tracking-wide">
                           {exp.year}
                           {/* Petite flèche pointant vers le bas sur mobile */}
                           <div className="absolute -bottom-1 left-4 w-3 h-3 bg-primary rotate-45"></div>
@@ -49,7 +49,7 @@ function Experiences() {
                       </div>
 
                       {/* Titres et Descriptions */}
-                      <h1 className="text-sm lg:text-lg font-primary font-bold uppercase tracking-wider text-[#333]">
+                      <h1 className="text-sm lg:text-lg font-primary font-bold uppercase tracking-wider ">
                         {exp.title}
                       </h1>
                       <h3 className="text-xs lg:text-[14px] font-bold uppercase text-blue-700 mb-2 tracking-widest">
@@ -84,7 +84,7 @@ function Experiences() {
                         isEven ? "justify-start" : "justify-end"
                       }`}
                     >
-                      <div className="relative bg-primary text-white text-[9px]  md:text-[10px]  lg:text-[12px] font-bold px-5 py-2.5 rounded-[4px] shadow-md whitespace-nowrap uppercase tracking-wide">
+                      <div className="relative bg-primary text-white text-[9px]  md:text-[10px]  lg:text-[12px] font-bold px-5 py-2.5 rounded-sm shadow-md whitespace-nowrap uppercase tracking-wide">
                         {exp.year}
                         <div
                           className={`absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rotate-45 ${
