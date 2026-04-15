@@ -1,7 +1,7 @@
 import { useState } from "react"
-import Button from "../common/Button"
-import Container from "../common/Container"
-import MyMenu from "../common/MyMenu"
+import Button from "../components/common/Button"
+import Container from "../components/common/Container"
+import MyMenu from "../components/common/MyMenu"
 import { headerLinks } from "../constant"
 
 function Header() {
@@ -11,13 +11,13 @@ function Header() {
     <div className="shadow-sm bg-white dark:bg-slate-900 w-full sticky top-0 z-100 transition-colors duration-300">
       <Container
         tag="header"
-        className="flex justify-between items-center py-0! font-base"
+        className="flex flex-row justify-between py-2! font-base"
       >
-        <div className="shrink-0 text-2xl font-header font-bold z-110">
+        <div className="text-lg lg:text-lg md:xl: font-header font-bold z-110">
           <a href="/">
             <h1 className="m-0 leading-none text-button dark:text-white">
               Fabie
-              <span className="text-gray-600 dark:text-gray-400">.Rav</span>
+              <span className="text-gray-600 dark:text-gray-700">.Rav</span>
             </h1>
           </a>
         </div>
@@ -39,23 +39,23 @@ function Header() {
                   href={link.href}
                   className="text-xl lg:text-base font-primary font-medium text-black dark:text-white hover:text-primary transition-all duration-300 relative group"
                 >
-                  {/* Utilisation de t() pour la traduction */}
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
                 </a>
               </li>
             ))}
-
-            {/* --- SECTION DES CONTRÔLES (Icons) --- */}
-
-            <li className="flex items-center text-sm py-2">
-              <a href="/cv.pdf" download onClick={() => setOpen(false)}>
-                <Button label={"Upload CV"}></Button>
-              </a>
-            </li>
           </ul>
         </nav>
-
+        <div className="hidden lg:block font-bold lg:text-sm bg-button py-2 px-4 rounded-full ">
+          <a
+            className="text-white"
+            href="/cv.pdf"
+            download
+            onClick={() => setOpen(false)}
+          >
+            Upload CV
+          </a>
+        </div>
         <div className="lg:hidden z-110">
           <MyMenu isClicked={open} onClick={() => setOpen(!open)} />
         </div>

@@ -1,4 +1,5 @@
-import Container from "../../../common/Container"
+import Container from "../common/Container"
+import Linkedin from "../icons/Linkedin"
 
 const AboutMe = () => {
   return (
@@ -11,7 +12,7 @@ const AboutMe = () => {
             {/* 1. L'IMAGE (Style cohérent avec le Hero : bords arrondis et shadow) */}
             <div className="w-full md:w-5/12 relative">
               <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
-                <div className="w-full h-[350px] sm:h-[450px] md:h-[500px] overflow-hidden">
+                <div className="w-full h-[280px] sm:h-[340px] md:h-[400px] overflow-hidden">
                   {" "}
                   {/* Adjusted height for better responsiveness */}
                   <img
@@ -23,11 +24,11 @@ const AboutMe = () => {
               </div>
 
               {/* Badge d'expérience (Même style que tes stats Hero) */}
-              <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-3xl shadow-xl z-20 hidden md:block border border-gray-100">
-                <p className="text-primary font-primary text-lg lg:text-2xl leading-none font-black">
+              <div className="absolute -bottom-2 -right-6 bg-white px-2 py-2 rounded-3xl shadow-xl z-20 hidden md:block border border-gray-100">
+                <p className="text-primary! font-primary text-lg  lg:text-sm md:text-lg leading-none font-black">
                   Available
                 </p>
-                <p className="text-gray-400 font-primary text-[10px] uppercase tracking-widest font-bold mt-1">
+                <p className="text-gray-400 font-primary text-[6px] uppercase tracking-widest font-bold mt-1">
                   For New Projects
                 </p>
               </div>
@@ -35,11 +36,11 @@ const AboutMe = () => {
 
             {/* 2. LE TEXTE (Style copié sur ton Hero Profile) */}
             <div className="w-full md:w-7/12">
-              <p className="font-primary  lg:text-lg font-medium mb-2 text-gray-900">
+              <p className="font-primary text-sm lg:text-sm font-medium mb-2 text-gray-900">
                 Who am I?
               </p>
 
-              <h2 className="text-4xl md:text-4xl lg:text-5xl font-primary font-bold text-gray-900 mb-8 leading-[0.85] tracking-tighter">
+              <h2 className="text-4xl md:text-2xl lg:text-4xl font-primary font-bold text-gray-900 mb-8 leading-[0.85] tracking-tighter">
                 Crafting digital <br />
                 <span className="italic font-serif font-light text-primary">
                   experiences
@@ -48,24 +49,23 @@ const AboutMe = () => {
                 that matter.
               </h2>
 
-              <div className="font-primary font-medium text-gray-700 text-lg leading-relaxed max-w-2xl mb-12">
+              <div className=" font-primary font-medium text-gray-700 text-sm leading-relaxed max-w-2xl mb-4">
                 <p>
-                  Passionate about the <strong>Web </strong>and{" "}
-                  <strong>Mobile</strong> world, I put my technical expertise at
-                  the service of your vision to bring fluid, robust, and
-                  memorable products to life. Let’s work together to transform
-                  your ideas into a unique digital experience.
+                  Passionate about the Web and Mobile world, I put my technical
+                  expertise at the service of your vision to bring fluid,
+                  robust, and memorable products to life. Let’s work together to
+                  transform your ideas into a unique digital experience.
                 </p>
               </div>
 
               {/* 3. LES INFOS PERSONNELLES (Style "Barre de services" avec border-l) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 gap-y-6">
                 {/* Item Name */}
                 <div className="border-l pl-4 border-gray-400">
                   <h5 className="font-primary text-sm font-bold uppercase tracking-wider">
                     Full Name
                   </h5>
-                  <p className="text-gray-700 text-sm mt-1">
+                  <p className="text-gray-700 text-sm mt-1 font-primary">
                     Fabienne RAZAFIMAHARAVO
                   </p>
                 </div>
@@ -97,9 +97,9 @@ const AboutMe = () => {
                     href="https://www.linkedin.com/in/fabienne-razafimaharavo-911520309"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-900 text-sm mt-1 block hover:text-primary transition-colors underline decoration-primary/20"
+                    className="text-button text-sm mt-1 block hover:text-blue-800 transition-colors underline"
                   >
-                    Fabienne RAZAFIMAHARAVO ↗
+                    <Linkedin className="cursor-pointer w-5 h-5 " />
                   </a>
                 </div>
               </div>

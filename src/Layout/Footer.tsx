@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail, Twitter, Code2, Terminal } from "lucide-react"
-import Container from "../common/Container"
+import Container from "../components/common/Container"
 
 function Footer() {
   return (

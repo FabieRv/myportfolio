@@ -1,8 +1,26 @@
-import { RouterProvider } from "react-router-dom";
-import { router } from "./router";
+import AboutMe from "./components/sections/About"
+import Experiences from "./components/sections/Experiences"
+import Logoexpe from "./components/sections/Logoexpe"
+import Profile from "./components/sections/Profile"
+import SkillsSection from "./components/sections/Skils"
+import Header from "./Layout/Header"
+import Footer from "./Layout/Footer"
+import { AnimatedTestimonialsDemo } from "./components/sections/Works/Demo"
 
-function App() {
-  return <RouterProvider router={router} />;
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <Profile />
+      <AboutMe />
+      <Logoexpe />
+      <SkillsSection />
+      {/* <Project /> */}
+      <AnimatedTestimonialsDemo />
+      <Experiences />
+      <Footer />
+    </div>
+  )
 }
 
-export default App;
+export default App

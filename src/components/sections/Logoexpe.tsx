@@ -1,5 +1,5 @@
-import Container from "../../../common/Container"
-import { atous } from "../../../constant"
+import Container from "../common/Container"
+import { atous } from "../../constant"
 import { useRef, useEffect } from "react"
 import { gsap } from "gsap"
 
@@ -31,28 +31,28 @@ function Logoexpe() {
   }, [])
 
   return (
-    <div className="overflow-hidden shadow-sm py-6  bg-[#D6E3F8] ">
+    <div className="overflow-hidden shadow-sm py-4  bg-[#ADF5FF] ">
       {/* bg-[#F4EDEA] */}
       <Container className="py-0! pt-0!">
         <div className="w-full relative">
           <div
             ref={marqueeRef}
-            className="flex flex-nowrap items-center gap-10 font-primary whitespace-nowrap"
+            className="flex flex-nowrap items-center gap-10 font-primary  font-bold whitespace-nowrap"
           >
             {atous.map((atout) => (
               <div
                 key={atout.id}
-                className="text-xs md:text-sm lg:text-lg font-bold text-gray-700 px-5 py-2 rounded-full bg-white shadow-sm"
+                className="text-sm  text-gray-700 px-4 py-2 rounded-full bg-white shadow-sm  "
               >
-                {atout.label}
+                <p>{atout.label}</p>
               </div>
             ))}
             {atous.map((atout) => (
               <div
                 key={`${atout.id}-clone`}
-                className="text-xs md:text-sm lg:text-lg font-bold text-gray-700 px-5 py-2 rounded-full bg-white shadow-sm"
+                className="text-sm  text-gray-700 px-4 py-2 rounded-full bg-white shadow-sm"
               >
-                {atout.label}
+                <p> {atout.label}</p>
               </div>
             ))}
           </div>

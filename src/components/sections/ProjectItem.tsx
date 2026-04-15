@@ -1,19 +1,18 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { projets } from "../../../constant/index"
+import { projets } from "../../constant/index"
 import { BiVideo } from "react-icons/bi"
-import Container from "../../../common/Container"
+import Container from "../common/Container"
+import Title from "../common/Title"
 
 const Project = () => {
   // Référence pour contrôler le défilement horizontal
 
   return (
     <div className="relative w-full ">
-      {/* Boutons de Navigation (Icônes Suivant/Précédent) */}
-
-      {/* Conteneur de défilement sans barre de scroll visible */}
-      <Container className="px-0! py-0!">
+      <Container>
+        <Title label="My Project" />
         <div className="w-full overflow-x-auto hide-scrollbar scroll-smooth">
           <div className="relative min-w-[2200px] h-[550px] mx-auto px-40">
             {/* Timeline Sinusoïdale Bleue */}
@@ -48,7 +47,7 @@ const Project = () => {
                           whileInView={{ opacity: 1, scale: 1 }}
                           className="space-y-3"
                         >
-                          <h3 className="text-2xl text-black-700 italic font-serif   font-bold leading-tight">
+                          <h3 className="text-xl text-black-700 italic font-serif   font-bold leading-tight">
                             {project.title}
                           </h3>
                           <p className="text-sm text-gray-500 leading-snug font-serif ">
@@ -83,7 +82,7 @@ const Project = () => {
                           whileInView={{ opacity: 1, scale: 1 }}
                           className="space-y-3"
                         >
-                          <h3 className="text-3xl text-black-700 italic font-serif   font-bold leading-tight">
+                          <h3 className="text-xl text-black-700 italic font-serif   font-bold leading-tight">
                             {project.title}
                           </h3>
                           <p className="text-sm text-gray-500 leading-snug font-serif ">

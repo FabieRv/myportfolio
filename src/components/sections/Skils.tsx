@@ -9,9 +9,9 @@ import {
   mobileSkills,
   databaseSkills,
   toolsSkills,
-} from "../../../constant"
-import Container from "../../../common/Container"
-import Title from "../../../common/Title"
+} from "../../constant"
+import Container from "../common/Container"
+import Title from "../common/Title"
 
 const SkillsSection: FC = () => {
   const { t } = useTranslation()
@@ -25,7 +25,7 @@ const SkillsSection: FC = () => {
   }
 
   return (
-    <section className=" bg-gray-50/50">
+    <div className=" bg-gray-50/50  ">
       <Container>
         <div className="text-center mb-8">
           <Title label={t("My Skills")} />
@@ -41,7 +41,7 @@ const SkillsSection: FC = () => {
             >
               {/* HEADER CATEGORIE - Plus compact */}
               <div className="mb-4 border-b border-gray-100 pb-2">
-                <h3 className="text-lg  font-primary font-bold text-gray-800 uppercase tracking-tighter">
+                <h3 className="text-lg lg:sm  font-primary font-bold text-gray-800 uppercase tracking-tighter">
                   {t(skill.name)}
                 </h3>
               </div>
@@ -51,15 +51,15 @@ const SkillsSection: FC = () => {
                 {techMapping[skill.name]?.map((tech, techIndex) => (
                   <div
                     key={techIndex}
-                    /* Taille réduite pour densifier le contenu */
-                    className="flex flex-col items-center justify-center gap-1.5 bg-blue-50/50 border border-blue-100 p-2 rounded-lg hover:bg-white hover:border-blue-300 transition-all w-[75px]"
+                    /* Taille réduite pour densifier le contenu bg-blue-50/50 */
+                    className="flex flex-col items-center justify-center gap-1.5 bg-bg border border-blue-100 px-2 py-2 rounded-lg hover:bg-white hover:border-blue-300 transition-all w-18.75"
                   >
                     <div className="bg-white p-1 rounded-full shadow-sm border border-gray-100">
                       <img
                         src={tech.image}
                         alt={tech.name}
                         /* Image parfaitement ronde et centrée */
-                        className="w-8 h-8 object-contain rounded-full"
+                        className="w-6 h-6 object-contain rounded-full"
                       />
                     </div>
                     <span className="text-[10px] font-bold text-gray-600 uppercase text-center leading-none">
@@ -90,7 +90,7 @@ const SkillsSection: FC = () => {
           ))}
         </div>
       </Container>
-    </section>
+    </div>
   )
 }
 

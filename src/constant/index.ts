@@ -45,53 +45,6 @@ export const atous = [
   { id: 6, label: "PROACTIVE" },
 ]
 
-export const projets = [
-  {
-    id: 1,
-    title: "Soary Project",
-    description:
-      "Design and Development of a modern and responsive showcase website, Design and Development of a modern and responsive showcase website",
-    technologies: ["Symfony", "tailwind CSS", "PostgreSql"],
-    demoLink: "#",
-    repoLink: "#",
-    image: "../../../public/images/tolia-p.webp",
-    alt: "tolia",
-  },
-  {
-    id: 2,
-    title: "MalagasyCraft",
-    description:
-      "Design and Development of a modern and responsive showcase website, Design and Development of a modern and responsive showcase website", // Translated
-    technologies: ["Laravel", "ReactJS", "MySQL"],
-    demoLink: "#",
-    repoLink: "#",
-    image: "../../../public/images/craft-projet.webp",
-    alt: "craft",
-  },
-  {
-    id: 3,
-    title: "E-parle",
-    description:
-      "Design and Development of a modern and responsive showcase website, Design and Development of a modern and responsive showcase website", // Translated
-    technologies: ["PHP", "CSS", "JS", "MySQL"],
-    demoLink: "#",
-    repoLink: "#",
-    image: "../../../public/images/eparle.webp",
-    alt: "eparle",
-  },
-  {
-    id: 4,
-    title: "Coin des Gadjets",
-    description:
-      "Design and Development of a modern and responsive showcase website, Design and Development of a modern and responsive showcase website", // Translated
-    technologies: ["ReactJS", "Tailwindcss", "NodeJS", "MySQL"],
-    demoLink: "#",
-    repoLink: "#",
-    image: "../../../public/images/coin-gadgets.webp",
-    alt: "coin",
-  },
-]
-
 // FRONTEND : On transforme les strings en objets avec le chemin image
 export const frontendSkills = [
   { name: "JS", image: "/images/JavaScript-logo.webp" },
@@ -112,11 +65,23 @@ export const backendSkills = [
 export const databaseSkills = [
   { name: "SQL", image: "/images/sql.webp" },
   { name: "PostgreSQL", image: "/images/pgsql.webp" },
+  { name: "MongoDB", image: "images/mongogb.webp" },
+]
+export const Logicielle = [
+  { name: "Merise", image: "/images/sql.webp" },
+  { name: "UML", image: "/images/sql.webp" },
+]
+export const Design = [
+  { name: "Adobe Premier", image: "/images/git.webp" },
+  { name: "Adobe Illustrator", image: "/images/postman.webp" },
+  { name: "Photoshop", image: "/images/postman.webp" },
+  { name: "Figma", image: "/images/postman.webp" },
+  { name: "In Design", image: "/images/postman.webp" },
 ]
 
 // OUTILS
 export const toolsSkills = [
-  { name: "GIT", image: "/images/git.webp" }, // Assure-toi d'avoir cette image
+  { name: "GIT", image: "/images/git.webp" },
   { name: "Postman", image: "/images/postman.webp" },
 ]
 
@@ -177,5 +142,48 @@ export const experiences = [
       "Assure le bon fonctionnement de l’application (cours, paiement, chat en temps réel).",
     ],
     icon: "✓",
+  },
+]
+
+export const ImageProject = [
+  {
+    name: "MalagasyCraft",
+    image: "images/projet/craft-projet.webp",
+    description:
+      "Plateforme e-commerce dédiée à l’artisanat malagasy avec gestion des ventes et des produits.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Soary",
+    image: "images/projet/tolia-p.webp",
+    description:
+      "Application e-commerce couvrant les achats, ventes, paiements, livraisons et stocks, avec gestion des tâches métier et des processus d’import/export des produits",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Cherry",
+    image: "images/projet/cherry.png",
+    description:
+      "Application orientée marketing digital. Il fait comme l'annonce publicitaire ",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Taaz",
+    image: "images/projet/taaz.png",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Coin de Gadget",
+    image: "../../public/images/coin-gadgets.webp",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
   },
 ]
