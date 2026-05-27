@@ -2,10 +2,9 @@ import AboutMe from "./components/sections/About"
 import Experiences from "./components/sections/Experiences"
 import Logoexpe from "./components/sections/Logoexpe"
 import Profile from "./components/sections/Profile"
-import SkillsSection from "./components/sections/Skils"
 import Header from "./Layout/Header"
 import Footer from "./Layout/Footer"
-import { AnimatedTestimonialsDemo } from "./components/sections/Works/Demo"
+import Projects from "./components/sections/Project"
 
 const App = () => {
   return (
@@ -14,10 +13,8 @@ const App = () => {
       <Profile />
       <AboutMe />
       <Logoexpe />
-      <SkillsSection />
-      {/* <Project /> */}
-      <AnimatedTestimonialsDemo />
       <Experiences />
+      <Projects />
       <Footer />
     </div>
   )

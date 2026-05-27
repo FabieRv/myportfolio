@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="bg-[#F4EDEA]">
       <Container>
-        {/* Main Grid */}
+        {/* Main Grid F4EDEA*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 ">
           {/* Column 1: Profile */}
           <div className="space-y-4 text-center sm:text-left">

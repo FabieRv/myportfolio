@@ -1,97 +1,228 @@
-"use client"
+import type { AboutTypes, LinkType } from "../types"
 
-import type { FC } from "react"
-import { useTranslation } from "react-i18next"
-import {
-  skills,
-  frontendSkills,
-  backendSkills,
-  mobileSkills,
-  databaseSkills,
-  toolsSkills,
-} from "../../constant"
-import Container from "../common/Container"
-import Title from "../common/Title"
+export const headerLinks: LinkType[] = [
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About Us" },
+  { href: "/#Skils", label: "Skills" },
+  { href: "/#Projects", label: "Projects" },
+  { href: "/#Experience", label: "Education" },
+  { href: "/#Contact", label: "Contact" },
+]
 
-const SkillsSection: FC = () => {
-  const { t } = useTranslation()
+export const aboutLinks: AboutTypes[] = [
+  {
+    src: "images/langage.jpg",
+    alt: "langage.jpg",
+    title: "Languages",
+    content: "React.JS, PHP, Laravel, Symfony, Python,...",
+  },
+  {
+    src: "images/education.png",
+    alt: "education.jpg",
+    title: "Education",
+    content: "Bachelor's Degree in Management Informatics",
+  },
+  {
+    src: "images/books.png",
+    alt: "books.jpg",
+    title: "Trainings",
+    content: "Certificate in PHP Backend Developer",
+  },
+  {
+    src: "images/projet.png",
+    alt: "projet.jng",
+    title: "Projects",
+    content: "+ 10 personal projects completed",
+  },
+]
 
-  const techMapping: Record<string, any[]> = {
-    BackEnd: backendSkills,
-    FrontEnd: frontendSkills,
-    Mobile: mobileSkills,
-    DataBase: databaseSkills,
-    Outils: toolsSkills,
-  }
+export const atous = [
+  { id: 1, label: "AUTONOMOUS" },
+  { id: 2, label: "CURIOUS" },
+  { id: 3, label: "DETAIL-ORIENTED" },
+  { id: 4, label: "TEAM PLAYER" },
+  { id: 5, label: "PERSEVERANT" },
+  { id: 6, label: "PROACTIVE" },
+]
 
-  return (
-    <div className=" bg-gray-50/50  ">
-      <Container>
-        <div className="text-center mb-8">
-          <Title label={t("My Skills")} />
-        </div>
+export const frontendSkills = [
+  { name: "JS", image: "/images/JavaScript-logo.webp" },
+  { name: "TailwindCSS", image: "/images/tailwind.webp" },
+  { name: "React.JS", image: "/images/react.webp" },
+]
 
-        {/* Grille Flex optimisée */}
-        <div className="flex flex-wrap justify-center gap-5 max-w-7xl mx-auto">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              /* Largeur fixée à 320px pour un aspect plus "moyen" et compact */
-              className="flex flex-col w-full sm:w-[320px] border border-gray-200 rounded-xl shadow-sm p-4 bg-white transition-all hover:shadow-md hover:-translate-y-1"
-            >
-              {/* HEADER CATEGORIE - Plus compact */}
-              <div className="mb-4 border-b border-gray-100 pb-2">
-                <h3 className="text-lg lg:sm  font-primary font-bold text-gray-800 uppercase tracking-tighter">
-                  {t(skill.name)}
-                </h3>
-              </div>
+// BACKEND
+export const backendSkills = [
+  { name: "PHP", image: "/images/php.webp" },
+  { name: "Laravel", image: "/images/laravel.webp" },
+  { name: "Symfony", image: "/images/symfony.webp" },
+  { name: "JAVA", image: "/images/java.webp" },
+  { name: "Python", image: "/images/pyhon.webp" },
+]
 
-              {/* LISTE DES TECHNOS */}
-              <div className="flex flex-wrap gap-2 mb-4">
-                {techMapping[skill.name]?.map((tech, techIndex) => (
-                  <div
-                    key={techIndex}
-                    /* Taille réduite pour densifier le contenu bg-blue-50/50 */
-                    className="flex flex-col items-center justify-center gap-1.5 bg-bg border border-blue-100 px-2 py-2 rounded-lg hover:bg-white hover:border-blue-300 transition-all w-18.75"
-                  >
-                    <div className="bg-white p-1 rounded-full shadow-sm border border-gray-100">
-                      <img
-                        src={tech.image}
-                        alt={tech.name}
-                        /* Image parfaitement ronde et centrée */
-                        className="w-6 h-6 object-contain rounded-full"
-                      />
-                    </div>
-                    <span className="text-[10px] font-bold text-gray-600 uppercase text-center leading-none">
-                      {tech.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
+// DATABASE
+export const databaseSkills = [
+  { name: "SQL", image: "/images/sql.webp" },
+  { name: "PostgreSQL", image: "/images/pgsql.webp" },
+  { name: "MongoDB", image: "images/mongogb.webp" },
+]
 
-              {/* PROGRESS BAR - Plus fine */}
-              <div className="mt-auto pt-2 flex flex-col gap-1.5">
-                <div className="flex justify-between items-center">
-                  <span className="text-[12px] font-bold text-gray-400 uppercase">
-                    {t("Level")}
-                  </span>
-                  <p className="text-[15px] font-black text-blue-600">
-                    {skill.level}%
-                  </p>
-                </div>
-                <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden ">
-                  <div
-                    style={{ width: `${skill.level}%` }}
-                    className="h-full bg-blue-600 rounded-full transition-all duration-1000"
-                  />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </Container>
-    </div>
-  )
-}
+export const Logicielle = [
+  { name: "Merise", image: "/images/sql.webp" },
+  { name: "UML", image: "/images/sql.webp" },
+]
 
-export default SkillsSection
+export const Design = [
+  { name: "Adobe Illustrator", image: "/images/postman.webp" },
+  { name: "Photoshop", image: "/images/postman.webp" },
+  { name: "Figma", image: "/images/postman.webp" },
+]
+
+// OUTILS
+export const toolsSkills = [
+  { name: "GIT", image: "/images/git.webp" },
+  { name: "Postman", image: "/images/postman.webp" },
+]
+
+export const mobileSkills = [{ name: "Flutter", image: "images/Flutter.webp" }]
+
+export const skills = [
+  { name: "BackEnd", level: 90 },
+  { name: "FrontEnd", level: 70 },
+  { name: "Mobile", level: 60 },
+  { name: "DataBase", level: 90 },
+  { name: "Outils", level: 95 },
+]
+
+export const experiences = [
+  {
+    year: "Octobre 2025 — PRESENT",
+    title: "FrontEnd Developer",
+    place: "Cherry Tech&Design",
+    desc1: "Stage Développeur React.JS",
+    desc2: [
+      "Contribuant à la création d'interfaces utilisateur modernes et réactives,",
+      "Optimisation de l'expérience utilisateur sur mobile.",
+    ],
+    icon: "✓",
+  },
+  {
+    year: "2024 — 2025",
+    title: "Backend Developer",
+    place: "Tolia Madagascar",
+    desc1: "Stage Développeur Symfony pendant 6 mois",
+    desc2: [
+      "Travaillant sur des projets commerciaux comme 'Soary Project',",
+      "Faire une gestion de stock,",
+      "Gère l'export et import.",
+    ],
+    icon: "✓",
+  },
+  {
+    year: "2024 — 2025",
+    title: "Backend Developer",
+    place: "MalagasyCraft",
+    desc1: "Stage Développeur Laravel",
+    desc2: [
+      "Travaillant sur des projets commerciaux comme 'MalagasyCraft',",
+      "Développe des fonctionnalités de l’application (ventes, stock, achats),",
+      "Gestion d’export et d’import des produits artisanaux,",
+    ],
+    icon: "✓",
+  },
+  {
+    year: "2023 — 2024",
+    title: "Projet Personnel",
+    place: "E-Parle",
+    desc1: "Projet personnel 'E-parle'",
+    desc2: [
+      "Développement d’une application de cours de français,",
+      "Conception et mise en œuvre des principales fonctionnalités,",
+      "Assure le bon fonctionnement de l’application (cours, paiement, chat en temps réel).",
+    ],
+    icon: "✓",
+  },
+]
+
+export const ImageProject = [
+  {
+    name: "MalagasyCraft",
+    image1: "images/projet/craft-projet.webp",
+    image2: "images/projet/craft-projet.webp",
+    title: "Plateforme e-commerce",
+    description:
+      "Appplication web e-commerce dédiée à l’artisanat malagasy avec gestion des ventes et des produits.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Soary",
+    image1: "images/projet/tolia-p.webp",
+    image2: "images/projet/tolia-p.webp",
+    title: "Plateforme ERP",
+    description:
+      "Application e-commerce couvrant les achats, ventes, paiements, livraisons et stocks, avec gestion des tâches métier et des processus d’import/export des produits",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Cherry",
+    image1: "images/projet/cherry.png",
+    image2: "images/projet/cherry.png",
+    title: "Prise de rendez-wous en ligne",
+    description:
+      "Application orientée marketing digital. Il fait comme l'annonce publicitaire ",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Taaz",
+    image1: "images/projet/taaz.png",
+    image2: "images/projet/taaz.png",
+    titlle: "site vitrine",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Coin de Gadget",
+    image1: "../../public/images/coin-gadgets.webp",
+    image2: "../../public/images/coin-gadgets.webp",
+    title: "plateforme e-commerce",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Imatex",
+    image1: "../../public/images/coin-gadgets.webp",
+    image2: "../../public/images/coin-gadgets.webp",
+    title: "Plateforme e-commerce site Vitrine",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "o-temps-t-ika",
+    image1: "../../public/images/coin-gadgets.webp",
+    image2: "../../public/images/coin-gadgets.webp",
+    title: "Plateforme e-commerce",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Akitravel",
+    image1: "../../public/images/coin-gadgets.webp",
+    image2: "../../public/images/coin-gadgets.webp",
+    title: "Plateforme ",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+]

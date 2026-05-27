@@ -46,9 +46,9 @@ function Header() {
             ))}
           </ul>
         </nav>
-        <div className="hidden lg:block font-bold lg:text-sm bg-button py-2 px-4 rounded-full ">
+        <div className="hidden lg:block font-bold lg:text-sm bg-primary  py-2 px-4 rounded-full ">
           <a
-            className="text-white"
+            className="text-white "
             href="/cv.pdf"
             download
             onClick={() => setOpen(false)}

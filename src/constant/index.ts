@@ -45,7 +45,6 @@ export const atous = [
   { id: 6, label: "PROACTIVE" },
 ]
 
-// FRONTEND : On transforme les strings en objets avec le chemin image
 export const frontendSkills = [
   { name: "JS", image: "/images/JavaScript-logo.webp" },
   { name: "TailwindCSS", image: "/images/tailwind.webp" },
@@ -67,16 +66,16 @@ export const databaseSkills = [
   { name: "PostgreSQL", image: "/images/pgsql.webp" },
   { name: "MongoDB", image: "images/mongogb.webp" },
 ]
+
 export const Logicielle = [
   { name: "Merise", image: "/images/sql.webp" },
   { name: "UML", image: "/images/sql.webp" },
 ]
+
 export const Design = [
-  { name: "Adobe Premier", image: "/images/git.webp" },
   { name: "Adobe Illustrator", image: "/images/postman.webp" },
   { name: "Photoshop", image: "/images/postman.webp" },
   { name: "Figma", image: "/images/postman.webp" },
-  { name: "In Design", image: "/images/postman.webp" },
 ]
 
 // OUTILS
@@ -148,15 +147,19 @@ export const experiences = [
 export const ImageProject = [
   {
     name: "MalagasyCraft",
-    image: "images/projet/craft-projet.webp",
+    image1: "images/projet/craft-projet.webp",
+    image2: "images/projet/craft-projet.webp",
+    title: "Plateforme e-commerce",
     description:
-      "Plateforme e-commerce dédiée à l’artisanat malagasy avec gestion des ventes et des produits.",
+      "Appplication web e-commerce dédiée à l’artisanat malagasy avec gestion des ventes et des produits.",
     demoLink: "#",
     repoLink: "#",
   },
   {
     name: "Soary",
-    image: "images/projet/tolia-p.webp",
+    image1: "images/projet/tolia-p.webp",
+    image2: "images/projet/tolia-p.webp",
+    title: "Plateforme ERP",
     description:
       "Application e-commerce couvrant les achats, ventes, paiements, livraisons et stocks, avec gestion des tâches métier et des processus d’import/export des produits",
     demoLink: "#",
@@ -164,7 +167,9 @@ export const ImageProject = [
   },
   {
     name: "Cherry",
-    image: "images/projet/cherry.png",
+    image1: "images/projet/cherry.png",
+    image2: "images/projet/cherry.png",
+    title: "Prise de rendez-wous en ligne",
     description:
       "Application orientée marketing digital. Il fait comme l'annonce publicitaire ",
     demoLink: "#",
@@ -172,7 +177,9 @@ export const ImageProject = [
   },
   {
     name: "Taaz",
-    image: "images/projet/taaz.png",
+    image1: "images/projet/taaz.png",
+    image2: "images/projet/taaz.png",
+    titlle: "site vitrine",
     description:
       "Solution web axée sur la gestion des produits et des transactions clients.",
     demoLink: "#",
@@ -180,7 +187,39 @@ export const ImageProject = [
   },
   {
     name: "Coin de Gadget",
-    image: "../../public/images/coin-gadgets.webp",
+    image1: "../../public/images/coin-gadgets.webp",
+    image2: "../../public/images/coin-gadgets.webp",
+    title: "plateforme e-commerce",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Imatex",
+    image1: "../../public/images/coin-gadgets.webp",
+    image2: "../../public/images/coin-gadgets.webp",
+    title: "Plateforme e-commerce site Vitrine",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "o-temps-t-ika",
+    image1: "../../public/images/coin-gadgets.webp",
+    image2: "../../public/images/coin-gadgets.webp",
+    title: "Plateforme e-commerce",
+    description:
+      "Solution web axée sur la gestion des produits et des transactions clients.",
+    demoLink: "#",
+    repoLink: "#",
+  },
+  {
+    name: "Akitravel",
+    image1: "../../public/images/coin-gadgets.webp",
+    image2: "../../public/images/coin-gadgets.webp",
+    title: "Plateforme ",
     description:
       "Solution web axée sur la gestion des produits et des transactions clients.",
     demoLink: "#",

@@ -3,13 +3,13 @@ import Container from "../common/Container"
 
 function Profile() {
   return (
-    <div className="bg-[#F4EDEA]  overflow-hidden ">
+    <div className="bg-[#F3F4F6]  overflow-hidden ">
       <Container className="py-0!">
         <div className="flex flex-col md:flex-row items-center justify-center lg:block lg:relative min-h-fit lg:min-h-115 lg:py-0 gap-10 md:gap-16">
           <div className="flex justify-center z-10 order-1 md:order-2 md:w-1/2 lg:w-full">
-            <div className="lg:relative w-50 md:w-50 lg:w-80 bg-secondary rounded-b-full overflow-hidden">
+            <div className="lg:relative w-50 md:w-50 lg:w-80 bg-[#E5E7EB] rounded-b-full overflow-hidden">
               <img
-                src="/images/prof-removebg-preview.webp"
+                src="/images/photos_portfolio.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover py-0!"
               />
@@ -31,7 +31,7 @@ function Profile() {
                 Developper
               </h1>
 
-              <p className="mt-6 text-gray-700 text-sm max-w-xs mx-auto md:mx-0 font-primary font-medium">
+              <p className="mt-6 text-gray-700 text-[16px] max-w-xs mx-auto md:mx-0 font-primary ">
                 Passionate Fullstack Developer specializing in Web and Mobile
                 development, with solid experience in both front-end and
                 back-end. Curious and driven, I enjoy learning new technologies
