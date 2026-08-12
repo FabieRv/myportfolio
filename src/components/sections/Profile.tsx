@@ -3,86 +3,101 @@ import Container from "../common/Container"
 
 function Profile() {
   return (
-    <div className="bg-[#F3F4F6]  overflow-hidden ">
+    <div className="bg-[#F3F4F6] overflow-hidden">
       <Container className="py-0!">
         <div className="flex flex-col md:flex-row items-center justify-center lg:block lg:relative min-h-fit lg:min-h-115 lg:py-0 gap-10 md:gap-16">
+          {/* IMAGE */}
           <div className="flex justify-center z-10 order-1 md:order-2 md:w-1/2 lg:w-full">
-            <div className="lg:relative w-50 md:w-50 lg:w-80 bg-[#E5E7EB] rounded-b-full overflow-hidden">
+            <div className="relative w-50 md:w-50 lg:w-80 h-64 lg:h-98 bg-[#E5E7EB] rounded-b-full overflow-hidden">
               <img
-                src="/images/photos_portfolio.jpg"
-                alt="Profile"
-                className="w-full h-full object-cover py-0!"
+                src="/images/photos.jpg"
+                alt="Profil"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
 
+          {/* TEXTE */}
           <div className="flex flex-col gap-4 lg:absolute lg:top-20 lg:left-0 z-20 pointer-events-none order-2 md:order-1 md:w-1/2 lg:w-full">
             <div className="pointer-events-auto text-center md:text-left lg:text-base">
-              <p className="text-xs lg:text-xs font-primary mb-2">
-                Hey, I'm Fabienne
+              <p className="text-xs lg:text-sm font-primary mb-2">
+                Bonjour, je suis Fabienne
               </p>
 
               <h1 className="text-4xl md:text-2xl lg:text-4xl font-bold leading-[0.85] tracking-tighter">
-                A Web <br />
+                Développeuse <br />
                 <span className="italic font-serif font-light text-4xl md:text-4xl lg:text-5xl">
-                  & Mobile
+                  Web & Mobile
                 </span>
-                <br />
-                Developper
               </h1>
 
-              <p className="mt-6 text-gray-700 text-[16px] max-w-xs mx-auto md:mx-0 font-primary ">
-                Passionate Fullstack Developer specializing in Web and Mobile
-                development, with solid experience in both front-end and
-                back-end. Curious and driven, I enjoy learning new technologies
-                and tackling complex technical challenges.
+              <p className="mt-6 text-gray-700 text-[16px] max-w-xs mx-auto md:mx-0 font-primary">
+                Développeuse Fullstack passionnée spécialisée dans le
+                développement Web et Mobile, avec une solide expérience en
+                front-end et back-end. Curieuse et motivée, j’aime apprendre de
+                nouvelles technologies et relever des défis techniques
+                complexes.
               </p>
             </div>
 
-            <div className="pointer-events-auto flex justify-center md:justify-start mb-10 lg:block  md:mb-0 ">
-              <Button label="Contact Me" />
+            {/* BUTTON */}
+            <div className="pointer-events-auto flex justify-center md:justify-start mb-10 lg:block md:mb-0">
+              <Button label="Me Contacter" />
             </div>
           </div>
 
-          {/* 3. LES STATS */}
+          {/* STATS */}
           <div className="absolute top-45 lg:top-20 right-0 z-20 hidden lg:flex flex-col items-end space-y-12 text-right pr-12 lg:pl-0!">
             <div>
-              <p className="text-lg lg:text-2xl font-bold ">1+</p>
+              <p className="text-lg lg:text-2xl font-bold">1+</p>
               <p className="text-xs text-gray-500 uppercase">
-                Years Experience
+                Année d'expérience
               </p>
             </div>
+
             <div>
-              <p className="text-lg lg:text-2xl font-bold ">20+</p>
+              <p className="text-lg lg:text-2xl font-bold">20+</p>
               <p className="text-xs text-gray-500 uppercase">
-                Projects Created
+                Projets réalisés
               </p>
             </div>
+
             <div>
-              <p className="text-lg lg:text-2xl font-bold ">95%</p>
+              <p className="text-lg lg:text-2xl font-bold">95%</p>
               <p className="text-xs text-gray-500 uppercase">Satisfaction</p>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-gray-400  pb-10 ">
+
+        {/* SERVICES */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-gray-400 pb-10">
           <div className="border-l pl-4 border-gray-400">
-            <h5 className="text-sm font-bold uppercase">FrontEnd Developper</h5>
+            <h5 className="text-sm font-bold uppercase">
+              Développement Frontend
+            </h5>
+
             <p className="text-gray-700 text-sm font-primary">
-              Designing seamless and responsive interfaces.
+              Création d’interfaces modernes, fluides et responsives.
             </p>
           </div>
 
           <div className="border-l pl-4 border-gray-400">
-            <h5 className="text-sm font-bold uppercase">BackEnd Developper</h5>
+            <h5 className="text-sm font-bold uppercase">
+              Développement Backend
+            </h5>
+
             <p className="text-gray-700 text-sm font-primary">
-              Developing secure backend systems and APIs.
+              Développement de systèmes backend sécurisés et d’API performantes.
             </p>
           </div>
 
           <div className="border-l pl-4 border-gray-400">
-            <h5 className="text-sm font-bold uppercase">Mobile Developper</h5>
+            <h5 className="text-sm font-bold uppercase">
+              Développement Mobile
+            </h5>
+
             <p className="text-gray-700 text-sm font-primary">
-              Creating engaging cross-platform mobile apps.
+              Création d’applications mobiles modernes et multiplateformes.
             </p>
           </div>
         </div>

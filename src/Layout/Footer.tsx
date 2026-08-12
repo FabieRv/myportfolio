@@ -1,9 +1,9 @@
-import { Github, Linkedin, Mail, Twitter, Code2, Terminal } from "lucide-react"
+import { Github, Linkedin, Mail, Twitter } from "lucide-react"
 import Container from "../components/common/Container"
 
 function Footer() {
   return (
-    <footer className="bg-[#F4EDEA]">
+    <footer className="bg-[#0F172A] text-[#F8FAFC]">
       <Container>
         {/* Main Grid F4EDEA*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 ">
@@ -14,7 +14,7 @@ function Footer() {
                 Portfolio
               </h1>
             </div>
-            <p className="text-[12px] opacity-60 leading-relaxed max-w-[200px] mx-auto sm:mx-0 font-medium">
+            <p className="text-[12px] opacity-60 leading-relaxed max-w-[200px] mx-auto sm:mx-0 font-medium text-white!">
               Passionate developer focused on building modern interfaces and
               innovative technical solutions.
             </p>
@@ -77,8 +77,8 @@ function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-white/10 text-center opacity-40 pt-8 pb-4 ">
-          <p className="text-[10px] uppercase tracking-widest font-bold  ">
+        <div className="border-t border-white text-center opacity-40 mt-4 pb-4 text-white ">
+          <p className="text-[10px]  uppercase tracking-widest font-bold text-white! mt-4 ">
             © 2026 Fabie Rav. All rights reserved.
           </p>
         </div>

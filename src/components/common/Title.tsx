@@ -7,7 +7,7 @@ export default function Title(props: TitleProps) {
 
   return (
     <div className="text-center mb-10">
-      <h2 className="text-4xl italic font-serif  text-[#0F172A] font-bold sm:text-4x py-4">
+      <h2 className="text-4xl  text-[#0F172A] font-bold sm:text-4x py-4">
         {label}
       </h2>
     </div>
