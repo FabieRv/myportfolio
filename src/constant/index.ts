@@ -1,7 +1,6 @@
 import type { AboutTypes, LinkType } from "../types"
 
 export const headerLinks: LinkType[] = [
-  { href: "/#home", label: "Accueil" },
   { href: "/#about", label: "À propos" },
   { href: "/#Skils", label: "Compétences" },
   { href: "/#Projects", label: "Projets" },
@@ -47,8 +46,11 @@ export const atous = [
 
 export const frontendSkills = [
   { name: "JS", image: "/images/JavaScript-logo.webp" },
+  {name: "TypeScript", image: "/images/ts.png"},
+  { name: "React", image: "/images/Reactt.png"},
+  { name: "Next.js", image:"images/logo_next.png"},
   { name: "TailwindCSS", image: "/images/tailwind.webp" },
-  { name: "React.JS", image: "/images/react.webp" },
+  {name: "Angular.js", image: "/images/angular.js.png"}
 ]
 
 // BACKEND
@@ -56,13 +58,14 @@ export const backendSkills = [
   { name: "PHP", image: "/images/php.webp" },
   { name: "Laravel", image: "/images/laravel.webp" },
   { name: "Symfony", image: "/images/symfony.webp" },
+  {name: "Node.js", image : "/images/node_js.png" },
   { name: "JAVA", image: "/images/java.webp" },
   { name: "Python", image: "/images/pyhon.webp" },
 ]
 
 // BASE DE DONNÉES
 export const databaseSkills = [
-  { name: "SQL", image: "/images/sql.webp" },
+  { name: "MySQL", image: "/images/mysql.png" },
   { name: "PostgreSQL", image: "/images/pgsql.webp" },
   { name: "MongoDB", image: "images/mongogb.webp" },
 ]
@@ -73,18 +76,23 @@ export const Logicielle = [
 ]
 
 export const Design = [
-  { name: "Adobe Illustrator", image: "/images/postman.webp" },
-  { name: "Photoshop", image: "/images/photoshop.jpg" },
-  { name: "Figma", image: "/images/figma.png" },
+  { name: "Adobe Illustrator", image: "/images/adobe.png" },
+  { name: "Adobe Photoshop", image: "/images/photoshopp.jpg" },
+  { name: "Figma", image: "/images/figmas.png" },
 ]
 
 // OUTILS
 export const toolsSkills = [
   { name: "Git", image: "/images/git.webp" },
+  {name: "Github", image: "/images/github.png"},
   { name: "Postman", image: "/images/postman.webp" },
+
 ]
 
-export const mobileSkills = [{ name: "Flutter", image: "images/Flutter.webp" }]
+export const mobileSkills = [
+  { name: "Flutter", image: "images/Flutter.webp" }, 
+  { name: "React Native", image: "/public/images/ract_n.webp"}
+]
 
 export const skills = [
   { name: "Back-end", level: 90 },
@@ -96,18 +104,34 @@ export const skills = [
 
 export const experiences = [
   {
-    year: "Octobre 2025 — PRÉSENT",
+    year: "Mars 2026 — Juin 2026",
+    title: "Développeur JavaScript Freelance",
+    place: "Rafiacraft",
+    desc1: "Développeur Next.js / Node.js",
+    desc2: [
+      "Conception et développement du site web Rafiacraft,",
+      "Développement de fonctionnalités de CRM en Rafiacraft",
+      "Développement des modules de gestion des ventes et des produits",
+      "Tests, correction des anomalies et déploiement de l’application Rafiacraft.",
+      
+    ],
+    icon: "✓",
+
+  },
+  {
+    year: "Octobre 2025 — Janvier 2025",
     title: "Développeur Frontend",
-    place: "Cherry Tech&Design",
-    desc1: "Stage Développeur React.JS",
+    place: "Cherry Tech and Design",
+    desc1: "Stage Développeur REACT — 4mois",
     desc2: [
       "Contribution à la création d’interfaces utilisateur modernes et réactives,",
-      "Optimisation de l’expérience utilisateur sur mobile.",
+      "Optimisation de l’expérience utilisateur sur mobile,",
+      "Déploiement et mise en production d’applications web robustes."
     ],
     icon: "✓",
   },
   {
-    year: "2024 — 2025",
+    year: "Juin 2024 — Novembre 2024",
     title: "Développeur Backend",
     place: "Tolia Madagascar",
     desc1: "Stage Développeur Symfony pendant 6 mois",
@@ -119,7 +143,7 @@ export const experiences = [
     icon: "✓",
   },
   {
-    year: "2024 — 2025",
+    year: "2023 — 2024",
     title: "Développeur Backend",
     place: "MalagasyCraft",
     desc1: "Stage Développeur Laravel",
@@ -146,16 +170,34 @@ export const experiences = [
 
 export const ImageProject = [
   {
-    name: "MalagasyCraft",
-    image1: "../../public/images/malagasyc.png",
-    title: "Plateforme e-commerce",
+    name: "Malagasycraft",
+    image1: "/images/malagasyc.png",
+    title: "Projet E-commerce",
     description:
       "Application web e-commerce dédiée à l’artisanat malgache avec gestion des ventes et des produits.",
     demoLink: "https://malagasycraft.com/",
     repoLink: "#",
-    technologies: ["Laravel", "React", "TailwindCss", "SQL"],
+    technologies: ["Laravel", "React", "TailwindCss", "MySQL"],
   },
-
+  {
+    name: "Soary",
+    image1: "/images/tolia_.png",
+    title: "Projet ERP",
+    description:
+      "ERP sur mesure : gestion complète de la chaîne commerciale incluant les opérations d’import et export, les achats et la facturation.",
+    demoLink: "https://tolia.servehttp.com/",
+    repoLink: "#",
+    technologies: ["Symfony", "Bootstrap", "pgSQL"],
+  },
+  {
+    name: "RAFIACRAFT - projet fin d'études",
+    image1: "/images/rafiac.png",
+    title: "Projet CRM",
+    description:"Application web de gestion de la relation client (CRM), avec gestion des clients et tableau de bord administrateur pour un suivi efficace.",
+    demoLink: "#",
+    repoLink: "#",
+    technologies: ["Next.js", "Nest.js", "TailwindCSS", "MySQL" ]
+  },
   {
     name: "CherryTech and Design",
     image1: "images/projet/cherry.png",
@@ -169,22 +211,21 @@ export const ImageProject = [
   {
     name: "o-temps-t-ika",
     image1: "/images/otemtik.png",
-    title: "Plateforme e-commerce",
+    title: "Site e-commerce",
     description:
-      "Solution web axée sur la gestion des produits et des transactions clients.",
+      "Plateforme vitrine dédié à la présentation des produits et à la gestion des transactions clients.",
     demoLink: "https://o-temps-t-ika.vercel.app/",
     repoLink: "#",
     technologies: ["React", "TailwindCss"],
   },
   {
-    name: "Soary",
-    image1: "/images/tolia_.png",
-    title: "Plateforme ERP",
-    description:
-      "ERP sur mesure : gestion complète de la chaîne commerciale incluant les opérations d’import et export, les achats et la facturation.",
-    demoLink: "https://tolia.servehttp.com/",
+    name : "ZEWA Madagascar",
+    image1: "/images/zewa.png",
+    title: "site vitrine",
+    description: "Site vitrine dédié à la présentation de ZEWA Madagascar, mettant en avant son expertise dans le recyclage des déchets électroniques et la sécurité  des données.",
+    demoLink: "https://zewa.mg/",
     repoLink: "#",
-    technologies: ["Symfony", "Bootstrap", "pgSQL"],
+    technologies: ["Next.js", "Nest.js", "Prisma", "PostgreSql"],
   },
   {
     name: "Taaz Capital",
@@ -199,17 +240,25 @@ export const ImageProject = [
   {
     name: "Coin de Gadget",
     image1: "images/coin-gadgets.webp",
-    title: "Plateforme e-commerce",
+    title: "Projet e-commerce",
     description:
       "Site web permettant la gestion et la vente de produits électroniques en ligne.",
     demoLink: "#",
     repoLink: "#",
     technologies: ["React", "TailwindCss", "Node.js"],
   },
+  { name: "LOGISPOT",
+    image1: "/images/Logispot.png",
+    title: "site vitrine",
+    description: "LOGISPOT accompagne les entreprises dans la gestion et l’optimisation de leurs stocks et inventaires, tout en sécurisant leurs opérations.",
+    demoLink : "https://smartlogispot.com/",
+    repoLink: "#",
+    technologies: ["Next.js", "TalwindCSS"],
+  },
   {
     name: "Imatex",
     image1: "/images/imatex.png",
-    title: "Site e-commerce vitrine",
+    title: "Site VITRINE ",
     description:
       "Site vitrine mettant en avant les produits et la présence de l'entreprise sur les réseaux sociaux",
     demoLink: "https://imatex.mg/",
@@ -239,14 +288,14 @@ export interface EducationItem {
 export const educationData: EducationItem[] = [
   {
     title: "Licence professionnelle en Informatique",
-    school: "Institut Supérieur d’Informatique (ISINFO)",
+    school: "Institut Supérieur d’Informatique (IS-INFO)",
     date: "2024 - 2025",
     description:
-      "Bac+3 en Informatique à l’Institut Supérieur d’Informatique (IS-INFO), Antananarivo.",
+      "Titulaire de diplômée d’une licence en Informatique à l’Institut Supérieur d’Informatique (IS-INFO), Antananarivo.",
   },
   {
     title: "Formation en Développement Web",
-    school: "GASY-TECH, Antananarivo",
+    school: "Centre de Formation Professionnelle : GASY-TECH, Antananarivo",
     date: "Août - Janvier 2025",
     description:
       "Formation approfondie en développement web PHP et écosystèmes modernes.",
@@ -262,29 +311,29 @@ export const educationData: EducationItem[] = [
     title: "Baccalauréat Scientifique",
     school: "Lycée Marovoay",
     date: "2016",
-    description: "Diplôme de fin d'études secondaires, série scientifique.",
+    description: "Titulaire du Baccalauréat – Série Scientifique",
   },
 ]
 
 export const philosophyData = [
   {
-    title: "Code Propre (Clean Code)",
+    title: "Solutions utiles",
     description:
-      "Priorité à la lisibilité et à la maintenabilité pour faciliter l'évolution du produit.",
+      "Des applications pensées pour répondre efficacement aux besoins des utilisateurs.",
   },
   {
-    title: "User-Centric Design",
+    title: "Code clair et maintenable",
     description:
-      "Chaque décision technique est prise pour améliorer l'usage final.",
+      "Une architecture propre et un code structuré pour faciliter l’évolution des projets.",
   },
   {
-    title: "Agilité & Craftmanship",
+    title: "Innovation et apprentissage",
     description:
-      "Une approche itérative qui valorise l'excellence technique et le feedback.",
+      "Une veille constante sur les nouvelles technologies et les bonnes pratiques du développement.",
   },
   {
-    title: "Sécurité 'by design'",
+    title: "Esprit d’équipe",
     description:
-      "Protection des données sensibles dès la première ligne de code.",
+      "Collaboration, partage d’idées et communication pour construire ensemble des projets efficaces et de qualité.",
   },
 ]

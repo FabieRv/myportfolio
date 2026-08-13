@@ -1,13 +1,13 @@
-import React, { useState, useRef } from "react"
+import React, { useRef, useState } from "react"
 
-import ProjectCard from "./ProjectCard"
-import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
 import { ImageProject } from "../../../constant"
+import ProjectCard from "./ProjectCard"
 
 const ProjectSection: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0)
-  const containerRef = useRef<HTMLDivElement>(null) // Référence pour GSAP
+  const containerRef = useRef<HTMLDivElement>(null) 
   const projectsPerPage = 3
 
   const totalPages = Math.ceil(ImageProject.length / projectsPerPage)
@@ -17,7 +17,6 @@ const ProjectSection: React.FC = () => {
     startIndex + projectsPerPage
   )
 
-  // Animation GSAP qui se déclenche quand currentPage change
   useGSAP(
     () => {
       gsap.fromTo(
@@ -32,7 +31,7 @@ const ProjectSection: React.FC = () => {
           y: 0,
           scale: 1,
           duration: 0.6,
-          stagger: 0.1, // Délai entre chaque carte
+          stagger: 0.1,
           ease: "power2.out",
         }
       )
@@ -43,12 +42,11 @@ const ProjectSection: React.FC = () => {
   return (
     <section className="bg-[#F3F4F6] py-16 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto" ref={containerRef}>
-        {/* Titre */}
         <div className="mb-12 text-center ">
           <h2 className="text-3xl font-bold text-gray-900">Mes Projets</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-110">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {currentProjects.map((project, index) => (
             <div
               key={`${project.name}-${currentPage}-${index}`}
@@ -59,8 +57,7 @@ const ProjectSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Pagination Dots */}
-        <div className="flex justify-center items-center gap-3 mt-4 md:mt-0">
+        <div className="flex justify-center items-center gap-3 mt-8 md:mt-4 lg:mt-4">
           {[...Array(totalPages)].map((_, index) => (
             <button
               key={index}

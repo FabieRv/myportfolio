@@ -5,9 +5,9 @@ import Title from "../common/Title"
 
 const Timeline: React.FC = () => {
   return (
-    <Container>
+     <Container >
       <div className="max-w-4xl mx-auto p-8 font-sans">
-        <Title label="Mes Educations"></Title>
+        <Title label="Mes formations"></Title>
         <div className="relative">
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-dotted border-gray-300"></div>
           {educationData.map((item, index) => (
@@ -23,7 +23,7 @@ const Timeline: React.FC = () => {
                 <p className="text-sm text-gray-500 mt-1">{item.date}</p>
               </div>
 
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[8px] z-10">
+              <div className="absolute left-1/2 transform -translate-x-1/2 top-2 z-10">
                 <div
                   className={`w-5 h-5 rounded-full border-4 border-white shadow-sm ${
                     index % 2 === 0 ? "bg-blue-400" : "bg-gray-700"
@@ -36,6 +36,7 @@ const Timeline: React.FC = () => {
                 <h4 className="text-lg font-bold text-gray-800 leading-tight">
                   {item.title}
                 </h4>
+               
                 <p className="text-gray-600 mt-2 text-sm leading-relaxed">
                   {item.description}
                 </p>
@@ -45,6 +46,7 @@ const Timeline: React.FC = () => {
         </div>
       </div>
     </Container>
+   
   )
 }
 

@@ -46,7 +46,7 @@ const SectionContact: React.FC = () => {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mt-2 text-slate-900 leading-tight">
               Parlons de votre <br />{" "}
-              <span className="text-blue-600">prochain projet.</span>
+              <span className="text-blue-600">prochain projet !</span>
             </h2>
           </div>
 

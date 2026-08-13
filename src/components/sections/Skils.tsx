@@ -1,10 +1,10 @@
 import {
-  frontendSkills,
+  Design,
   backendSkills,
   databaseSkills,
-  toolsSkills,
+  frontendSkills,
   mobileSkills,
-  Design,
+  toolsSkills,
 } from "../../constant"
 import Container from "../common/Container"
 
@@ -50,9 +50,9 @@ export default function SkillsSection() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         <SkillCard title="Frontend" skills={frontendSkills} />
         <SkillCard title="Backend" skills={backendSkills} />
+        <SkillCard title="Mobile" skills={mobileSkills} />
         <SkillCard title="Base de données" skills={databaseSkills} />
         <SkillCard title="Outils" skills={toolsSkills} />
-        <SkillCard title="Mobile" skills={mobileSkills} />
         <SkillCard title="Design" skills={Design} />
       </div>
     </Container>

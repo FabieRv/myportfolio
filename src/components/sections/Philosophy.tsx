@@ -1,58 +1,110 @@
-import React from "react"
-import { motion } from "framer-motion"
-import { philosophyData } from "../../constant"
-import Container from "../common/Container"
-import Title from "../common/Title"
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useLayoutEffect, useRef } from "react";
+
+import { philosophyData } from "../../constant";
+import Title from "../common/Title";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Philosophy: React.FC = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      // Animation du titre
+      gsap.from(".philosophy-title", {
+        opacity: 0,
+        x: -50,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".philosophy-title",
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      });
+
+      // Animation des éléments
+      gsap.from(".philosophy-item", {
+        opacity: 0,
+        x: -40,
+        duration: 0.7,
+        stagger: 0.15,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".philosophy-list",
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      });
+
+      // Animation des flèches
+      gsap.utils.toArray<HTMLElement>(".philosophy-item").forEach((item) => {
+        const arrow = item.querySelector(".philosophy-arrow");
+
+        if (!arrow) return;
+
+        item.addEventListener("mouseenter", () => {
+          gsap.to(arrow, {
+            x: 8,
+            duration: 0.3,
+            ease: "power2.out",
+          });
+        });
+
+        item.addEventListener("mouseleave", () => {
+          gsap.to(arrow, {
+            x: 0,
+            duration: 0.3,
+            ease: "power2.out",
+          });
+        });
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="bg-white py-4 min-h-[60vh] flex items-center overflow-hidden">
-      <Container>
-        {/* Titre avec animation directe */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-16"
-        >
-          <Title label="Ma Philosophie" />
-        </motion.div>
-
-        {/* Grille de contenu utilisant les variants */}
-        <div className="flex justify-center">
-          <motion.div
-            className="space-y-6 max-w-3xl"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            {philosophyData.map((item, index) => (
-              <motion.div key={index} className="flex items-start group">
-                {/* Flèche animée au survol */}
-                <motion.span
-                  className="text-[#2563EB] mr-5 text-xl font-bold"
-                  whileHover={{ x: 5 }}
-                >
-                  →
-                </motion.span>
-
-                {/* Texte informatif */}
-                <div>
-                  <h3 className="text-xl font-bold text-[#1E293B] md:inline-block md:mr-2">
-                    {item.title} :
-                  </h3>
-                  <p className="text-[#475569] text-lg leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+    <section
+    ref={sectionRef}
+    className="bg-[#F3F4F6] px-6 py-10 overflow-hidden"
+  >
+    <div className="max-w-7xl mx-auto">
+      
+      <div className="philosophy-title mb-12 text-center">
+        <Title label="Ma Philosophie" />
+      </div>
+  
+      <div className="flex justify-center">
+        <div className="max-w-3xl w-full space-y-6">
+          {philosophyData.map((item, index) => (
+            <div
+              key={index}
+              className="flex items-start"
+            >
+              <span className="text-[#2563EB] mr-5 text-xl font-bold">
+                →
+              </span>
+  
+              <div>
+                <h3 className="text-xl font-bold text-[#1E293B]">
+                  {item.title} :
+                </h3>
+  
+                <p className="text-[#475569] text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
-      </Container>
-    </section>
-  )
-}
+      </div>
+  
+    </div>
+  </section>
+  );
+};
 
-export default Philosophy
+export default Philosophy;
