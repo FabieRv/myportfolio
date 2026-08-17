@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import Container from "../components/common/Container";
 
 function Footer() {
@@ -72,8 +73,8 @@ function Footer() {
             <div className="flex justify-between gap-3">
               <SocialBtn Icon={Github} link="https://github.com/FabieRv" />
               <SocialBtn Icon={Linkedin} link="https://www.linkedin.com/in/fabienne-razafimaharavo-911520309/" />
-            
-              <SocialBtn Icon={Mail} link="mailto:contact@example.com" />
+              <SocialBtn Icon={FaWhatsapp} link="https://wa.me/261320497005"/>
+              <SocialBtn Icon={Mail}  link="mailto:fabie.rav@gmail.com" />
             </div>
           </div>
         </div>
@@ -95,7 +96,7 @@ const SocialBtn = ({ Icon, link }: { Icon: any; link: string }) => (
     href={link}
     target="_blank"
     rel="noopener noreferrer"
-    className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white hover:text-[#003366] transition-all cursor-pointer border border-white/5 shadow-lg group"
+    className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-300 hover:text-[#ffff] transition-all cursor-pointer border border-white/5 shadow-lg group"
   >
     <Icon size={18} className="group-hover:scale-110 transition-transform" />
   </a>

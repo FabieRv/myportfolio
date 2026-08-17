@@ -57,20 +57,53 @@ const ProjectSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex justify-center items-center gap-3 mt-8 md:mt-4 lg:mt-4">
-          {[...Array(totalPages)].map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentPage(index)}
-              className={`h-3 rounded-full transition-all duration-300 ${
-                currentPage === index
-                  ? "w-8 bg-blue-600"
-                  : "w-3 bg-gray-400 hover:bg-blue-300"
-              }`}
-              aria-label={`Page ${index + 1}`}
-            />
-          ))}
-        </div>
+        <div className="flex flex-col items-center mt-8">
+  {/* Pagination */}
+  <div className="flex justify-center items-center gap-3">
+    {[...Array(totalPages)].map((_, index) => (
+      <button
+        key={index}
+        onClick={() => setCurrentPage(index)}
+        className={`h-3 rounded-full transition-all duration-300 ${
+          currentPage === index
+            ? "w-8 bg-blue-600"
+            : "w-3 bg-gray-400 hover:bg-blue-300"
+        }`}
+        aria-label={`Page ${index + 1}`}
+      />
+    ))}
+  </div>
+
+  {/* Voir plus */}
+  {currentPage === totalPages - 1 && (
+    <a
+      href="https://github.com/FabieRv"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        flex
+        w-fit
+        items-center
+        justify-center
+        gap-2
+        px-6
+        py-3
+        mt-6
+        bg-blue-600
+        text-white
+        text-sm
+        font-semibold
+        rounded-xl
+        hover:bg-[#5DA9E9]
+        transition-all
+        duration-300
+        hover:shadow-md
+      "
+    >
+      Voir plus de projets
+    </a>
+  )}
+</div>
       </div>
     </section>
   )
