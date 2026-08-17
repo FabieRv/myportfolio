@@ -1,45 +1,47 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react"
-import Container from "../components/common/Container"
+import { Github, Linkedin, Mail } from "lucide-react";
+import Container from "../components/common/Container";
 
 function Footer() {
   return (
-    <footer className="bg-[#0F172A] text-[#F8FAFC]">
+    <footer className="bg-[#172554] text-white">
       <Container>
         {/* Main Grid F4EDEA*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 ">
-          {/* Column 1: Profile */}
+       
           <div className="space-y-4 text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start gap-2 mb-2">
-              <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em]">
+              <h1 className="text-sm font-header font-bold uppercase tracking-[0.2em]">
                 Portfolio
               </h1>
             </div>
-            <p className="text-[12px] opacity-60 leading-relaxed max-w-[200px] mx-auto sm:mx-0 font-medium text-white!">
-              Passionate developer focused on building modern interfaces and
-              innovative technical solutions.
+            <p className="text-[12px] opacity-60 leading-relaxed max-w-50 mx-auto sm:mx-0 font-medium text-white!">
+            Développeuse passionnée, spécialisée dans la création d’interfaces modernes et de solutions techniques innovantes.
             </p>
           </div>
 
           {/* Column 2: Navigation */}
           <div className="space-y-4 text-center sm:text-left">
-            <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em]">
+            <h1 className="text-sm  font-bold uppercase tracking-[0.2em]">
               Navigation
             </h1>
-            <ul className="text-[13px] space-y-2 opacity-70 font-medium">
+            <ul className="text-[13px] space-y-2 opacity-70 font-medium font-primary">
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-                Home
+                Accueil
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-                About Me
+               Formations
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-                Skills
+              Compétences
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-                Projects
+                Projets 
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-                Contact
+                Expériences
+              </li>
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
+              Contact
               </li>
             </ul>
           </div>
@@ -51,26 +53,26 @@ function Footer() {
             </h1>
             <ul className="text-[12px] space-y-2 opacity-70 font-medium">
               <li className="flex items-center justify-center sm:justify-start gap-2">
-                Frontend Developper
+                Développeur Frontend
               </li>
               <li className="flex items-center justify-center sm:justify-start gap-2">
-                Backend Develelopper
+                Développeur Backend
               </li>
               <li className="flex items-center justify-center sm:justify-start gap-2">
-                Mobile Developper
+                Développeur Mobile
               </li>
             </ul>
           </div>
 
           {/* Column 4 - Social Media */}
-          <div className="flex flex-col items-center md:items-end space-y-6">
+          <div className="flex flex-col items-center  space-y-6">
             <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em]">
-              Connect With Me
+            Restons en contact
             </h1>
-            <div className="flex gap-3">
-              <SocialBtn Icon={Github} link="https://github.com" />
-              <SocialBtn Icon={Linkedin} link="https://linkedin.com" />
-              <SocialBtn Icon={Twitter} link="#" />
+            <div className="flex justify-between gap-3">
+              <SocialBtn Icon={Github} link="https://github.com/FabieRv" />
+              <SocialBtn Icon={Linkedin} link="https://www.linkedin.com/in/fabienne-razafimaharavo-911520309/" />
+            
               <SocialBtn Icon={Mail} link="mailto:contact@example.com" />
             </div>
           </div>

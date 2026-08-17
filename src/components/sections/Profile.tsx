@@ -32,11 +32,7 @@ function Profile() {
               </h1>
 
               <p className="mt-6 text-gray-700 text-[16px] max-w-xs mx-auto md:mx-0 font-primary">
-                Développeuse Fullstack passionnée spécialisée dans le
-                développement Web et Mobile, avec une solide expérience en
-                front-end et back-end. Curieuse et motivée, j’aime apprendre de
-                nouvelles technologies et relever des défis techniques
-                complexes.
+              Développeuse Fullstack passionnée par le développement web et mobile, avec une solide expérience en front-end et back-end. J’ai conçu et développé des applications web innovantes tout en veillant à maintenir une qualité de code élevée. Curieuse et motivée, j’aime apprendre de nouvelles technologies et relever des défis techniques complexes.
               </p>
             </div>
 
@@ -56,7 +52,7 @@ function Profile() {
             </div>
 
             <div>
-              <p className="text-lg lg:text-2xl font-bold">20+</p>
+              <p className="text-lg lg:text-2xl font-bold">10+</p>
               <p className="text-xs text-gray-500 uppercase">
                 Projets réalisés
               </p>

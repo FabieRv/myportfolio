@@ -44,18 +44,18 @@ const SectionContact: React.FC = () => {
         {/* Partie Gauche : Informations */}
         <div className="space-y-8">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mt-2 text-slate-900 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold font-header mt-2 text-slate-900 leading-tight">
               Parlons de votre <br />{" "}
               <span className="text-blue-600">prochain projet !</span>
             </h2>
           </div>
 
-          <p className="text-slate-500 text-lg leading-relaxed max-w-md">
+          <p className="text-slate-500 text-lg leading-relaxed max-w-md font-primary">
             Vous avez une idée ou une proposition de collaboration ? Envoyez-moi
             un message, je vous répondrai dans les plus brefs délais.
           </p>
 
-          <div className="text-sm pt-4 felx flex-col gap-4 mb-4">
+          <div className="text-sm pt-4 flex flex-col gap-4 mb-4">
             <ElementInfo
               icone="📧"
               titre="Email"
@@ -70,7 +70,7 @@ const SectionContact: React.FC = () => {
         </div>
 
         {/* Partie Droite : Formulaire (Style Épuré) */}
-        <div className="bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm">
+        <div className="bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm font-primary">
           <form onSubmit={gererSoumission} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ChampSaisie
@@ -120,7 +120,7 @@ const SectionContact: React.FC = () => {
               disabled={envoiEnCours}
               className={`w-full ${
                 envoiEnCours ? "bg-slate-400" : "bg-blue-600 hover:bg-blue-700"
-              } text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-blue-600/10 flex items-center justify-center gap-3`}
+              } text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-600/10 flex items-center justify-center gap-3`}
             >
               {envoiEnCours ? "Envoi en cours..." : "Envoyer le message"}
               {!envoiEnCours && <span className="text-xl">→</span>}

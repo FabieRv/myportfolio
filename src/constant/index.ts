@@ -1,7 +1,7 @@
 import type { AboutTypes, LinkType } from "../types"
 
 export const headerLinks: LinkType[] = [
-  { href: "/#about", label: "À propos" },
+  { href: "/#about", label: "Accueil" },
   { href: "/#Skils", label: "Compétences" },
   { href: "/#Projects", label: "Projets" },
   { href: "/#Experience", label: "Expérience" },
@@ -104,7 +104,7 @@ export const skills = [
 
 export const experiences = [
   {
-    year: "Mars 2026 — Juin 2026",
+    year: "Juillet 2025 — Mai 2026",
     title: "Développeur JavaScript Freelance",
     place: "Rafiacraft",
     desc1: "Développeur Next.js / Node.js",
@@ -120,11 +120,12 @@ export const experiences = [
   },
   {
     year: "Octobre 2025 — Janvier 2025",
-    title: "Développeur Frontend",
+    title: "Stagiaire Développeur Frontend",
     place: "Cherry Tech and Design",
-    desc1: "Stage Développeur REACT — 4mois",
+    desc1: "Stage Développeur JavaScript — 4 mois",
     desc2: [
-      "Contribution à la création d’interfaces utilisateur modernes et réactives,",
+      "Contribution à la création d’interfaces utilisateur modernes et réactives en React ou Next.js",
+      "",
       "Optimisation de l’expérience utilisateur sur mobile,",
       "Déploiement et mise en production d’applications web robustes."
     ],
@@ -132,9 +133,9 @@ export const experiences = [
   },
   {
     year: "Juin 2024 — Novembre 2024",
-    title: "Développeur Backend",
+    title: "Stagiaire Développeur Backend",
     place: "Tolia Madagascar",
-    desc1: "Stage Développeur Symfony pendant 6 mois",
+    desc1: "Stage Développeur Symfony — 6 mois",
     desc2: [
       "Travail sur des projets commerciaux comme ‘Soary Project’,",
       "Gestion de stock,",
@@ -144,9 +145,9 @@ export const experiences = [
   },
   {
     year: "2023 — 2024",
-    title: "Développeur Backend",
+    title: "Stagiaire Développeur Backend",
     place: "MalagasyCraft",
-    desc1: "Stage Développeur Laravel",
+    desc1: "Stage Développeur Laravel — 6 mois",
     desc2: [
       "Travail sur des projets commerciaux comme ‘MalagasyCraft’,",
       "Développement des fonctionnalités de l’application (ventes, stock, achats),",
@@ -190,7 +191,7 @@ export const ImageProject = [
     technologies: ["Symfony", "Bootstrap", "pgSQL"],
   },
   {
-    name: "RAFIACRAFT - projet fin d'études",
+    name: "RAFIACRAFT",
     image1: "/images/rafiac.png",
     title: "Projet CRM",
     description:"Application web de gestion de la relation client (CRM), avec gestion des clients et tableau de bord administrateur pour un suivi efficace.",
@@ -317,7 +318,7 @@ export const educationData: EducationItem[] = [
 
 export const philosophyData = [
   {
-    title: "Solutions utiles",
+    title: "Performance et Efficacité",
     description:
       "Des applications pensées pour répondre efficacement aux besoins des utilisateurs.",
   },

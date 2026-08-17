@@ -1,10 +1,10 @@
+import { experiences } from "../../constant/index"
 import Container from "../common/Container"
 import Title from "../common/Title"
-import { experiences } from "../../constant/index"
 
 function Experiences() {
   return (
-    <Container className="">
+    <Container className="text-lg">
       <div className="text-center">
         <Title label="Expériences" />
 
@@ -46,7 +46,7 @@ function Experiences() {
                     </div>
 
                     {/* Titres et descriptions */}
-                    <h1 className="text-sm lg:text-lg font-primary font-bold uppercase tracking-wider ">
+                    <h1 className="text-sm lg:text-lg font-primary font-bold uppercase tracking-wider  ">
                       {exp.title}
                     </h1>
 
@@ -54,12 +54,12 @@ function Experiences() {
                       {exp.place}
                     </h3>
 
-                    <p className="text-gray-500 text-[11px] lg:text-[13px] font-semibold italic">
+                    <p style={{ color: "#60A5FA" }} className=" text-[11px] lg:text-sm font-semibold italic">
                       {exp.desc1}
                     </p>
 
                     {exp.desc2 && (
-                      <p className="text-gray-900 text-[16px] lg:text-sm leading-relaxed  mt-1">
+                      <p className="text-gray-900 text-[16px]  lg:text-sm leading-relaxed  mt-1 font-primary">
                         {exp.desc2.map((line, i) => (
                           <span key={i} className="block">
                             {line}
