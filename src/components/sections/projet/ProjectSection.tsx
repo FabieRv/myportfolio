@@ -40,7 +40,7 @@ const ProjectSection: React.FC = () => {
   )
 
   return (
-    <section className="bg-[#F3F4F6] py-16 px-6 overflow-hidden text-lg">
+    <section className="bg-[#F3F4F6] py-16 px-6 overflow-hidden text-lg" id="Projects">
       <div className="max-w-6xl mx-auto" ref={containerRef}>
         <div className="mb-12 text-center ">
           <h2 className="text-3xl font-bold text-gray-900">Mes Projets</h2>

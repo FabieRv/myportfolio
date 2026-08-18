@@ -1,7 +1,35 @@
+import { useEffect, useRef } from "react"
 import Button from "../common/Button"
 import Container from "../common/Container"
 
+import { gsap } from "gsap"
+import TextType from "../common/TextType"
+
 function Profile() {
+  const titleRef = useRef<HTMLSpanElement>(null)
+
+  useEffect(() => {
+    if (!titleRef.current) return
+
+    const letters = titleRef.current.querySelectorAll(".fold-letter")
+
+    gsap.fromTo(
+      letters,
+      {
+        opacity: 0,
+        rotateX: -90,
+        transformOrigin: "50% 0%",
+      },
+      {
+        opacity: 1,
+        rotateX: 0,
+        duration: 0.7,
+        stagger: 0.05,
+        ease: "power3.out",
+      }
+    )
+  }, [])
+
   return (
     <div className="bg-[#F3F4F6] overflow-hidden">
       <Container className="py-0!">
@@ -20,14 +48,47 @@ function Profile() {
           {/* TEXTE */}
           <div className="flex flex-col gap-4 lg:absolute lg:top-20 lg:left-0 z-20 pointer-events-none order-2 md:order-1 md:w-1/2 lg:w-full">
             <div className="pointer-events-auto text-center md:text-left lg:text-base">
-              <p className="text-xs lg:text-sm font-primary mb-2">
+              {/* <p className="text-xs lg:text-sm font-primary mb-2">
                 Bonjour, je suis Fabienne
-              </p>
+              </p> */}
+
+          <TextType
+          text={[
+            "Bonjour, je suis Fabienne",
+            "Développeuse Fullstack",
+            "Passionnée par la technologie",
+          ]}
+          typingSpeed={75}
+          pauseDuration={1500}
+          showCursor
+          cursorCharacter="_"
+          deletingSpeed={50}
+          cursorBlinkDuration={0.5}
+          className="text-xs lg:text-sm font-primary mb-2"
+        />
 
               <h1 className="text-4xl md:text-2xl lg:text-4xl font-bold leading-[0.85] tracking-tighter">
                 Développeuse <br />
-                <span className="italic font-serif font-light text-4xl md:text-4xl lg:text-5xl">
-                  Web & Mobile
+
+                <span
+                  ref={titleRef}
+                  className="italic font-serif font-light text-4xl md:text-4xl lg:text-5xl"
+                  style={{
+                    perspective: "700px",
+                  }}
+                >
+                  {"Web & Mobile".split("").map((char, index) => (
+                    <span
+                      key={index}
+                      className="fold-letter inline-block"
+                      style={{
+                        transformOrigin: "50% 0%",
+                        transformStyle: "preserve-3d",
+                      }}
+                    >
+                      {char === " " ? "\u00A0" : char}
+                    </span>
+                  ))}
                 </span>
               </h1>
 
@@ -38,7 +99,9 @@ function Profile() {
 
             {/* BUTTON */}
             <div className="pointer-events-auto flex justify-center md:justify-start mb-10 lg:block md:mb-0">
-              <Button label="Me Contacter" />
+            <a href="#Contact">
+              <Button label="Me contacter" />
+            </a>
             </div>
           </div>
 

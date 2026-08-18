@@ -1,7 +1,7 @@
 import type { AboutTypes, LinkType } from "../types"
 
 export const headerLinks: LinkType[] = [
-  { href: "/#about", label: "Accueil" },
+  { href: "/#about", label: "À propos" },
   { href: "/#Skils", label: "Compétences" },
   { href: "/#Projects", label: "Projets" },
   { href: "/#Experience", label: "Expérience" },
@@ -265,6 +265,15 @@ export const ImageProject = [
     demoLink: "https://imatex.mg/",
     repoLink: "#",
     technologies: ["React", "TailwindCss"],
+  },
+  {
+    name: "Hafavy",
+    image1:"/images/havafyy.png",
+    title:"site e-commerce",
+    description: "Un plateforme e-commerce permettant aux vendeurs locaux de créer leur boutique en ligne, gérer leurs produits et développer leur activité. ",
+    demoLink:"https://havafy.mg",
+    repoLink: "#",
+    technologies: ["Next.js", "Supabase","TailwindCss"],
   },
 
   {

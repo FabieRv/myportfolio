@@ -14,11 +14,11 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
     >
       {/* Image */}
       <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
-  <img
-    src={project.image1}
-    alt={project.name}
-    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-  />
+        <img
+          src={project.image1}
+          alt={project.name}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
 
         <a
           href={project.demoLink}

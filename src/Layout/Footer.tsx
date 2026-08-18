@@ -26,23 +26,26 @@ function Footer() {
               Navigation
             </h1>
             <ul className="text-[13px] space-y-2 opacity-70 font-medium font-primary">
-              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-                Accueil
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="about">
+                <a href="#about">À propos</a>
               </li>
-              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-               Formations
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all"id="Formations">
+                 <a href="#Formations">Formations</a>
               </li>
-              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-              Compétences
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Passions">
+                <a href="#Passions">Mes Passions</a>
               </li>
-              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-                Projets 
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Skils">
+                <a href="#Skils">Compétences</a>
               </li>
-              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-                Expériences
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Projects ">
+                <a href="#Projects">Projets </a> 
               </li>
-              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all">
-              Contact
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Experience">
+                <a href="#Experience">Expériences </a> 
+              </li>
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Contact">
+                <a href="#Contact">Contact </a>
               </li>
             </ul>
           </div>

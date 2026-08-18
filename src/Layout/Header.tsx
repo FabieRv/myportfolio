@@ -1,5 +1,4 @@
 import { useState } from "react"
-import Button from "../components/common/Button"
 import Container from "../components/common/Container"
 import MyMenu from "../components/common/MyMenu"
 import { headerLinks } from "../constant"
@@ -49,11 +48,11 @@ function Header() {
         <div className="hidden lg:block font-bold lg:text-sm bg-primary  py-2 px-4 rounded-full ">
           <a
             className="text-white "
-            href="/cv.pdf"
+            href="cv/cv_Fabienne_.pdf"
             download
             onClick={() => setOpen(false)}
           >
-            Upload CV
+            Mon CV
           </a>
         </div>
         <div className="lg:hidden z-110">

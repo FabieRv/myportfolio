@@ -1,110 +1,142 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import React, { useLayoutEffect, useRef } from "react";
+"use client"
 
-import { philosophyData } from "../../constant";
-import Title from "../common/Title";
+import gsap from "gsap"
+import React, { useLayoutEffect, useRef } from "react"
 
-gsap.registerPlugin(ScrollTrigger);
+import { philosophyData } from "../../constant"
+import Title from "../common/Title"
 
 const Philosophy: React.FC = () => {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLElement>(null)
 
   useLayoutEffect(() => {
+    const section = sectionRef.current
+
+    if (!section) return
+
     const ctx = gsap.context(() => {
-      // Animation du titre
-      gsap.from(".philosophy-title", {
-        opacity: 0,
-        x: -50,
-        duration: 0.8,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".philosophy-title",
-          start: "top 85%",
-          toggleActions: "play none none none",
-        },
-      });
+      // Récupération de toutes les flèches
+      const arrows =
+        gsap.utils.toArray<HTMLElement>(
+          ".philosophy-arrow"
+        )
 
-      // Animation des éléments
-      gsap.from(".philosophy-item", {
-        opacity: 0,
-        x: -40,
-        duration: 0.7,
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".philosophy-list",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      });
+      arrows.forEach((arrow) => {
+        // Animation de la flèche
+        const animation = gsap.to(arrow, {
+          x: 8,
+          scale: 1.15,
+          duration: 0.35,
+          ease: "power2.out",
+          paused: true,
+        })
 
-      // Animation des flèches
-      gsap.utils.toArray<HTMLElement>(".philosophy-item").forEach((item) => {
-        const arrow = item.querySelector(".philosophy-arrow");
+        const parent = arrow.parentElement
 
-        if (!arrow) return;
+        if (!parent) return
 
-        item.addEventListener("mouseenter", () => {
-          gsap.to(arrow, {
-            x: 8,
-            duration: 0.3,
-            ease: "power2.out",
-          });
-        });
+        // Quand la souris entre
+        const handleMouseEnter = () => {
+          animation.play()
+        }
 
-        item.addEventListener("mouseleave", () => {
-          gsap.to(arrow, {
-            x: 0,
-            duration: 0.3,
-            ease: "power2.out",
-          });
-        });
-      });
-    }, sectionRef);
+        // Quand la souris sort
+        const handleMouseLeave = () => {
+          animation.reverse()
+        }
 
-    return () => ctx.revert();
-  }, []);
+        parent.addEventListener(
+          "mouseenter",
+          handleMouseEnter
+        )
+
+        parent.addEventListener(
+          "mouseleave",
+          handleMouseLeave
+        )
+      })
+    }, section)
+
+    // Nettoyage
+    return () => {
+      ctx.revert()
+    }
+  }, [])
 
   return (
     <section
-    ref={sectionRef}
-    className="bg-[#F3F4F6] px-6 py-10 overflow-hidden"
-  >
-    <div className="max-w-7xl mx-auto">
-      
-      <div className="philosophy-title mb-12 text-center">
-        <Title label="Ma Philosophie" />
-      </div>
-  
-      <div className="flex justify-center">
-        <div className="max-w-3xl w-full space-y-6">
-          {philosophyData.map((item, index) => (
-            <div
-              key={index}
-              className="flex items-start"
-            >
-              <span className="text-[#2563EB] mr-5 text-xl font-bold">
-                →
-              </span>
-  
-              <div>
-                <h3 className="text-xl font-bold text-[#1E293B]">
-                  {item.title} :
-                </h3>
-  
-                <p className="text-[#475569] text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-  
-    </div>
-  </section>
-  );
-};
+      ref={sectionRef}
+      className="bg-[#F3F4F6] px-6 py-10 overflow-hidden"
+      id="Passions"
+    >
+      <div className="max-w-7xl mx-auto">
 
-export default Philosophy;
+        {/* TITRE */}
+        <div className="mb-12 text-center">
+          <Title label="Mes Passions" />
+        </div>
+
+        {/* LISTE */}
+        <div className="flex justify-center">
+          <div className="max-w-3xl w-full space-y-6">
+
+            {philosophyData.map((item, index) => (
+              <div
+                key={index}
+                className="
+                  flex
+                  items-start
+                  cursor-pointer
+                "
+              >
+
+                {/* FLÈCHE ANIMÉE */}
+                <span
+                  className="
+                    philosophy-arrow
+                    inline-block
+                    text-[#2563EB]
+                    mr-5
+                    text-xl
+                    font-bold
+                    flex-shrink-0
+                  "
+                >
+                  →
+                </span>
+
+                {/* CONTENU */}
+                <div>
+                  <h3
+                    className="
+                      text-xl
+                      font-bold
+                      text-[#1E293B]
+                    "
+                  >
+                    {item.title} :
+                  </h3>
+
+                  <p
+                    className="
+                      text-[#475569]
+                      text-sm
+                      leading-relaxed
+                    "
+                  >
+                    {item.description}
+                  </p>
+                </div>
+
+              </div>
+            ))}
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  )
+}
+
+export default Philosophy

@@ -38,7 +38,7 @@ const SkillCard = ({ title, skills }: any) => {
 
 export default function SkillsSection() {
   return (
-    <Container className="mb-20 ">
+    <Container className="mb-20 " id="Skils">
       {/* HEADER */}
       <div className="text-center mb-8">
         <h2 className="text-4xl font-extrabold text-gray-800 ">
