@@ -17,18 +17,13 @@ const App = () => {
       <Header />
       <Profile />
       <AboutMe />
-
       <Logoexpe />
       <Education />
       <Philosophy />
       <SkillsSlider />
       <ProjectSection />
-
       <Experiences />
       <ContactSection />
-      
-
-
       <Footer />
     </div>
   )
