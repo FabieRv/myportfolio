@@ -23,7 +23,7 @@ h1 {
 }
 
 p {
-  @apply font-primary font-medium text-gray-700;
+  @apply font-primary font-medium text-[#4B5563];
 }
 
 @keyframes fadeIn {

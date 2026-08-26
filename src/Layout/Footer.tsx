@@ -4,7 +4,7 @@ import Container from "../components/common/Container";
 
 function Footer() {
   return (
-    <footer className="bg-[#172554] text-white">
+    <footer className="bg-[#2563EB] text-white">
       <Container>
         {/* Main Grid F4EDEA*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 ">
@@ -85,7 +85,7 @@ function Footer() {
         {/* Copyright */}
         <div className="border-t border-white text-center opacity-40 mt-4 pb-4 text-white ">
           <p className="text-[10px]  uppercase tracking-widest font-bold text-white! mt-4 ">
-            © 2026 Fabie Rav. All rights reserved.
+            © 2026 Fabie Rav. Développer avec passion.
           </p>
         </div>
       </Container>

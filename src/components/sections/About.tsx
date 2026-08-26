@@ -7,77 +7,64 @@ import Linkedin from "../icons/Linkedin"
 const AboutMe = () => {
   return (
     <Container
-      className="relative overflow-hidden mb-24"
+      className="relative overflow-hidden mb-24 py-8"
       id="about"
     >
-      <div className="absolute top-10 -left-20 w-96 h-96 rounded-full blur-3xl -z-10" />
+      {/* Halo lumineux d'arrière-plan très subtil */}
+      <div className="absolute top-10 -left-20 w-96 h-96 rounded-full bg-blue-500/5 blur-3xl -z-10 animate-pulse" />
 
       <div className="max-w-6xl mx-auto font-primary">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
 
-          {/* IMAGE */}
+          {/* BLOCK IMAGE */}
           <div className="w-full md:w-5/12 relative">
-
-            <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-lg border-8 border-white">
-
-              {/* CONTENEUR IMAGE + ANIMATION */}
+            <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-xl border-4 border-white bg-white">
+              
+              {/* Conteneur Image + Animation */}
               <div className="relative w-full h-[400px] sm:h-[450px] md:h-96 overflow-hidden">
-
-                {/* IMAGE */}
                 <img
                   src="/images/dev.jpg"
                   alt="Fabienne Développeuse"
-                  className="
-                    absolute
-                    inset-0
-                    w-full
-                    h-full
-                    object-cover
-                    z-0
-                  "
+                  className="absolute inset-0 w-full h-full object-cover z-0"
                 />
 
-                {/* ANIMATION UNIQUEMENT DANS L'IMAGE */}
                 <SplashCursor
-                  COLOR="#A855F7"
+                  COLOR="#1A56DB"
                   RAINBOW_MODE={false}
                 />
-
               </div>
             </div>
 
-            {/* STATUS */}
-            <div className="absolute bottom-3 right-2 bg-button px-4 py-4 rounded-xl shadow-xl z-30 hidden md:block">
-              <p className="text-white! font-primary text-lg lg:text-sm md:text-lg leading-none font-black">
-                Disponible
-              </p>
-
-              <p className="text-white! font-primary text-[6px] uppercase tracking-widest font-bold mt-1">
+            {/* BADGE DISPONIBILITÉ */}
+            <div className="absolute -bottom-4 right-4 bg-[#1A56DB] text-white px-5 py-3 rounded-2xl shadow-lg z-30 hidden md:block border border-white/20">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-ping" />
+                <p className="font-primary text-sm font-bold leading-none text-white!">
+                  Disponible
+                </p>
+              </div>
+              <p className="font-primary text-[10px] uppercase tracking-wider font-medium text-white! mt-1">
                 Pour de nouveaux projets
               </p>
             </div>
           </div>
 
-          {/* CONTENT */}
+          {/* CONTENU TEXTE */}
           <div className="w-full md:w-7/12">
-
-            <p className="font-primary text-sm lg:text-sm font-medium mb-2 text-gray-900">
+            
+            <span className="inline-block px-3 py-1 bg-blue-50 text-[#1A56DB] text-xs font-semibold uppercase tracking-wider rounded-full mb-3">
               Qui suis-je ?
-            </p>
+            </span>
 
-            <h2 className="text-4xl md:text-2xl lg:text-4xl font-primary font-bold text-gray-900 mb-8 leading-[0.85] tracking-tighter">
+            <h2 className="text-3xl md:text-3xl lg:text-4xl font-primary font-bold text-slate-900 mb-6 leading-tight tracking-tight">
               Création d’applications <br />
-
-              <span className="italic font-serif font-light text-primary">
+              <span className="italic font-serif font-normal text-[#1A56DB]">
                 web et mobiles
-              </span>
-
-              <br />
-
+              </span> <br />
               modernes
             </h2>
 
-            <div className="font-primary text-gray-700 text-[16px] leading-relaxed max-w-2xl mb-4">
+            <div className="font-primary text-slate-600 text-base leading-relaxed max-w-2xl mb-8">
               <p>
                 Je suis une développeuse web passionnée par la création
                 d’applications modernes, performantes et bien structurées.
@@ -91,43 +78,40 @@ const AboutMe = () => {
               </p>
             </div>
 
-            {/* INFOS */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 gap-y-6 pt-4">
+            {/* GRILLE D'INFORMATIONS */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-100">
 
               {/* TELEPHONE */}
-              <div className="border-l pl-4 border-gray-400">
-                <h5 className="font-primary text-sm font-bold uppercase tracking-wider">
+              <div className="border-l-2 pl-4 border-[#1A56DB]">
+                <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
                   Téléphone
                 </h5>
-
-                <p className="text-gray-700 text-sm mt-1">
+                <p className="text-slate-800 text-sm font-semibold mt-1">
                   034 78 984 75
                 </p>
               </div>
 
               {/* LINKEDIN */}
-              <div className="border-l pl-4 border-gray-400">
-                <h5 className="font-primary text-sm font-bold uppercase tracking-wider">
+              <div className="border-l-2 pl-4 border-[#1A56DB]">
+                <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
                   LinkedIn
                 </h5>
-
                 <a
                   href="https://www.linkedin.com/in/fabienne-razafimaharavo-911520309/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#2563EB] text-sm mt-1 block hover:text-blue-400 transition-colors"
+                  className="text-[#1A56DB] hover:text-blue-700 text-sm mt-1 block transition-colors"
                 >
-                  <Linkedin className="cursor-pointer w-5 h-5" />
+                  <Linkedin className="w-5 h-5" />
                 </a>
               </div>
 
               {/* LOCALISATION */}
-              <div className="border-l pl-4 border-gray-400">
-                <h5 className="font-primary text-sm font-bold uppercase tracking-wider">
+              <div className="border-l-2 pl-4 border-[#1A56DB]">
+                <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
                   Localisation
                 </h5>
-
-                <p className="text-gray-700 text-sm mt-1">
+                <p className="text-slate-800 text-sm font-semibold mt-1">
                   Madagascar
                 </p>
               </div>

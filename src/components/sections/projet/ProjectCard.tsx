@@ -10,7 +10,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           window.open(project.demoLink, "_blank", "noopener,noreferrer");
         }
       }}
-      className="h-full flex flex-col bg-[#F3F4F6] border border-blue-300 rounded-2xl p-4 hover:border-blue-600 transition-all duration-300 group"
+      className="h-full flex flex-col border border-blue-300 rounded-2xl p-4 hover:border-blue-600 transition-all duration-300 group"
     >
       {/* Image */}
       <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
@@ -66,7 +66,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
         {project.technologies?.map((tech, index) => (
           <span
             key={index}
-            className="px-3 py-2 bg-[#5DA9E9] text-white/90 text-[12px] font-medium rounded-md border border-gray-200"
+            className="px-3 py-1.5 bg-slate-100 text-slate-600 text-xs font-medium rounded-md border border-slate-200"
           >
             {tech}
           </span>

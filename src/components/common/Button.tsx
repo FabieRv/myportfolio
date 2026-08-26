@@ -25,7 +25,7 @@ export default function Button({
 
   const variants = {
     "primary-dark":
-      "bg-[#2563EB] text-white py-3 px-4 rounded-full hover:bg-[#5DA9E9] text-sm",
+      "bg-[#1A56DB] text-white py-3 px-4 rounded-full hover:bg-[#5DA9E9] text-sm",
   }
 
   return (

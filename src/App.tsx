@@ -8,7 +8,6 @@ import Logoexpe from "./components/sections/Logoexpe"
 import Philosophy from "./components/sections/Philosophy"
 import Profile from "./components/sections/Profile"
 import ProjectSection from "./components/sections/projet/ProjectSection"
-import SkillsSlider from "./components/sections/skils"
 
 
 const App = () => {
@@ -20,7 +19,7 @@ const App = () => {
       <Logoexpe />
       <Education />
       <Philosophy />
-      <SkillsSlider />
+   
       <ProjectSection />
       <Experiences />
       <ContactSection />

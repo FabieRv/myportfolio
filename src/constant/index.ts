@@ -132,7 +132,7 @@ export const experiences = [
     icon: "✓",
   },
   {
-    year: "Juin 2024 — Novembre 2024",
+    year: "Juin – Novembre 2024",
     title: "Stagiaire Développeur Backend",
     place: "Tolia Madagascar",
     desc1: "Stage Développeur Symfony — 6 mois",
@@ -144,26 +144,26 @@ export const experiences = [
     icon: "✓",
   },
   {
-    year: "2023 — 2024",
+    year: "Novembre 2023 — Mai 2024",
     title: "Stagiaire Développeur Backend",
     place: "MalagasyCraft",
     desc1: "Stage Développeur Laravel — 6 mois",
     desc2: [
       "Travail sur des projets commerciaux comme ‘MalagasyCraft’,",
       "Développement des fonctionnalités de l’application (ventes, stock, achats),",
-      "Gestion des exports et imports des produits artisanaux,",
+      "Gestion des exports et imports des produits artisanaux.",
     ],
     icon: "✓",
   },
   {
-    year: "2023 — 2024",
-    title: "Projet Personnel",
-    place: "E-Parle",
-    desc1: "Projet personnel ‘E-parle’",
+    year: "Septembre - Novembre 2023",
+    title: "Stagiaire Développeur Python",
+    place: "Freelance",
+    desc1: "Projet éducatif",
     desc2: [
       "Développement d’une application d’apprentissage du français,",
       "Conception et mise en œuvre des fonctionnalités principales,",
-      "Assure le bon fonctionnement de l’application (cours, paiement, chat en temps réel).",
+      "Assurer le bon fonctionnement de l’application (cours, paiement et chat en temps réel).",
     ],
     icon: "✓",
   },
@@ -261,7 +261,7 @@ export const ImageProject = [
     image1: "/images/imatex.png",
     title: "Site VITRINE ",
     description:
-      "Site vitrine mettant en avant les produits et la présence de l'entreprise sur les réseaux sociaux",
+      "Site vitrine mettant en avant les produits et la présence de l'entreprise sur les réseaux sociaux.",
     demoLink: "https://imatex.mg/",
     repoLink: "#",
     technologies: ["React", "TailwindCss"],
@@ -308,7 +308,7 @@ export const educationData: EducationItem[] = [
     school: "Centre de Formation Professionnelle : GASY-TECH, Antananarivo",
     date: "Août - Janvier 2025",
     description:
-      "Formation approfondie en développement web PHP et écosystèmes modernes.",
+      "Formation approfondie en développement web PHP (Laravel)",
   },
   {
     title: "Formation en Développement Mobile",

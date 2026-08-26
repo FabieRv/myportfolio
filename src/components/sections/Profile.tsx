@@ -72,7 +72,7 @@ function Profile() {
 
                 <span
                   ref={titleRef}
-                  className="italic font-serif font-light text-4xl md:text-4xl lg:text-5xl"
+                  className="italic font-serif font-light text-4xl md:text-4xl lg:text-5xl text-[#1A56DB]"
                   style={{
                     perspective: "700px",
                   }}

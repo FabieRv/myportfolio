@@ -1,7 +1,7 @@
-import Container from "../common/Container"
-import { atous } from "../../constant"
-import { useRef, useEffect } from "react"
 import { gsap } from "gsap"
+import { useEffect, useRef } from "react"
+import { atous } from "../../constant"
+import Container from "../common/Container"
 
 function Logoexpe() {
   const marqueeRef = useRef<HTMLDivElement>(null)
@@ -23,7 +23,7 @@ function Logoexpe() {
   }, [])
 
   return (
-    <div className="overflow-hidden border-y border-blue-100/30 py-4 bg-[#E5E7EB]">
+    <div className="overflow-hidden border-y border-blue-100/30 py-4 bg-[#F8FAFC]">
       <Container className="py-4  pt-0!">
         <div className="w-full relative">
           <div

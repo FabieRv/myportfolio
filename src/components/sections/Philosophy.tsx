@@ -66,7 +66,7 @@ const Philosophy: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#F3F4F6] px-6 py-10 overflow-hidden"
+      className="bg-[#F8FAFC]  px-6 py-15 overflow-hidden "
       id="Passions"
     >
       <div className="max-w-7xl mx-auto">
@@ -95,7 +95,7 @@ const Philosophy: React.FC = () => {
                   className="
                     philosophy-arrow
                     inline-block
-                    text-[#2563EB]
+                    text-[#1A56DB]
                     mr-5
                     text-xl
                     font-bold
