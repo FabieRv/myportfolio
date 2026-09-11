@@ -1,0 +1,55 @@
+{
+  "header": {
+    "cv": "Download CV",
+    "lang_fr": "FR",
+    "lang_en": "EN"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Profile": {
+    "typing": [
+      "Hello, I'm Fabienne",
+      "Full Stack Developer",
+      "Web & Mobile Specialist"
+    ],
+    "job": "Developer",
+    "webMobile": "Full Stack",
+    "description": "Junior Full Stack Developer with a Bachelor’s degree in Computer Science. Motivated, organized, and a fast learner, with practical experience in PHP, Laravel, Symfony, React, Next.js, Vue.js, Node.js, and Flutter. Seeking to apply my skills, gain professional experience, and continue growing as a developer.",
+    "button": "Get in touch",
+    "stats": {
+      "experience": "Years of experience",
+      "projects": "Completed projects",
+      "satisfaction": "Client satisfaction"
+    },
+    "services": {
+      "frontend": {
+        "title": "FRONTEND DEVELOPMENT",
+        "description": "Designing modern, smooth, and responsive interfaces."
+      },
+      "backend": {
+        "title": "BACKEND DEVELOPMENT",
+        "description": "Building secure backend systems and high-performance APIs."
+      },
+      "mobile": {
+        "title": "MOBILE DEVELOPMENT",
+        "description": "Creating modern cross-platform mobile applications."
+      }
+    }
+  },
+  "about": {
+    "badge": "Available",
+    "badgeSub": "For new projects",
+    "tag": "Who am I?",
+    "titleLine1": "web and mobile",
+    "titleLine2": "Modern digital solutions",
+    "description": "I am a passionate web developer who enjoys creating modern, high-performance, and well-structured applications. Beyond coding, I care about quality, user experience, and the business logic behind every project. I enjoy working on real-world projects that solve real problems, whether in frontend, backend, or mobile development. My goal is to continue growing as a full-stack developer and contribute to impactful, well-designed projects.",
+    "phone": "Phone",
+    "linkedin": "LinkedIn",
+    "location": "Location"
+  }
+}

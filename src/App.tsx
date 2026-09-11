@@ -9,7 +9,6 @@ import Philosophy from "./components/sections/Philosophy"
 import Profile from "./components/sections/Profile"
 import ProjectSection from "./components/sections/projet/ProjectSection"
 
-
 const App = () => {
   return (
     <div>
@@ -19,7 +18,6 @@ const App = () => {
       <Logoexpe />
       <Education />
       <Philosophy />
-   
       <ProjectSection />
       <Experiences />
       <ContactSection />

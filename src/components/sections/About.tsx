@@ -1,10 +1,15 @@
 'use client'
 
+import { useTranslation } from "react-i18next"
 import Container from "../common/Container"
 import SplashCursor from "../common/SplashCursor"
 import Linkedin from "../icons/Linkedin"
 
+
 const AboutMe = () => {
+
+  const { t } = useTranslation('translation', { keyPrefix: 'about' })
+
   return (
     <Container
       className="relative overflow-hidden mb-24 py-8"
@@ -40,11 +45,11 @@ const AboutMe = () => {
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-ping" />
                 <p className="font-primary text-sm font-bold leading-none text-white!">
-                  Disponible
+                {t('badge')}
                 </p>
               </div>
               <p className="font-primary text-[10px] uppercase tracking-wider font-medium text-white! mt-1">
-                Pour de nouveaux projets
+              {t('badgeSub')}
               </p>
             </div>
           </div>
@@ -53,28 +58,20 @@ const AboutMe = () => {
           <div className="w-full md:w-7/12">
             
             <span className="inline-block px-3 py-1 bg-blue-50 text-[#1A56DB] text-xs font-semibold uppercase tracking-wider rounded-full mb-3">
-              Qui suis-je ?
+            {t('tag')}<br />
             </span>
 
             <h2 className="text-3xl md:text-3xl lg:text-4xl font-primary font-bold text-slate-900 mb-6 leading-tight tracking-tight">
-              Création d’applications <br />
+              {t('titleLine2')} <br />
               <span className="italic font-serif font-normal text-[#1A56DB]">
-                web et mobiles
-              </span> <br />
-              modernes
+              {t('titleLine1')} <br />
+              </span> 
+             
             </h2>
 
             <div className="font-primary text-slate-600 text-base leading-relaxed max-w-2xl mb-8">
               <p>
-                Je suis une développeuse web passionnée par la création
-                d’applications modernes, performantes et bien structurées.
-                Au-delà du code, je m’intéresse à la qualité, à l’expérience
-                utilisateur et à la logique métier derrière chaque projet.
-                J’aime travailler sur des projets concrets qui résolvent de
-                vrais problèmes, que ce soit en frontend, backend ou mobile.
-                Mon objectif est de continuer à évoluer en tant que
-                développeuse fullstack et de contribuer à des projets
-                impactants et bien conçus.
+              {t('description')} <br />
               </p>
             </div>
 
@@ -84,7 +81,7 @@ const AboutMe = () => {
               {/* TELEPHONE */}
               <div className="border-l-2 pl-4 border-[#1A56DB]">
                 <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
-                  Téléphone
+                  {t('phone')}
                 </h5>
                 <p className="text-slate-800 text-sm font-semibold mt-1">
                   034 78 984 75
@@ -94,7 +91,7 @@ const AboutMe = () => {
               {/* LINKEDIN */}
               <div className="border-l-2 pl-4 border-[#1A56DB]">
                 <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
-                  LinkedIn
+                  {t('linkedin')}
                 </h5>
                 <a
                   href="https://www.linkedin.com/in/fabienne-razafimaharavo-911520309/"
@@ -109,7 +106,7 @@ const AboutMe = () => {
               {/* LOCALISATION */}
               <div className="border-l-2 pl-4 border-[#1A56DB]">
                 <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
-                  Localisation
+                  {t('location')}
                 </h5>
                 <p className="text-slate-800 text-sm font-semibold mt-1">
                   Madagascar

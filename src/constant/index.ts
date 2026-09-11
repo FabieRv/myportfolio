@@ -1,11 +1,11 @@
-import type { AboutTypes, LinkType } from "../types"
+import type { AboutTypes } from "../types";
 
-export const headerLinks: LinkType[] = [
-  { href: "/#about", label: "À propos" },
-  { href: "/#Skils", label: "Compétences" },
-  { href: "/#Projects", label: "Projets" },
-  { href: "/#Experience", label: "Expérience" },
-  { href: "/#Contact", label: "Contact" },
+export const headerLinks = [
+  { href: "#about", key: "about" },
+  { href: "#skills", key: "skills" },
+  { href: "#experience", key: "experience" },
+  { href: "#projects", key: "projects" },
+  { href: "#contact", key: "contact" },
 ]
 
 export const aboutLinks: AboutTypes[] = [
@@ -122,7 +122,7 @@ export const experiences = [
     year: "Octobre 2025 — Janvier 2025",
     title: "Stagiaire Développeur Frontend",
     place: "Cherry Tech and Design",
-    desc1: "Stage Développeur JavaScript — 4 mois",
+    desc1: "Stage Développeur JavaScript — 3 mois",
     desc2: [
       "Contribution à la création d’interfaces utilisateur modernes et réactives en React ou Next.js",
       "",
@@ -158,8 +158,8 @@ export const experiences = [
   {
     year: "Septembre - Novembre 2023",
     title: "Stagiaire Développeur Python",
-    place: "Freelance",
-    desc1: "Projet éducatif",
+    place: "Agence de voyage",
+    desc1: "",
     desc2: [
       "Développement d’une application d’apprentissage du français,",
       "Conception et mise en œuvre des fonctionnalités principales,",
@@ -321,7 +321,7 @@ export const educationData: EducationItem[] = [
     title: "Baccalauréat Scientifique",
     school: "Lycée Marovoay",
     date: "2016",
-    description: "Titulaire du Baccalauréat – Série Scientifique",
+    description: "Titulaire du Baccalauréat – Série D",
   },
 ]
 

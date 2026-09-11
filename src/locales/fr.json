@@ -1,0 +1,57 @@
+{
+  "header": {
+    "cv": "Télécharger le CV",
+    "lang_fr": "FR",
+    "lang_en": "EN"
+  },
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  
+  "Profile": {
+    "typing": [
+      "Bonjour, je suis Fabienne",
+      "Développeur Full Stack",
+      "Spécialiste Web & Mobile"
+    ],
+    "job": "Développeur",
+    "webMobile": "Full Stack",
+    "description": "Développeuse Full Stack Junior titulaire d’une Licence en Informatique. Motivée, organisée et autonome, avec une expérience pratique en PHP, Laravel, Symfony, React, Next.js, Vue.js, Node.js et Flutter. Je souhaite mettre mes compétences en pratique, acquérir de l’expérience professionnelle et continuer à progresser dans le développement.",
+    "button": "Me contacter",
+    "stats": {
+      "experience": "Année d'expérience",
+      "projects": "Projets réalisés",
+      "satisfaction": "Satisfaction client"
+    },
+    "services": {
+      "frontend": {
+        "title": "DÉVELOPPEMENT FRONTEND",
+        "description": "Conception d'interfaces modernes, fluide et responsive"
+      },
+      "backend": {
+        "title": "DÉVELOPPEMENT BACKEND",
+        "description": "Creation de systeme backend sécurisé et d'API performante."
+      },
+      "mobile": {
+        "title": "DÉVELOPPEMENT MOBILE",
+        "description": "Création d'applications mobiles moderne et multiplateformes."
+      }
+    }
+  },
+  "about":{
+    "badge":"Disponible",
+    "badgeSub": "Pour de nouveaux projets",
+    "tag": "Qui suis-je ?",
+    "titleLine1": "web et mobile",
+    "titleLine2": "Création d’applications modernes",
+    "description": "Je suis une développeuse web passionnée par la création d’applications modernes, performantes et bien structurées. Au-delà du code, je m’intéresse à la qualité, à l’expérience utilisateur et à la logique métier derrière chaque projet. J’aime travailler sur des projets concrets qui résolvent de vrais problèmes, que ce soit en frontend, backend ou mobile. Mon objectif est de continuer à évoluer en tant que développeuse fullstack et de contribuer à des projets impactants et bien conçus.",
+    "phone": "Télephone",
+    "linkedin": "Linkedin",
+    "location": "Localisation"
+  }
+ 
+}
