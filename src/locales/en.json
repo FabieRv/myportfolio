@@ -51,5 +51,200 @@
     "phone": "Phone",
     "linkedin": "LinkedIn",
     "location": "Location"
-  }
-}
+  },
+  "skillsMarquee": {
+    "expertise": "Expertise",
+    "atous": {
+      "1": "AUTONOMOUS",
+      "2": "CURIOUS",
+      "3": "ATTENTION TO DETAIL",
+      "4": "TEAM PLAYER",
+      "5": "PERSEVERING",
+      "6": "PROACTIVE"
+    }
+  },
+  "education": {
+    "sectionTitle": "My Education",
+    "items": {
+      "1": {
+        "title": "Bachelor's Degree in Computer Science",
+        "school": "Higher Institute of Computer Science (IS-INFO)",
+        "date": "2024 - 2025",
+        "description": "Holder of a Bachelor's Degree in Computer Science at IS-INFO, Antananarivo."
+      },
+      "2": {
+        "title": "Web Development Training",
+        "school": "Vocational Training Center: GASY-TECH, Antananarivo",
+        "date": "August 2024 - January 2025",
+        "description": "In-depth training in PHP web development (Laravel)."
+      },
+      "3": {
+        "title": "Mobile Development Training",
+        "school": "Orange Digital Center",
+        "date": "June 2024",
+        "description": "Cross-platform mobile development training using Flutter."
+      },
+      "4": {
+        "title": "High School Diploma in Science",
+        "school": "Lycée Marovoay",
+        "date": "2016",
+        "description": "High School Diploma recipient."
+      }
+    }
+  },
+  "philosophy": {
+      "sectionTitle": "My Philosophy",
+      "items": {
+        "1": {
+          "title": "Performance and Efficiency",
+          "description": "Applications designed to effectively meet user needs."
+        },
+        "2": {
+          "title": "Clean and Maintainable Code",
+          "description": "A clean architecture and structured code to facilitate project evolution."
+        },
+        "3": {
+          "title": "Innovation and Continuous Learning",
+          "description": "Constant technology watch and adherence to software development best practices."
+        },
+        "4": {
+          "title": "Team Spirit",
+          "description": "Collaboration, sharing ideas, and clear communication to build high-quality projects together."
+        }
+      }
+    },
+    
+  "projects": {
+        "sectionTitle": "My Projects",
+        "viewMore": "View more projects",
+        "items": {
+          "rafiacraft": {
+            "name": "RafiaCraft",
+            "title": "CRM Web Application",
+            "description": "Web CRM and e-commerce platform dedicated to Malagasy handicrafts, featuring sales management, stock tracking, and product catalog management."
+          },
+          "soary": {
+            "name": "Soary Project",
+            "title": "ERP Web Application",
+            "description": "Business management solution developed with Symfony, designed for inventory tracking, sales, and import-export operations."
+          },
+          "malagasycraft": {
+            "name": "MalagasyCraft",
+            "title": "E-Commerce Platform",
+            "description": "E-commerce platform with integrated management of sales, stock, purchases, and tracking of artisanal product exports and imports."
+          },
+          "Coin": {
+            "name": "Coin de Gadget",
+            "title": "E-Commerce Website",
+            "description": "E-commerce website dedicated to managing and selling electronic products online."
+          },
+          "cherry": {
+            "name": "Cherry Tech and Design",
+            "title": "Showcase Website",
+            "description": "Showcase website presenting digital services and solutions offered by Cherry Tech & Design."
+          },
+          "otemptika": {
+            "name": "o-temps-t-ika",
+            "title": "E-Commerce Platform",
+            "description": "Showcase platform dedicated to highlighting products and handling client transaction management."
+          },
+          "zewa": {
+            "name": "ZEWA Madagascar",
+            "title": "Showcase Website",
+            "description": "Website presenting the services, environmental commitments, and e-waste recycling solutions of ZEWA Madagascar."
+          },
+          "taaz": {
+            "name": "Taaz Capital",
+            "title": "Training Platform",
+            "description": "Educational website presenting trading courses and training services provided by Taaz Capital."
+          },
+          "imatex": {
+            "name": "Imatex",
+            "title": "Showcase Website",
+            "description": "Website introducing IMATEX, highlighting its expertise in raffia product manufacturing, portfolio, and company operations."
+          },
+          "ivoirpool": {
+            "name": "Ivoirpool",
+            "title": "Showcase Website",
+            "description": "Corporate website presenting modern and sustainable swimming pool solutions offered by Ivoire Pool."
+          },
+          "havafy": {
+            "name": "Havafy",
+            "title": "E-Commerce Platform",
+            "description": "E-commerce platform enabling local vendors to set up their online shop, manage products, and grow their business."
+          },
+          "Logispot": 
+            { "name": "LOGISPOT", 
+            "title": "E-commerce Website", 
+            "description": "LOGISPOT helps businesses manage and optimize their inventory and stock levels while securing their operations." 
+          }
+        }
+  },
+  "experiences": {
+      "sectionTitle": "Expériences",
+        "items": [
+          {
+            "year": "July 2025 — May 2026",
+            "title": "Freelance JavaScript Developer",
+            "place": "Rafiacraft",
+            "desc1": "Next.js / Node.js Developer",
+            "desc2": [
+              "Design and development of the Rafiacraft website,",
+              "Development of CRM features within Rafiacraft,",
+              "Development of sales and product management modules,",
+              "Testing, bug fixing, and deployment of the Rafiacraft application."
+              ],
+            "icon": "✓"
+            },
+            {
+            "year": "October 2024 — January 2025",
+            "title": "Frontend Developer Intern",
+            "place": "Cherry Tech and Design",
+            "desc1": "JavaScript Developer Internship — 3 months",
+            "desc2": [
+              "Contributed to creating modern, responsive user interfaces using React and Next.js,",
+              "Mobile user experience optimization,",
+              "Deployment and production release of robust web applications."
+            ],
+            "icon": "✓"
+           },
+          {
+            "year": "June – November 2024",
+            "title": "Backend Developer Intern",
+            "place": "Tolia Madagascar",
+            "desc1": "Symfony Developer Internship — 6 months",
+            "desc2": [
+              "Worked on commercial projects such as ‘Soary Project’,",
+              "Inventory and stock management,",
+              "Import and export operations management."
+            ],
+            "icon": "✓"
+          },
+          {
+            "year": "November 2023 — May 2024",
+            "title": "Backend Developer Intern",
+            "place": "MalagasyCraft",
+              "desc1": "Laravel Developer Internship — 6 months",
+              "desc2": [
+                "Worked on commercial software applications like ‘MalagasyCraft’,",
+                "Built core application features (sales, inventory, purchasing),",
+                "Managed import/export tracking for handcrafted artisanal goods."
+              ],
+              "icon": "✓"
+            },
+            {
+              "year": "September - November 2023",
+              "title": "Python Developer Intern",
+              "place": "Travel Agency",
+              "desc1": "Python Developer Internship — 3 months",
+              "desc2": [
+                "Developed a French language learning application,",
+                "Designed and implemented core software features,",
+                "Ensured smooth system operation (courses, payment processing, and real-time chat)."
+              ],
+              "icon": "✓"
+            }
+          ]
+        }
+      }
+    

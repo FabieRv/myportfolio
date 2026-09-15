@@ -1,10 +1,14 @@
 import { gsap } from "gsap"
 import { useEffect, useRef } from "react"
+import { useTranslation } from "react-i18next"
 import { atous } from "../../constant"
 import Container from "../common/Container"
 
 function Logoexpe() {
+
   const marqueeRef = useRef<HTMLDivElement>(null)
+  const { t } = useTranslation('translation', { keyPrefix: 'skillsMarquee' })
+
   useEffect(() => {
     const marquee = marqueeRef.current
     if (!marquee) return
@@ -14,7 +18,8 @@ function Logoexpe() {
       gsap.to(marquee, {
         x: -totalWidth,
         duration: 40,
-        repeat: 2,
+        repeat: -1,
+        ease: "none",
       })
     }
     document.fonts.ready.then(startAnimation)
@@ -36,13 +41,13 @@ function Logoexpe() {
                 className="flex items-center gap-12 px-6"
               >
                 <span className="text-[10px] font-header uppercase  text-[#334155]">
-                  Expertise
+                 {t('expertise')}
                 </span>
 
                 <span className="w-2 h-2 rotate-45 bg-button" />
 
                 <p className="font-serif italic text-lg md:text-lg text-black">
-                  {atout.label}
+                {t(`atous.${atout.id}`)}
                 </p>
               </div>
             ))}

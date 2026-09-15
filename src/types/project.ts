@@ -1,9 +1,10 @@
 export interface Project {
   name: string
   image1: string
-  title: string
-  description: string
+  titleKey?: string
+  descriptionKey?: string
+  description?: string
   demoLink: string
-  repoLink: string
+  repoLink?: string
   technologies?: string[]
 }

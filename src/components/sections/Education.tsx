@@ -3,7 +3,7 @@
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import React, { useEffect, useRef } from "react"
-
+import { useTranslation } from "react-i18next"
 import { educationData } from "../../constant"
 import Container from "../common/Container"
 import Title from "../common/Title"
@@ -11,6 +11,8 @@ import Title from "../common/Title"
 gsap.registerPlugin(ScrollTrigger)
 
 const Timeline: React.FC = () => {
+
+  const { t } = useTranslation()
   const timelineRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -131,7 +133,7 @@ const Timeline: React.FC = () => {
         className="max-w-4xl mx-auto p-8 font-sans"
         id="Formations"
       >
-        <Title label="Mes formations" />
+        <Title label={t("education.sectionTitle")} />
 
         <div className="relative mt-12">
           {/* Ligne centrale */}
@@ -173,11 +175,11 @@ const Timeline: React.FC = () => {
                 "
               >
                 <h4 className="text-lg font-bold text-gray-800 leading-tight">
-                  {item.school}
+                {t(`education.items.${item.id}.school`)}
                 </h4>
 
                 <p className="text-sm text-gray-500 mt-1">
-                  {item.date}
+                {t(`education.items.${item.id}.date`)}
                 </p>
               </div>
 
@@ -219,11 +221,11 @@ const Timeline: React.FC = () => {
                 "
               >
                 <h4 className="text-lg font-bold text-gray-800 leading-tight">
-                  {item.title}
+                {t(`education.items.${item.id}.title`)}
                 </h4>
 
                 <p className="text-gray-600 mt-2 text-sm leading-relaxed">
-                  {item.description}
+                {t(`education.items.${item.id}.description`)}
                 </p>
               </div>
             </div>

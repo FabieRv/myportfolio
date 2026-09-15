@@ -1,20 +1,24 @@
 "use client"
 
-import { experiences } from "../../constant/index"
-import Container from "../common/Container"
-import Title from "../common/Title"
-
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef } from "react"
+import { useTranslation } from "react-i18next"
+import type { ExperienceItem } from "../../constant"
+import Container from "../common/Container"
+import Title from "../common/Title"
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 function Experiences() {
   const sectionRef = useRef<HTMLDivElement>(null)
+  const { t } = useTranslation()
+  const rawExperiences = t("experiences.items", { returnObjects: true })
+  const experiences: ExperienceItem[] = Array.isArray(rawExperiences)
+  ? (rawExperiences as ExperienceItem[])
+  : []
 
-  // Utilisation de useGSAP au lieu de useLayoutEffect (gestion mémoire & SSR sécurisée)
   useGSAP(
     () => {
       const dates = gsap.utils.toArray<HTMLElement>(".experience-date")
@@ -44,14 +48,14 @@ function Experiences() {
     },
     { scope: sectionRef }
   )
-
+ 
   return (
     <div className="bg-[#F3F4F6] pb-10">
       <Container className="text-lg" id="Experience">
         <div ref={sectionRef}>
-          {/* TITRE */}
+
           <div className="text-center">
-            <Title label="Expériences" />
+            <Title label={t("sectionTitle")} />
 
             <div className="flex justify-center items-center mb-10">
               <div className="h-px w-20 bg-gray-300" />

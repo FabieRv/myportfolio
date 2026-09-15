@@ -2,11 +2,13 @@
 
 import gsap from "gsap"
 import React, { useLayoutEffect, useRef } from "react"
-
+import { useTranslation } from "react-i18next"
 import { philosophyData } from "../../constant"
 import Title from "../common/Title"
 
 const Philosophy: React.FC = () => {
+
+  const { t } = useTranslation()
   const sectionRef = useRef<HTMLElement>(null)
 
   useLayoutEffect(() => {
@@ -73,7 +75,7 @@ const Philosophy: React.FC = () => {
 
         {/* TITRE */}
         <div className="mb-12 text-center">
-          <Title label="Mes Passions" />
+          <Title label={t("philosophy.sectionTitle")} />
         </div>
 
         {/* LISTE */}
@@ -114,7 +116,7 @@ const Philosophy: React.FC = () => {
                       text-[#1E293B]
                     "
                   >
-                    {item.title} :
+                  {t(`philosophy.items.${item.id}.title`)} :
                   </h3>
 
                   <p
@@ -124,7 +126,7 @@ const Philosophy: React.FC = () => {
                       leading-relaxed
                     "
                   >
-                    {item.description}
+                   {t(`philosophy.items.${item.id}.description`)}
                   </p>
                 </div>
 

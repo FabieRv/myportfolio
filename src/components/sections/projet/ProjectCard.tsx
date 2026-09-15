@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import type { Project } from "../../../types/project";
 import CurrentColor from "../../icons/CurrentColor";
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
+
+  const { t } = useTranslation();
   return (
     <div
       onClick={() => {
@@ -50,14 +53,14 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
         <span className="w-8 h-0.5 bg-blue-500 rounded-full"></span>
 
         <h4 className="text-sm font-semibold text-blue-500 uppercase tracking-wider">
-          {project.title}
+        {t(project.titleKey ?? "")}
         </h4>
       </div>
 
       {/* Description */}
       <div>
         <p className="text-gray-500 text-sm h-18 line-clamp-3 leading-relaxed">
-          {project.description}
+          {project.descriptionKey ? t(project.descriptionKey) : project.description}
         </p>
       </div>
 
