@@ -28,15 +28,15 @@
     },
     "services": {
       "frontend": {
-        "title": "FRONTEND DEVELOPMENT",
+        "title": "Frontend Development",
         "description": "Designing modern, smooth, and responsive interfaces."
       },
       "backend": {
-        "title": "BACKEND DEVELOPMENT",
+        "title": "Backend Development",
         "description": "Building secure backend systems and high-performance APIs."
       },
       "mobile": {
-        "title": "MOBILE DEVELOPMENT",
+        "title": "Mobile Development",
         "description": "Creating modern cross-platform mobile applications."
       }
     }
@@ -245,6 +245,32 @@
               "icon": "✓"
             }
           ]
-        }
-      }
+ },
+  "contact": {
+    "sectionTitle": "Contact Me",
+    "subtitle": "Have a project in mind or an opportunity? Feel free to leave a message!",
+    "infoTitle": "Contact Info",
+    "formTitle": "Send a Message",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "your.email@example.com",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Subject of your message",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "sendButton": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "An error occurred. Please try again."
+  },
+  "footer": {
+    "tagline": "Passionate developer specialized in creating modern interfaces and innovative technical solutions.",
+    "navigation": "Navigation",
+    "passions": "My Passions",
+    "expertise": "Expertise",
+    "socialTitle": "Let's stay in touch",
+    "copyright": "© 2026 Fabie Rav. Developed with passion."
+  }
+}
     

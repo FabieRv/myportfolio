@@ -5,7 +5,8 @@
     "lang_en": "EN"
   },
   "nav": {
-    "about": "À propos",
+    "accueil": "Accueil",
+    "formation": "formation",
     "skills": "Compétences",
     "experience": "Expérience",
     "projects": "Projets",
@@ -29,15 +30,15 @@
     },
     "services": {
       "frontend": {
-        "title": "DÉVELOPPEMENT FRONTEND",
+        "title": "Développement frontend",
         "description": "Conception d'interfaces modernes, fluide et responsive"
       },
       "backend": {
-        "title": "DÉVELOPPEMENT BACKEND",
+        "title": "Développement Backend",
         "description": "Creation de systeme backend sécurisé et d'API performante."
       },
       "mobile": {
-        "title": "DÉVELOPPEMENT MOBILE",
+        "title": "Développement Mobile",
         "description": "Création d'applications mobiles moderne et multiplateformes."
       }
     }
@@ -181,7 +182,7 @@
         }
       }
     },
-      "experiences": {
+    "experiences": {
         "sectionTitle": "Expériences",
         "items": [
           {
@@ -246,5 +247,33 @@
             "icon": "✓"
           }
         ]
-      }
+    },
+    "contact": {
+      "namePlaceholder": "Votre nom",
+      "emailLabel": "Adresse Email",
+      "sectionTitle": "Contactez-moi",
+      "subtitle": "Un projet en tête ou une opportunité ? N'hésitez pas à me laisser un message !",
+      "infoTitle": "Coordonnées",
+      "formTitle": "Envoyer un message",
+      "nameLabel": "Nom complet",
+      "emailPlaceholder": "email@example.com",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Sujet de votre message",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Rédigez votre message ici...",
+      "sendButton": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "successMessage": "Message envoyé avec succès !",
+      "errorMessage": "Une erreur est survenue. Veuillez réadapter ou réessayer."
+   
+    },
+    "footer": {
+      "tagline": "Développeuse passionnée, spécialisée dans la création d’interfaces modernes et de solutions techniques innovantes.",
+      "navigation": "Navigation",
+      "passions": "Mes Passions",
+      "competences": "competences",
+      "expertise": "Expertise",
+      "socialTitle": "Restons en contact",
+      "copyright": "© 2026 Fabie Rav. Développé avec passion."
+    }
   }

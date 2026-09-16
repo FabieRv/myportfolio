@@ -19,13 +19,13 @@ function Header() {
   }
 
   return (
-    <div className="shadow-sm bg-white dark:bg-slate-900 w-full sticky top-0 z-[100] transition-colors duration-300">
+    <div className="shadow-sm bg-white dark:bg-slate-900 w-full sticky top-0 z-100 transition-colors duration-300">
       <Container
         tag="header"
         className="flex flex-row justify-between items-center py-2! font-base"
       >
         {/* LOGO */}
-        <div className="text-lg font-header font-bold z-[110]">
+        <div className="text-lg font-header font-bold z-110">
           <a href="/">
             <h1 className="m-0 leading-none text-button dark:text-white">
               Fabie
@@ -38,19 +38,20 @@ function Header() {
         <nav>
           <ul
             className={`
-              flex items-center gap-8
+              flex items-center gap-8 lg:gap-6 
               fixed lg:static
               top-0 left-0
               w-screen lg:w-fit
               h-screen lg:h-fit
               flex-col lg:flex-row
               justify-center lg:justify-end
-              bg-[#F4EDEA]
+              bg-[#bbd2fc]
               dark:bg-slate-900
               lg:bg-transparent
               transition-transform duration-500
-              z-[100]
+              z-100
               lg:z-auto
+              text-xl lg:text-sm
               ${
                 open
                   ? "translate-x-0"
@@ -64,7 +65,7 @@ function Header() {
                 <a
                   href={link.href}
                   className="
-                    text-xl lg:text-base
+                    text-xl lg:text-sm
                     font-primary font-medium
                     text-black dark:text-white
                     hover:text-primary
@@ -90,8 +91,8 @@ function Header() {
               </li>
             ))}
 
-            {/* TRADUCTION MOBILE */}
-            <li className="lg:hidden mt-4">
+            {/* TRADUCTION MOBILE / TABLETTE */}
+            <li className="lg:hidden mt-2">
               <button
                 type="button"
                 onClick={toggleLanguage}
@@ -125,6 +126,19 @@ function Header() {
                   EN
                 </span>
               </button>
+            </li>
+
+            {/* BOUTON TELECHARGER CV (MOBILE ET TABLETTE) */}
+            <li className="lg:hidden mt-4" onClick={() => setOpen(false)}>
+              <div className="font-bold text-base bg-primary py-2.5 px-6 rounded-full shadow-md">
+                <a
+                  className="text-white flex items-center justify-center gap-2"
+                  href="/cv/cv_Fabienne_RAZAFIMAHARAVO.pdf"
+                  download="cv_Fabienne_RAZAFIMAHARAVO.pdf"
+                >
+                  {t("header.cv")}
+                </a>
+              </div>
             </li>
           </ul>
         </nav>
@@ -169,16 +183,12 @@ function Header() {
             </span>
           </button>
 
-          {/* CV */}
+          {/* CV DESKTOP */}
           <div className="font-bold text-sm bg-primary py-2 px-4 rounded-full">
             <a
               className="text-white"
-              href={
-                currentLang === "fr"
-                  ? "/cv/cv_Fabienne_FR.pdf"
-                  : "/cv/cv_Fabienne_EN.pdf"
-              }
-              download
+              href="/cv/cv_Fabienne_RAZAFIMAHARAVO.pdf"
+              download="cv_Fabienne_RAZAFIMAHARAVO.pdf"
             >
               {t("header.cv")}
             </a>

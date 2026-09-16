@@ -1,10 +1,12 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { FaWhatsapp } from "react-icons/fa";
 import Container from "../components/common/Container";
 
 function Footer() {
+  const { t } = useTranslation()
   return (
-    <footer className="bg-[#2563EB] text-white">
+    <footer className="bg-[#989ca5] text-white">
       <Container>
         {/* Main Grid F4EDEA*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 ">
@@ -16,36 +18,36 @@ function Footer() {
               </h1>
             </div>
             <p className="text-[12px] opacity-60 leading-relaxed max-w-50 mx-auto sm:mx-0 font-medium text-white!">
-            Développeuse passionnée, spécialisée dans la création d’interfaces modernes et de solutions techniques innovantes.
+            {t("footer.tagline")}
             </p>
           </div>
 
           {/* Column 2: Navigation */}
           <div className="space-y-4 text-center sm:text-left">
             <h1 className="text-sm  font-bold uppercase tracking-[0.2em]">
-              Navigation
+            {t("footer.navigation")}
             </h1>
             <ul className="text-[13px] space-y-2 opacity-70 font-medium font-primary">
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="about">
-                <a href="#about">À propos</a>
+                <a href="#about">{t("nav.about")}</a>
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all"id="Formations">
-                 <a href="#Formations">Formations</a>
+                 <a href="#Formations">{t("footer.passions")}</a>
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Passions">
-                <a href="#Passions">Mes Passions</a>
+                <a href="#Passions">{t("nav.skills")}</a>
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Skils">
-                <a href="#Skils">Compétences</a>
+                <a href="#Skils">{t("nav.competences")}</a>
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Projects ">
-                <a href="#Projects">Projets </a> 
+                <a href="#Projects">{t("nav.projects")}</a> 
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Experience">
-                <a href="#Experience">Expériences </a> 
+                <a href="#Experience">{t("nav.experience")}</a> 
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Contact">
-                <a href="#Contact">Contact </a>
+                <a href="#Contact">{t("nav.contact")}</a>
               </li>
             </ul>
           </div>
@@ -53,17 +55,17 @@ function Footer() {
           {/* Column 3: Expertise */}
           <div className="space-y-4 text-center sm:text-left font-primary font-medium text-sm md:text-sm lg:text-lg">
             <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em]">
-              Expertise
+            {t("footer.expertise")}
             </h1>
             <ul className="text-[12px] space-y-2 opacity-70 font-medium">
               <li className="flex items-center justify-center sm:justify-start gap-2">
-                Développeur Frontend
+              {t("Profile.services.frontend.title")}
               </li>
               <li className="flex items-center justify-center sm:justify-start gap-2">
-                Développeur Backend
+              {t("Profile.services.backend.title")}
               </li>
               <li className="flex items-center justify-center sm:justify-start gap-2">
-                Développeur Mobile
+              {t("Profile.services.mobile.title")}
               </li>
             </ul>
           </div>
@@ -71,7 +73,7 @@ function Footer() {
           {/* Column 4 - Social Media */}
           <div className="flex flex-col items-center  space-y-6">
             <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em]">
-            Restons en contact
+            {t("footer.socialTitle")}
             </h1>
             <div className="flex justify-between gap-3">
               <SocialBtn Icon={Github} link="https://github.com/FabieRv" />
@@ -85,7 +87,7 @@ function Footer() {
         {/* Copyright */}
         <div className="border-t border-white text-center opacity-40 mt-4 pb-4 text-white ">
           <p className="text-[10px]  uppercase tracking-widest font-bold text-white! mt-4 ">
-            © 2026 Fabie Rav. Développer avec passion.
+          {t("footer.copyright")}
           </p>
         </div>
       </Container>

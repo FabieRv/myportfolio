@@ -5,6 +5,7 @@ import React, {
   type ChangeEvent,
   type FormEvent,
 } from "react"
+import { useTranslation } from "react-i18next"
 
 interface FormState {
   nom: string
@@ -19,6 +20,8 @@ interface EmailJSError {
 }
 
 const SectionContact: React.FC = () => {
+  const { t } = useTranslation()
+
   const [formData, setFormData] = useState<FormState>({
     nom: "",
     email: "",
@@ -74,7 +77,7 @@ const SectionContact: React.FC = () => {
 
       setStatutMessage({
         type: "succes",
-        texte: "Message envoyé avec succès !",
+        texte: t("contact.successMessage"),
       })
 
       setFormData({ nom: "", email: "", sujet: "", message: "" })
@@ -84,8 +87,8 @@ const SectionContact: React.FC = () => {
 
       setStatutMessage({
         type: "erreur",
-        texte: `Échec de l'envoi : ${
-          error?.text || "Une erreur est survenue lors de l'envoi."
+        texte: `${t("contact.errorMessage")} ${
+          error?.text || ""
         }`,
       })
     } finally {
@@ -96,32 +99,30 @@ const SectionContact: React.FC = () => {
   return (
     <section
       className="bg-white text-slate-900 py-24 px-6 lg:px-24"
-      id="Contact"
+      id="contact"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* GAUCHE */}
         <div className="space-y-8">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold font-header mt-2 text-slate-900 leading-tight">
-              Parlons de votre <br />
-              <span className="text-blue-600">prochain projet !</span>
+              {t("contact.sectionTitle")}
             </h2>
           </div>
 
           <p className="text-slate-500 text-lg leading-relaxed max-w-md font-primary">
-            Vous avez une idée ou une proposition de collaboration ? Envoyez-moi
-            un message, je vous répondrai dans les plus brefs délais.
+            {t("contact.subtitle")}
           </p>
 
           <div className="text-sm pt-4 flex flex-col gap-4 mb-4">
             <ElementInfo
               icone="📧"
-              titre="Email"
+              titre={t("contact.emailLabel")}
               valeur="fabie.rav@gmail.com"
             />
             <ElementInfo
               icone="📍"
-              titre="Localisation"
+              titre={t("about.location")}
               valeur="Antananarivo, Madagascar"
             />
           </div>
@@ -132,29 +133,29 @@ const SectionContact: React.FC = () => {
           <form onSubmit={gererSoumission} className="space-y-6 text-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ChampSaisie
-                label="Nom complet"
+                label={t("contact.nameLabel")}
                 name="nom"
                 type="text"
-                placeholder="Votre nom"
+                placeholder={t("contact.namePlaceholder")}
                 value={formData.nom}
                 onChange={gererChangement}
               />
 
               <ChampSaisie
-                label="Adresse Email"
+                label={t("contact.emailLabel")}
                 name="email"
                 type="email"
-                placeholder="example@gmail.com"
+                placeholder={t("contact.emailPlaceholder")}
                 value={formData.email}
                 onChange={gererChangement}
               />
             </div>
 
             <ChampSaisie
-              label="Sujet"
+              label={t("contact.subjectLabel")}
               name="sujet"
               type="text"
-              placeholder="Comment puis-je vous aider ?"
+              placeholder={t("contact.subjectPlaceholder")}
               value={formData.sujet}
               onChange={gererChangement}
             />
@@ -164,13 +165,13 @@ const SectionContact: React.FC = () => {
                 htmlFor={messageInputId}
                 className="text-sm font-semibold text-slate-700 ml-1"
               >
-                Message
+                {t("contact.messageLabel")}
               </label>
 
               <textarea
                 id={messageInputId}
                 name="message"
-                placeholder="Décrivez votre projet en quelques mots..."
+                placeholder={t("contact.messagePlaceholder")}
                 rows={5}
                 value={formData.message}
                 onChange={gererChangement}
@@ -179,7 +180,7 @@ const SectionContact: React.FC = () => {
               />
             </div>
 
-            {/* Notification UX à la place des alerts */}
+            {/* Notification UX */}
             {statutMessage.type && (
               <div
                 className={`p-4 rounded-xl text-sm font-medium ${
@@ -201,7 +202,9 @@ const SectionContact: React.FC = () => {
                   : "bg-blue-600 hover:bg-blue-700"
               } text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-600/10 flex items-center justify-center gap-3`}
             >
-              {envoiEnCours ? "Envoi en cours..." : "Envoyer le message"}
+              {envoiEnCours
+                ? t("contact.sending")
+                : t("contact.sendButton")}
               {!envoiEnCours && <span className="text-xl">→</span>}
             </button>
           </form>

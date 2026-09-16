@@ -1,7 +1,8 @@
 import type { AboutTypes } from "../types";
 
 export const headerLinks = [
-  { href: "#about", key: "about" },
+  { href: "#accueil", key: "accueil" },
+  { href: "#formation", key: "formation" },
   { href: "#skills", key: "skills" },
   { href: "#experience", key: "experience" },
   { href: "#projects", key: "projects" },
@@ -94,7 +95,8 @@ export const toolsSkills = [
 
 export const mobileSkills = [
   { name: "Flutter", image: "images/Flutter.webp" }, 
-  { name: "React Native", image: "/public/images/ract_n.webp"}
+  { name: "React Native", image: "/public/images/ract_n.webp"},
+  { name: "JAVA", image: "/images/java.webp" },
 ]
 
 export const skills = [

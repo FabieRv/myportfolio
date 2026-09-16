@@ -5,9 +5,9 @@ import ContactSection from "./components/sections/Contact"
 import Education from "./components/sections/Education"
 import Experiences from "./components/sections/Experiences"
 import Logoexpe from "./components/sections/Logoexpe"
-import Philosophy from "./components/sections/Philosophy"
 import Profile from "./components/sections/Profile"
 import ProjectSection from "./components/sections/projet/ProjectSection"
+import SkillsSection from "./components/sections/skils"
 
 const App = () => {
   return (
@@ -17,7 +17,8 @@ const App = () => {
       <AboutMe />
       <Logoexpe />
       <Education />
-      <Philosophy />
+      {/* <Philosophy /> */}
+      <SkillsSection/>
       <ProjectSection />
       <Experiences />
       <ContactSection />

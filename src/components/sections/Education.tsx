@@ -131,7 +131,7 @@ const Timeline: React.FC = () => {
       <div
         ref={timelineRef}
         className="max-w-4xl mx-auto p-8 font-sans"
-        id="Formations"
+        id="formation"
       >
         <Title label={t("education.sectionTitle")} />
 

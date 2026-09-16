@@ -3,6 +3,7 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { CheckCircle2 } from "lucide-react"
 import { useRef } from "react"
 import { useTranslation } from "react-i18next"
 import type { ExperienceItem } from "../../constant"
@@ -16,8 +17,8 @@ function Experiences() {
   const { t } = useTranslation()
   const rawExperiences = t("experiences.items", { returnObjects: true })
   const experiences: ExperienceItem[] = Array.isArray(rawExperiences)
-  ? (rawExperiences as ExperienceItem[])
-  : []
+    ? (rawExperiences as ExperienceItem[])
+    : []
 
   useGSAP(
     () => {
@@ -48,18 +49,17 @@ function Experiences() {
     },
     { scope: sectionRef }
   )
- 
+
   return (
     <div className="bg-[#F3F4F6] pb-10">
-      <Container className="text-lg" id="Experience">
+      <Container className="text-lg" id="experience">
         <div ref={sectionRef}>
-
           <div className="text-center">
             <Title label={t("sectionTitle")} />
 
             <div className="flex justify-center items-center mb-10">
               <div className="h-px w-20 bg-gray-300" />
-              <div className="mx-4 w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white text-xs">
+              <div className="mx-4 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs shadow-sm">
                 <span className="transform -rotate-45" aria-hidden="true">
                   ➤
                 </span>
@@ -71,7 +71,7 @@ function Experiences() {
           {/* TIMELINE */}
           <div className="relative">
             {/* Ligne centrale */}
-            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gray-300" />
+            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-blue-200" />
 
             <div className="space-y-12">
               {experiences.map((exp, index) => {
@@ -110,35 +110,60 @@ function Experiences() {
                         </h3>
 
                         {/* LIEU */}
-                        <h4 className="text-xs lg:text-[14px] font-bold uppercase text-[#334155] mb-2 tracking-widest">
+                        <h4 className="text-xs lg:text-[14px] font-bold uppercase text-slate-600 mb-1 tracking-widest">
                           {exp.place}
                         </h4>
 
                         {/* DESCRIPTION 1 */}
-                        <p className="text-[#60A5FA] text-[11px] lg:text-sm font-semibold italic">
+                        <p className="text-blue-500 text-[11px] lg:text-sm font-semibold italic mb-3">
                           {exp.desc1}
                         </p>
 
-                        {/* DESCRIPTION 2 */}
+                        {/* DESCRIPTION 2 (AVEC PUCES) */}
                         {exp.desc2 && (
-                          <div className="text-gray-900 text-[16px] lg:text-sm leading-relaxed mt-1 font-primary">
+                          <ul
+                            className={`space-y-2.5 ${
+                              isEven ? "md:items-end" : "md:items-start"
+                            }`}
+                          >
                             {Array.isArray(exp.desc2) ? (
                               exp.desc2.map((line, i) => (
-                                <span key={i} className="block">
-                                  {line}
-                                </span>
+                                <li
+                                  key={i}
+                                  className={`flex items-start gap-2.5 text-slate-600 text-xs sm:text-sm leading-relaxed ${
+                                    isEven
+                                      ? "md:flex-row-reverse md:text-right"
+                                      : "md:flex-row md:text-left"
+                                  }`}
+                                >
+                                  <div className="p-0.5 rounded-full bg-blue-50 shrink-0 mt-0.5">
+                                    <CheckCircle2 className="w-4 h-4 text-blue-600" />
+                                  </div>
+                                  <span>{line}</span>
+                                </li>
                               ))
                             ) : (
-                              <span>{exp.desc2}</span>
+                              <li
+                                className={`flex items-start gap-2.5 text-slate-600 text-xs sm:text-sm leading-relaxed ${
+                                  isEven
+                                    ? "md:flex-row-reverse md:text-right"
+                                    : "md:flex-row md:text-left"
+                                }`}
+                              >
+                                <div className="p-0.5 rounded-full bg-blue-50 shrink-0 mt-0.5">
+                                  <CheckCircle2 className="w-4 h-4 text-blue-600" />
+                                </div>
+                                <span>{exp.desc2}</span>
+                              </li>
                             )}
-                          </div>
+                          </ul>
                         )}
                       </div>
                     </div>
 
                     {/* POINT CENTRAL */}
-                    <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-7 h-7 bg-gray-400 border-4 border-white rounded-full flex items-center justify-center z-10 shadow-sm">
-                      <span className="text-gray-50 text-[10px] font-bold">
+                    <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-600 border-4 border-white rounded-full flex items-center justify-center z-10 shadow-md">
+                      <span className="text-white text-[10px] font-bold">
                         {exp.icon}
                       </span>
                     </div>
