@@ -41,9 +41,9 @@ const AboutMe = () => {
             </div>
 
             {/* BADGE DISPONIBILITÉ */}
-            <div className="absolute -bottom-4 right-4 bg-[#1A56DB] text-white px-5 py-3 rounded-2xl shadow-lg z-30 hidden md:block border border-white/20">
+            <div className="absolute -bottom-4 right-4 bg-blue-400 text-white px-5 py-3 rounded-2xl shadow-lg z-30 hidden md:block border border-white/20">
               <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-ping" />
+                <span className="w-2.5 h-2.5 bg-emerald-300 rounded-full animate-ping" />
                 <p className="font-primary text-sm font-bold leading-none text-white!">
                 {t('badge')}
                 </p>
@@ -89,7 +89,7 @@ const AboutMe = () => {
               </div>
 
               {/* LINKEDIN */}
-              <div className="border-l-2 pl-4 border-[#1A56DB]">
+              <div className="border-l-2 pl-4 border-[#1A56DB] ">
                 <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
                   {t('linkedin')}
                 </h5>
@@ -97,9 +97,9 @@ const AboutMe = () => {
                   href="https://www.linkedin.com/in/fabienne-razafimaharavo-911520309/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#1A56DB] hover:text-blue-700 text-sm mt-1 block transition-colors"
+                  className="text-[#1A56DB]  text-sm mt-1 block transition-colors"
                 >
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-5 h-5 hover:text-[#5DA9E9]" />
                 </a>
               </div>
 

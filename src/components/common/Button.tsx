@@ -25,7 +25,7 @@ export default function Button({
 
   const variants = {
     "primary-dark":
-      "bg-[#1A56DB] text-white py-3 px-4 rounded-full hover:bg-[#5DA9E9] text-sm",
+      "bg-[#2563eb] text-white py-3 px-4 rounded-full hover:bg-[#1D4ED8] text-sm",
   }
 
   return (
@@ -35,7 +35,7 @@ export default function Button({
       onClick={onClick}
     >
       <span>{label}</span>
-      {icon && <span className="flex items-center justify-center">{icon}</span>}
+      {icon && <span className="flex items-center justify-center font-header ">{icon}</span>}
       {children}
     </button>
   )

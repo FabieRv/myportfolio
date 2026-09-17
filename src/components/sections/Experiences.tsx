@@ -55,7 +55,7 @@ function Experiences() {
       <Container className="text-lg" id="experience">
         <div ref={sectionRef}>
           <div className="text-center">
-            <Title label={t("sectionTitle")} />
+          <Title label={t("experiences.sectionTitle")} />
 
             <div className="flex justify-center items-center mb-10">
               <div className="h-px w-20 bg-gray-300" />

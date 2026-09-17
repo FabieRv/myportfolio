@@ -6,7 +6,8 @@
   },
   "nav": {
     "accueil": "Accueil",
-    "formation": "formation",
+    "about":"À propos",
+    "formation": "Formation",
     "skills": "Compétences",
     "experience": "Expérience",
     "projects": "Projets",
@@ -17,7 +18,7 @@
     "typing": [
       "Bonjour, je suis Fabienne",
       "Développeur Full Stack",
-      "Spécialiste en développement Web et Mobile"
+      "Web, Mobile et Solutions digitales"
     ],
     "job": "Développeur",
     "webMobile": "Full Stack",
@@ -65,8 +66,19 @@
       "6": "PROACTIF"
     }
   },
+  "skills": {
+    "sectionTitle": "Mes Compétences",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Base de données",
+      "tools": "Outils",
+      "design": "Design"
+    }
+  },
   "education": {
-    "sectionTitle": "Ma formation",
+    "sectionTitle": "Mes formations",
     "items": {
       "1": {
         "title": "Licence professionnelle en Informatique",
@@ -116,13 +128,13 @@
       }
     },
   "projects": {
-      "sectionTitle": "My Projects",
+      "sectionTitle": "Mes Projets",
       "viewMore": "View more projects",
       "items": {
         "rafiacraft": {
           "name": "Rafiacraft",
           "title": "Application web CRM",
-          "description": "Web CRM and e-commerce platform dedicated to Malagasy handicrafts, featuring sales management, stock tracking, and product catalog management."
+          "description": "Plateforme web CRM dédiée à l’artisanat malgache, intégrant la gestion des ventes, le suivi des stocks et la gestion du catalogue produits.."
         },
         "soary": {
           "name": "Soary Project",

@@ -6,14 +6,14 @@ import Container from "../components/common/Container";
 function Footer() {
   const { t } = useTranslation()
   return (
-    <footer className="bg-[#989ca5] text-white">
+    <footer className="bg-[#082d9d] text-white">
       <Container>
         {/* Main Grid F4EDEA*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 ">
        
           <div className="space-y-4 text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start gap-2 mb-2">
-              <h1 className="text-sm font-header font-bold uppercase tracking-[0.2em]">
+              <h1 className="text-sm font-header font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
                 Portfolio
               </h1>
             </div>
@@ -24,21 +24,21 @@ function Footer() {
 
           {/* Column 2: Navigation */}
           <div className="space-y-4 text-center sm:text-left">
-            <h1 className="text-sm  font-bold uppercase tracking-[0.2em]">
+            <h1 className="text-sm  font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
             {t("footer.navigation")}
             </h1>
             <ul className="text-[13px] space-y-2 opacity-70 font-medium font-primary">
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="about">
+                <a href="#about">{t("nav.accueil")}</a>
+              </li>
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="about">
                 <a href="#about">{t("nav.about")}</a>
               </li>
-              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all"id="Formations">
-                 <a href="#Formations">{t("footer.passions")}</a>
+              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="about">
+                <a href="#about">{t("nav.formation")}</a>
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Passions">
                 <a href="#Passions">{t("nav.skills")}</a>
-              </li>
-              <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Skils">
-                <a href="#Skils">{t("nav.competences")}</a>
               </li>
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="Projects ">
                 <a href="#Projects">{t("nav.projects")}</a> 
@@ -54,7 +54,7 @@ function Footer() {
 
           {/* Column 3: Expertise */}
           <div className="space-y-4 text-center sm:text-left font-primary font-medium text-sm md:text-sm lg:text-lg">
-            <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em]">
+            <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
             {t("footer.expertise")}
             </h1>
             <ul className="text-[12px] space-y-2 opacity-70 font-medium">
@@ -72,7 +72,7 @@ function Footer() {
 
           {/* Column 4 - Social Media */}
           <div className="flex flex-col items-center  space-y-6">
-            <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em]">
+            <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
             {t("footer.socialTitle")}
             </h1>
             <div className="flex justify-between gap-3">
@@ -87,7 +87,7 @@ function Footer() {
         {/* Copyright */}
         <div className="border-t border-white text-center opacity-40 mt-4 pb-4 text-white ">
           <p className="text-[10px]  uppercase tracking-widest font-bold text-white! mt-4 ">
-          {t("footer.copyright")}
+          {t("footer.copyright")}<span className="text-[#5DA9E9] text-lg opacity-100!">♥</span>
           </p>
         </div>
       </Container>

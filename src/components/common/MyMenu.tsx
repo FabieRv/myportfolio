@@ -9,7 +9,7 @@ function MyMenu({
   return (
     <div
       onClick={onClick}
-      className={`flex flex-col cursor-pointer relative gap-2 w-[30px] lg:w-10 z-20 lg:hidden `}
+      className={`flex flex-col cursor-pointer relative gap-2 w-8 lg:w-10 z-20 lg:hidden `}
     >
       <span
         className={`w-full ${

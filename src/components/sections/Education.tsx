@@ -133,8 +133,9 @@ const Timeline: React.FC = () => {
         className="max-w-4xl mx-auto p-8 font-sans"
         id="formation"
       >
-        <Title label={t("education.sectionTitle")} />
-
+       
+         <Title label={t("education.sectionTitle")} />
+     
         <div className="relative mt-12">
           {/* Ligne centrale */}
           <div
@@ -162,7 +163,7 @@ const Timeline: React.FC = () => {
                 items-start
                 justify-between
                 w-full
-                min-h-[100px]
+                min-h-25
               "
             >
               {/* GAUCHE */}

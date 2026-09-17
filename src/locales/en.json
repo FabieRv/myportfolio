@@ -5,7 +5,9 @@
     "lang_en": "EN"
   },
   "nav": {
+    "accueil": "Home",
     "about": "About",
+    "formation": "Education",
     "skills": "Skills",
     "experience": "Experience",
     "projects": "Projects",
@@ -15,7 +17,7 @@
     "typing": [
       "Hello, I'm Fabienne",
       "Full Stack Developer",
-      "Web & Mobile Specialist"
+      "Web, Mobile and Digital Solutions"
     ],
     "job": "Developer",
     "webMobile": "Full Stack",
@@ -63,8 +65,19 @@
       "6": "PROACTIVE"
     }
   },
+  "skills": {
+    "sectionTitle": "Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Database",
+      "tools": "Tools",
+      "design": "Design"
+    }
+  },
   "education": {
-    "sectionTitle": "My Education",
+    "sectionTitle": "Education",
     "items": {
       "1": {
         "title": "Bachelor's Degree in Computer Science",
@@ -121,7 +134,7 @@
           "rafiacraft": {
             "name": "RafiaCraft",
             "title": "CRM Web Application",
-            "description": "Web CRM and e-commerce platform dedicated to Malagasy handicrafts, featuring sales management, stock tracking, and product catalog management."
+            "description": "Web CRM  platform dedicated to Malagasy handicrafts, featuring sales management, stock tracking, and product catalog management."
           },
           "soary": {
             "name": "Soary Project",
@@ -181,7 +194,7 @@
         }
   },
   "experiences": {
-      "sectionTitle": "Expériences",
+      "sectionTitle": "Experience",
         "items": [
           {
             "year": "July 2025 — May 2026",

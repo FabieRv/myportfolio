@@ -17,7 +17,7 @@ export const aboutLinks: AboutTypes[] = [
     src: "images/langage.jpg",
     alt: "langage.jpg",
     title: "Langages",
-    content: "React.JS, PHP, Laravel, Symfony, Python,...",
+    content: "React, PHP, Laravel, Symfony, Python,...",
   },
   {
     src: "images/education.png",
@@ -49,11 +49,11 @@ export const atous = [
 ]
 
 export const frontendSkills = [
-  { name: "JS", image: "/images/JavaScript-logo.webp" },
+  {name: "React", image: "/images/Reactt.png"},
   {name: "TypeScript", image: "/images/ts.png"},
-  { name: "React", image: "/images/Reactt.png"},
   { name: "Next.js", image:"images/logo_next.png"},
   { name: "TailwindCSS", image: "/images/tailwind.webp" },
+  { name: "Vue.JS", image: "/images/vue.js.jpg" },
   {name: "Angular.js", image: "/images/angular.js.png"}
 ]
 
@@ -129,7 +129,7 @@ export const ImageProject = [
     image1: "/images/malagasyc.png",
     titleKey: "projects.items.malagasycraft.title",
     descriptionKey: "projects.items.malagasycraft.description",
-    demoLink: "https://...",
+    demoLink: "https://malagasycraft.com/",
     repoLink: "#",
     technologies: ["Laravel", "React", "TailwindCss", "MySQL"],
   },
