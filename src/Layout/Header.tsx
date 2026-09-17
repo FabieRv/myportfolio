@@ -184,7 +184,7 @@ function Header() {
           </button>
 
           {/* CV DESKTOP */}
-          <div className="font-bold text-sm bg-primary py-2 px-4 rounded-full hover:bg-[#1D4ED8] ">
+          <div className="font-bold text-sm bg-[#3B82F6] py-2 px-4 rounded-full hover:bg-[#1D4ED8] ">
             <a
               className="text-white"
               href="/cv/cv_Fabienne_RAZAFIMAHARAVO.pdf"

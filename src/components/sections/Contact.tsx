@@ -199,7 +199,7 @@ const SectionContact: React.FC = () => {
               className={`w-60 flex items-center justify-center ${
                 envoiEnCours
                   ? "bg-slate-400 cursor-not-allowed"
-                  : "bg-blue-600 hover:bg-blue-700"
+                  : "bg-[#3B82F6] hover:bg-blue-700"
               } text-white text-sm   font-header py-2 w-50 rounded-full transition-all shadow-lg shadow-blue-600/10  gap-3`}
             >
               {envoiEnCours
