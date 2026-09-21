@@ -125,24 +125,6 @@ export const experiences: ExperienceItem[] = []
 
 export const ImageProject = [
   {
-    name: "Malagasycraft",
-    image1: "/images/malagasyc.png",
-    titleKey: "projects.items.malagasycraft.title",
-    descriptionKey: "projects.items.malagasycraft.description",
-    demoLink: "https://malagasycraft.com/",
-    repoLink: "#",
-    technologies: ["Laravel", "React", "TailwindCss", "MySQL"],
-  },
-  {
-    name: "Soary",
-    image1: "/images/tolia_.png",
-    titleKey: "projects.items.soary.title",
-    descriptionKey: "projects.items.soary.description",
-    demoLink: "https://tolia.servehttp.com/",
-    repoLink: "#",
-    technologies: ["Symfony", "Bootstrap", "pgSQL"],
-  },
-  {
     name: "Rafiacraft",
     image1: "/images/rafiac.png",
     titleKey: "projects.items.rafiacraft.title",
@@ -151,23 +133,43 @@ export const ImageProject = [
     repoLink: "#",
     technologies: ["Next.js", "Nest.js", "TailwindCSS", "MySQL" ]
   },
+
+  { name: "LOGISPOT",
+  image1: "/images/Logispot.png",
+  titleKey: "projects.items.Logispot.title",
+  descriptionKey: "projects.items.Logispot.description",
+  demoLink : "https://smartlogispot.com/",
+  repoLink: "#",
+  technologies: ["Next.js", "TalwindCSS"],
+},
+{
+  name: "o-temps-t-ika",
+  image1: "/images/otemtik.png",
+  titleKey: "projects.items.otemptika.title",
+  descriptionKey: "projects.items.otemptika.description",
+  demoLink: "https://o-temps-t-ika.vercel.app/",
+  repoLink: "#",
+  technologies: ["React", "TailwindCss"],
+},
+
   {
-    name: "CherryTech and Design",
-    image1: "images/projet/cherry.png",
-    titleKey: "projects.items.cherry.title",
-    descriptionKey: "projects.items.cherry.description",
-    demoLink: "https://cherrytd.com/",
+    name: "Malagasycraft",
+    image1: "/images/malagasyc.png",
+    titleKey: "projects.items.malagasycraft.title",
+    descriptionKey: "projects.items.malagasycraft.description",
+    demoLink: "https://malagasycraft.com/",
     repoLink: "#",
-    technologies: ["Next", "TailwindCss", "MongoDb"],
+    technologies: ["Laravel", "React", "TailwindCss", "MySQL"],
   },
+  
   {
-    name: "o-temps-t-ika",
-    image1: "/images/otemtik.png",
-    titleKey: "projects.items.otemptika.title",
-    descriptionKey: "projects.items.otemptika.description",
-    demoLink: "https://o-temps-t-ika.vercel.app/",
+    name: "Taaz Capital",
+    image1: "images/projet/taaz.png",
+    titleKey: "projects.items.taaz.title",
+    descriptionKey: "projects.items.taaz.description",
+    demoLink: "https://taazcapital.mg/",
     repoLink: "#",
-    technologies: ["React", "TailwindCss"],
+    technologies: ["Next", "TailwindCss"],
   },
   {
     name : "ZEWA Madagascar",
@@ -178,24 +180,18 @@ export const ImageProject = [
     repoLink: "#",
     technologies: ["Next.js", "Nest.js", "Prisma", "PostgreSql"],
   },
+  
   {
-    name: "Taaz Capital",
-    image1: "images/projet/taaz.png",
-    titleKey: "projects.items.taaz.title",
-    descriptionKey: "projects.items.taaz.description",
-    demoLink: "https://taazcapital.mg/",
+    name: "CherryTech and Design",
+    image1: "images/projet/cherry.png",
+    titleKey: "projects.items.cherry.title",
+    descriptionKey: "projects.items.cherry.description",
+    demoLink: "https://cherrytd.com/",
     repoLink: "#",
-    technologies: ["Next", "TailwindCss"],
+    technologies: ["Next", "TailwindCss", "MongoDb"],
   },
 
-  { name: "LOGISPOT",
-    image1: "/images/Logispot.png",
-    titleKey: "projects.items.Logispot.title",
-    descriptionKey: "projects.items.Logispot.description",
-    demoLink : "https://smartlogispot.com/",
-    repoLink: "#",
-    technologies: ["Next.js", "TalwindCSS"],
-  },
+
   {
     name: "Imatex",
     image1: "/images/imatex.png",
@@ -214,7 +210,6 @@ export const ImageProject = [
     repoLink: "#",
     technologies: ["Next.js", "Supabase","TailwindCss"],
   },
-
   {
     name: "Ivoirpool",
     image1: "/images/ivoire.png",
@@ -223,6 +218,15 @@ export const ImageProject = [
     demoLink: "https://ivoirpool.vercel.app/",
     repoLink: "#",
     technologies: ["Next", "TailwindCss"],
+  },
+  {
+    name: "Soary",
+    image1: "/images/tolia_.png",
+    titleKey: "projects.items.soary.title",
+    descriptionKey: "projects.items.soary.description",
+    demoLink: "https://tolia.servehttp.com/",
+    repoLink: "#",
+    technologies: ["Symfony", "Bootstrap", "pgSQL"],
   },
   {
     name: "Aki Travel",
