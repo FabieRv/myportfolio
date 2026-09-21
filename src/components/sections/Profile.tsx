@@ -11,7 +11,7 @@ function Profile() {
   const imageContainerRef = useRef<HTMLDivElement>(null)
 
   const currentLang = i18n.language
-  // Sécurisation contre undefined/null
+ 
   const webMobileText = (t("Profile.webMobile") || "") as string
 
   useEffect(() => {
@@ -60,19 +60,10 @@ function Profile() {
     <div className="bg-[#F3F4F6] overflow-hidden">
       <Container className="py-0!">
         <div
-          className="
-            flex flex-col
-            md:flex-row
-            items-center
-            justify-center
-            lg:block lg:relative
-            min-h-fit
-            lg:min-h-115
-            md:py-12 lg:py-0
+          className=" flex flex-col md:flex-row  items-center  justify-center  lg:block lg:relative  min-h-fit  lg:min-h-115  md:py-12 lg:py-0
             gap-8 md:gap-10 lg:gap-0
           "
         >
-          {/* ================= IMAGE ================= */}
           <div
             ref={imageContainerRef}
             className="flex justify-center z-10 order-1 md:order-2 w-full md:w-1/2 lg:w-full"
@@ -86,24 +77,12 @@ function Profile() {
             </div>
           </div>
 
-          {/* ================= TEXTE ================= */}
           <div
-            className="
-              flex flex-col gap-4
-              z-20
-              pointer-events-none
-              order-2 md:order-1
-              w-full md:w-1/2
-              lg:w-full
-              lg:absolute lg:top-20 lg:left-0
+            className="   flex flex-col gap-4  z-20  pointer-events-none  order-2 md:order-1  w-full md:w-1/2   lg:w-full  lg:absolute lg:top-20 lg:left-0
             "
           >
             <div
-              className="
-                pointer-events-auto
-                text-center
-                md:text-left
-                lg:text-base
+              className="  pointer-events-auto  text-center  md:text-left  lg:text-base
               "
             >
               {/* TYPING */}
@@ -120,40 +99,19 @@ function Profile() {
                 cursorCharacter="_"
                 deletingSpeed={50}
                 cursorBlinkDuration={0.5}
-                className="
-                  text-xs
-                  sm:text-sm
-                  lg:text-sm
-                  font-primary
-                  mb-2
+                className="text-xs sm:text-sm lg:text-sm font-primary mb-2
                 "
               />
 
               {/* TITRE */}
               <h1
-                className="
-                  text-3xl
-                  sm:text-4xl
-                  md:text-3xl
-                  lg:text-4xl
-                  font-bold
-                  leading-[0.9]
-                  tracking-tighter
-                "
+                className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-bold leading-[0.9] tracking-tighter  "
               >
                 {t("Profile.job")} <br />
                 <span
                   key={currentLang}
                   ref={titleRef}
-                  className="
-                    italic
-                    font-serif
-                    font-light
-                    text-4xl
-                    sm:text-5xl
-                    md:text-4xl
-                    lg:text-5xl
-                    text-[#1A56DB]
+                  className=" italic  font-serif font-light text-4xl sm:text-5xl md:text-4xl lg:text-5xl text-[#1A56DB]
                   "
                   style={{ perspective: "700px" }}
                 >
@@ -172,22 +130,9 @@ function Profile() {
                 </span>
               </h1>
 
-              {/* DESCRIPTION */}
               <p
-                className="
-                  mt-5
-                  md:mt-4
-                  lg:mt-6
-                  text-gray-700
-                  text-sm
-                  sm:text-[15px]
-                  lg:text-[16px]
-                  max-w-xs
-                  sm:max-w-sm
-                  md:max-w-xs
-                  mx-auto
-                  md:mx-0
-                  font-primary
+                className="  mt-5  md:mt-4  lg:mt-6 text-gray-700 text-sm  sm:text-[15px] lg:text-[16px] max-w-xs sm:max-w-sm md:max-w-xs mx-auto
+                  md:mx-0 font-primary
                 "
               >
                 {t("Profile.description")}
@@ -196,14 +141,7 @@ function Profile() {
 
             {/* ================= BOUTON ================= */}
             <div
-              className="
-                pointer-events-auto
-                flex
-                justify-center
-                md:justify-start
-                mb-6
-                md:mb-0
-                lg:block
+              className=" pointer-events-auto flex justify-center  md:justify-start mb-6  md:mb-0 lg:block
               "
             >
               <a href="#Contact">
@@ -214,18 +152,7 @@ function Profile() {
 
           {/* ================= STATS ================= */}
           <div
-            className="
-              absolute
-              top-20
-              right-0
-              z-20
-              hidden
-              lg:flex
-              flex-col
-              items-end
-              space-y-12
-              text-right
-              md:pr-10
+            className=" absolute top-20 right-0 z-20 hidden lg:flex  flex-col items-end space-y-12 text-right md:pr-10
             "
           >
             <div>

@@ -66,7 +66,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       </div>
 
       {/* Technologies */}
-      <div className="flex flex-wrap gap-2 mt-auto pt-3">
+      <div className="flex flex-wrap gap-2  pt-4 mt-auto">
         {project.technologies?.map((tech, index) => (
           <span
             key={index}

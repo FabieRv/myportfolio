@@ -83,25 +83,7 @@ const ProjectSection: React.FC = () => {
       href="https://github.com/FabieRv"
       target="_blank"
       rel="noopener noreferrer"
-      className="
-        flex
-        w-fit
-        items-center
-        justify-center
-        gap-2
-        px-6
-        py-3
-        mt-6
-        bg-blue-600
-        text-white
-        text-sm
-        font-semibold
-        rounded-xl
-        hover:bg-[#5DA9E9]
-        transition-all
-        duration-300
-        hover:shadow-md
-      "
+      className="  flex  w-fit  items-center  justify-center gap-2 px-6 py-3 mt-6 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-[#5DA9E9] transition-all  duration-300 hover:shadow-md "
     >
       Voir plus de projets
     </a>

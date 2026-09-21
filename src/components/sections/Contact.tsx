@@ -130,7 +130,7 @@ const SectionContact: React.FC = () => {
 
         {/* DROITE : FORMULAIRE */}
         <div className="bg-[#C9F0FF]/30 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm font-primary">
-          <form onSubmit={gererSoumission} className="space-y-6 text-lg">
+          <form onSubmit={gererSoumission} className="space-y-6 text-sm">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ChampSaisie
                 label={t("contact.nameLabel")}
@@ -172,7 +172,7 @@ const SectionContact: React.FC = () => {
                 id={messageInputId}
                 name="message"
                 placeholder={t("contact.messagePlaceholder")}
-                rows={5}
+                rows={4}
                 value={formData.message}
                 onChange={gererChangement}
                 required

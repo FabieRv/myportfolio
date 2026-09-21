@@ -22,7 +22,7 @@
     ],
     "job": "Développeur",
     "webMobile": "Full Stack",
-    "description": "Développeuse Full Stack Junior titulaire d’une Licence en Informatique. Motivée, organisée et autonome, avec une expérience pratique en PHP, Laravel, Symfony, React, Next.js, Vue.js, Node.js et Flutter. Je souhaite mettre mes compétences en pratique, acquérir de l’expérience professionnelle et continuer à progresser dans le développement.",
+    "description": "Diplômée en informatique et passionnée par le web et le mobile, j'aime concevoir des applications complètes, fluides et bien structurées. Curieuse et rigoureuse, je cherche aujourd'hui à m'investir dans des projets concrets, relever des défis techniques stimulants et continuer à progresser au sein d'une équipe dynamique.",
     "button": "Me contacter",
     "stats": {
       "experience": "Année d'expérience",
@@ -32,7 +32,7 @@
     "services": {
       "frontend": {
         "title": "Développement frontend",
-        "description": "Conception d'interfaces modernes, fluide et responsive"
+        "description": "Conception d'interfaces modernes, fluide et responsive."
       },
       "backend": {
         "title": "Développement Backend",
@@ -50,7 +50,7 @@
     "tag": "Qui suis-je ?",
     "titleLine1": "web et mobile",
     "titleLine2": "Création d’applications modernes",
-    "description": "Je suis une développeuse web passionnée par la création d’applications modernes, performantes et bien structurées. Au-delà du code, je m’intéresse à la qualité, à l’expérience utilisateur et à la logique métier derrière chaque projet. J’aime travailler sur des projets concrets qui résolvent de vrais problèmes, que ce soit en frontend, backend ou mobile. Mon objectif est de continuer à évoluer en tant que développeuse fullstack et de contribuer à des projets impactants et bien conçus.",
+    "description": "Je suis un développeur passionné par la création d’applications modernes, performantes et bien structurées. Au-delà du code, je m’intéresse à la qualité, à l’expérience utilisateur et à la logique métier derrière chaque projet. J’aime travailler sur des projets concrets qui résolvent de vrais problèmes, que ce soit en frontend, backend ou mobile. Mon objectif est de continuer à évoluer en tant que développeur full Stack et de contribuer à des projets impactants et bien conçus.",
     "phone": "Télephone",
     "linkedin": "Linkedin",
     "location": "Localisation"
@@ -82,9 +82,9 @@
     "items": {
       "1": {
         "title": "Licence professionnelle en Informatique",
-        "school": "Institut Supérieur d’Informatique (IS-INFO)",
+        "school": "Institut Supérieur d’Informatique (IS-INFO), Antananarivo",
         "date": "2024 - 2025",
-        "description": "Titulaire de diplômée d’une licence en Informatique à l’Institut Supérieur d’Informatique (IS-INFO), Antananarivo."
+        "description": "Titulaire de diplômée d’une licence en Informatique,"
       },
       "2": {
         "title": "Formation en Développement Web",
@@ -134,7 +134,7 @@
         "rafiacraft": {
           "name": "Rafiacraft",
           "title": "Application web CRM",
-          "description": "Plateforme web CRM dédiée à l’artisanat malgache, intégrant la gestion des ventes, le suivi des stocks et la gestion du catalogue produits.."
+          "description": "Plateforme web CRM dédiée à l’artisanat malgache, intégrant la gestion des ventes, le suivi des stocks et la gestion des catalogues produits."
         },
         "soary": {
           "name": "Soary Project",
@@ -144,7 +144,7 @@
         "malagasycraft": {
           "name": "MalagasyCraft",
           "title": "Plateforme e-commerce",
-          "description": "E-commerce platform with integrated management of sales, stock, purchases, and tracking of artisanal product exports and imports."
+          "description": "Plateforme e-commerce avec gestion intégrée des ventes, des stocks, des achats et suivi des exportations et importations des produits artisanaux."
         },
         "Coin":{
           "name": "Coin de Gadget",
@@ -159,7 +159,7 @@
         "otemptika":{
           "name": "o-temps-t-ika",
           "title": "Plateforme e-commerce",
-          "description":"Une plateforme vitrine dédiée à la présentation des produits et à la gestion des transactions clients"
+          "description":"Une plateforme vitrine dédiée à la présentation des produits et à la gestion des transactions clients."
         },
         "zewa":{
           "name":"ZEWA Madagascar",
@@ -175,7 +175,7 @@
         "imatex":{
           "name": "Imatex",
           "title":"Site web vitrine ",
-          "description":"Un site web présentant l’entreprise IMATEX, son savoir-faire dans le développement de produits en raphia, ses réalisations et ses activités."
+          "description":"Un site web présentant l’entreprise IMATEX, son savoir-faire dans le développement des produits artisanaux, ses réalisations et ses activités."
         },
         "ivoirpool":{
           "name":"Ivoirpool",
@@ -250,19 +250,8 @@
         "Gestion des exports et imports des produits artisanaux."
       ],
       "icon": "✓"
-    },
-    {
-      "year": "Septembre - Novembre 2023",
-      "title": "Stagiaire Développeur Python",
-      "place": "Agence de voyage",
-      "desc1": "Stage Développeur Python — 3 mois",
-      "desc2": [
-        "Développement d’une application d’apprentissage du français,",
-        "Conception et mise en œuvre des fonctionnalités principales,",
-        "Assurer le bon fonctionnement de l’application (cours, paiement et chat en temps réel)."
-      ],
-      "icon": "✓"
     }
+   
   ]
 },
 "contact": {

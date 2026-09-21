@@ -139,41 +139,17 @@ const Timeline: React.FC = () => {
         <div className="relative mt-12">
           {/* Ligne centrale */}
           <div
-            className="
-              timeline-line
-              absolute
-              left-1/2
-              top-0
-              h-full
-              -translate-x-1/2
-              border-l-2
-              border-dotted
-              border-gray-300
-            "
+            className="timeline-line absolute left-1/2  top-0 h-full -translate-x-1/2 border-l-2  border-dotted border-gray-300 "
           />
 
           {educationData.map((item, index) => (
             <div
               key={index}
-              className="
-                timeline-item
-                relative
-                mb-12
-                flex
-                items-start
-                justify-between
-                w-full
-                min-h-25
-              "
+              className="timeline-item relative mb-6 flex items-start justify-between w-full min-h-25 "
             >
               {/* GAUCHE */}
               <div
-                className="
-                  timeline-left
-                  w-[45%]
-                  text-right
-                  pt-1
-                "
+                className="  timeline-left  w-[45%]  text-right pt-1"
               >
                 <h4 className="text-lg font-bold text-gray-800 leading-tight">
                 {t(`education.items.${item.id}.school`)}
@@ -186,23 +162,10 @@ const Timeline: React.FC = () => {
 
               {/* POINT CENTRAL */}
               <div
-                className="
-                  absolute
-                  left-1/2
-                  top-2
-                  z-10
-                  -translate-x-1/2
-                "
+                className=" absolute left-1/2 top-2 z-10  -translate-x-1/2 "
               >
                 <div
-                  className={`
-                    timeline-dot
-                    w-5
-                    h-5
-                    rounded-full
-                    border-4
-                    border-white
-                    shadow-md
+                  className={`  timeline-dot w-5 h-5 rounded-full border-4 border-white shadow-md
                     ${
                       index % 2 === 0
                         ? "bg-blue-400"
