@@ -230,7 +230,7 @@ export const ImageProject = [
   },
   {
     name: "Aki Travel",
-    image1: "/public/images/akitravel.png",
+    image1: "/images/akitravel.png",
     titleKey: "projects.items.akitravel.title",
     descriptionKey: "projects.items.akitravel.description",
     demoLink: "https://akitravel.mg/",
