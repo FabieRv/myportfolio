@@ -190,7 +190,12 @@
             { "name": "LOGISPOT", 
             "title": "E-commerce Website", 
             "description": "LOGISPOT helps businesses manage and optimize their inventory and stock levels while securing their operations." 
-          }
+          },
+          "akitravel":{
+            "name": "Aki Travel",
+            "title": "Travel Website",
+            "description":"Aki Travel Madagascar is a travel agency specializing in customized tours and trips across Madagascar, offering transportation, accommodation, and travel assistance."
+        }
         }
   },
   "experiences": {

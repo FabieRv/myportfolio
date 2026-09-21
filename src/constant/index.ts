@@ -147,7 +147,7 @@ export const ImageProject = [
     image1: "/images/rafiac.png",
     titleKey: "projects.items.rafiacraft.title",
     descriptionKey: "projects.items.rafiacraft.description",
-    demoLink: "https://...",
+    demoLink: "https://frontrafia.vercel.app",
     repoLink: "#",
     technologies: ["Next.js", "Nest.js", "TailwindCSS", "MySQL" ]
   },
@@ -187,15 +187,7 @@ export const ImageProject = [
     repoLink: "#",
     technologies: ["Next", "TailwindCss"],
   },
-  {
-    name: "Coin de Gadget",
-    image1: "images/coin-gadgets.webp",
-    titleKey: "projects.items.Coin.title",
-    descriptionKey: "projects.items.Coin.description",
-    demoLink: "#",
-    repoLink: "#",
-    technologies: ["React", "TailwindCss", "Node.js"],
-  },
+
   { name: "LOGISPOT",
     image1: "/images/Logispot.png",
     titleKey: "projects.items.Logispot.title",
@@ -232,6 +224,15 @@ export const ImageProject = [
     repoLink: "#",
     technologies: ["Next", "TailwindCss"],
   },
+  {
+    name: "Aki Travel",
+    image1: "/public/images/akitravel.png",
+    titleKey: "projects.items.akitravel.title",
+    descriptionKey: "projects.items.akitravel.description",
+    demoLink: "https://akitravel.mg/",
+    repoLink: "#",
+    technologies: ["React", "TailwindCss", "pgSql"], 
+  }
 ]
 // Types.ts (ou dans ton fichier constant)
 

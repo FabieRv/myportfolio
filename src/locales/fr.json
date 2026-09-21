@@ -191,101 +191,107 @@
           "name":"LOGISPOT",
           "title":"site e-commerce",
           "description":"LOGISPOT accompagne les entreprises dans la gestion et l’optimisation de leurs stocks et inventaires, tout en sécurisant leurs opérations."
-        }
+        },
+        "akitravel":{
+          "name": "Aki Travel",
+          "title": "Site d’agence de voyage",
+          "description":"Aki Travel Madagascar est une agence de voyage spécialisée dans l’organisation de circuits et de séjours personnalisés à Madagascar, avec des services de transport, hébergement et accompagnement touristique."
       }
-    },
-    "experiences": {
-        "sectionTitle": "Expériences",
-        "items": [
-          {
-            "year": "Juillet 2025 — Mai 2026",
-            "title": "Développeur JavaScript Freelance",
-            "place": "Rafiacraft",
-            "desc1": "Développeur Next.js / Node.js",
-            "desc2": [
-              "Conception et développement du site web Rafiacraft,",
-              "Développement de fonctionnalités de CRM en Rafiacraft,",
-              "Développement des modules de gestion des ventes et des produits,",
-              "Tests, correction des anomalies et déploiement de l’application Rafiacraft."
-            ],
-            "icon": "✓"
-          },
-          {
-            "year": "Octobre 2024 — Janvier 2025",
-            "title": "Stagiaire Développeur Frontend",
-            "place": "Cherry Tech and Design",
-            "desc1": "Stage Développeur JavaScript — 3 mois",
-            "desc2": [
-              "Contribution à la création d’interfaces utilisateur modernes et réactives en React ou Next.js,",
-              "Optimisation de l’expérience utilisateur sur mobile,",
-              "Déploiement et mise en production d’applications web robustes."
-            ],
-            "icon": "✓"
-          },
-          {
-            "year": "Juin – Novembre 2024",
-            "title": "Stagiaire Développeur Backend",
-            "place": "Tolia Madagascar",
-            "desc1": "Stage Développeur Symfony — 6 mois",
-            "desc2": [
-              "Travail sur des projets commerciaux comme ‘Soary Project’,",
-              "Gestion de stock,",
-              "Gestion de l’export et de l’import."
-            ],
-            "icon": "✓"
-          },
-          {
-            "year": "Novembre 2023 — Mai 2024",
-            "title": "Stagiaire Développeur Backend",
-            "place": "MalagasyCraft",
-            "desc1": "Stage Développeur Laravel — 6 mois",
-            "desc2": [
-              "Travail sur des projets commerciaux comme ‘MalagasyCraft’,",
-              "Développement des fonctionnalités de l’application (ventes, stock, achats),",
-              "Gestion des exports et imports des produits artisanaux."
-            ],
-            "icon": "✓"
-          },
-          {
-            "year": "Septembre - Novembre 2023",
-            "title": "Stagiaire Développeur Python",
-            "place": "Agence de voyage",
-            "desc1": "Stage Développeur Python — 3 mois",
-            "desc2": [
-              "Développement d’une application d’apprentissage du français,",
-              "Conception et mise en œuvre des fonctionnalités principales,",
-              "Assurer le bon fonctionnement de l’application (cours, paiement et chat en temps réel)."
-            ],
-            "icon": "✓"
-          }
-        ]
-    },
-    "contact": {
-      "namePlaceholder": "Votre nom",
-      "emailLabel": "Adresse Email",
-      "sectionTitle": "Contactez-moi",
-      "subtitle": "Un projet en tête ou une opportunité ? N'hésitez pas à me laisser un message !",
-      "infoTitle": "Coordonnées",
-      "formTitle": "Envoyer un message",
-      "nameLabel": "Nom complet",
-      "emailPlaceholder": "email@example.com",
-      "subjectLabel": "Sujet",
-      "subjectPlaceholder": "Sujet de votre message",
-      "messageLabel": "Message",
-      "messagePlaceholder": "Rédigez votre message ici...",
-      "sendButton": "Envoyer le message",
-      "sending": "Envoi en cours...",
-      "successMessage": "Message envoyé avec succès !",
-      "errorMessage": "Une erreur est survenue. Veuillez réadapter ou réessayer."
-   
-    },
-    "footer": {
-      "tagline": "Développeuse passionnée, spécialisée dans la création d’interfaces modernes et de solutions techniques innovantes.",
-      "navigation": "Navigation",
-      "passions": "Mes Passions",
-      "competences": "competences",
-      "expertise": "Expertise",
-      "socialTitle": "Restons en contact",
-      "copyright": "© 2026 Fabie Rav. Développé avec passion."
-    }
   }
+},
+"experiences": {
+  "sectionTitle": "Expériences",
+  "items": [
+    {
+      "year": "Juillet 2025 — Mai 2026",
+      "title": "Développeur JavaScript Freelance",
+      "place": "Rafiacraft",
+      "desc1": "Développeur Next.js / Node.js",
+      "desc2": [
+        "Conception et développement du site web Rafiacraft,",
+        "Développement de fonctionnalités de CRM en Rafiacraft,",
+        "Développement des modules de gestion des ventes et des produits,",
+        "Tests, correction des anomalies et déploiement de l’application Rafiacraft."
+      ],
+      "icon": "✓"
+    },
+    {
+      "year": "Octobre 2024 — Janvier 2025",
+      "title": "Stagiaire Développeur Frontend",
+      "place": "Cherry Tech and Design",
+      "desc1": "Stage Développeur JavaScript — 3 mois",
+      "desc2": [
+        "Contribution à la création d’interfaces utilisateur modernes et réactives en React ou Next.js,",
+        "Optimisation de l’expérience utilisateur sur mobile,",
+        "Déploiement et mise en production d’applications web robustes."
+      ],
+      "icon": "✓"
+    },
+    {
+      "year": "Juin – Novembre 2024",
+      "title": "Stagiaire Développeur Backend",
+      "place": "Tolia Madagascar",
+      "desc1": "Stage Développeur Symfony — 6 mois",
+      "desc2": [
+        "Travail sur des projets commerciaux comme ‘Soary Project’,",
+        "Gestion de stock,",
+        "Gestion de l’export et de l’import."
+      ],
+      "icon": "✓"
+    },
+    {
+      "year": "Novembre 2023 — Mai 2024",
+      "title": "Stagiaire Développeur Backend",
+      "place": "MalagasyCraft",
+      "desc1": "Stage Développeur Laravel — 6 mois",
+      "desc2": [
+        "Travail sur des projets commerciaux comme ‘MalagasyCraft’,",
+        "Développement des fonctionnalités de l’application (ventes, stock, achats),",
+        "Gestion des exports et imports des produits artisanaux."
+      ],
+      "icon": "✓"
+    },
+    {
+      "year": "Septembre - Novembre 2023",
+      "title": "Stagiaire Développeur Python",
+      "place": "Agence de voyage",
+      "desc1": "Stage Développeur Python — 3 mois",
+      "desc2": [
+        "Développement d’une application d’apprentissage du français,",
+        "Conception et mise en œuvre des fonctionnalités principales,",
+        "Assurer le bon fonctionnement de l’application (cours, paiement et chat en temps réel)."
+      ],
+      "icon": "✓"
+    }
+  ]
+},
+"contact": {
+  "namePlaceholder": "Votre nom",
+  "emailLabel": "Adresse Email",
+  "sectionTitle": "Contactez-moi",
+  "subtitle": "Un projet en tête ou une opportunité ? N'hésitez pas à me laisser un message !",
+  "infoTitle": "Coordonnées",
+  "formTitle": "Envoyer un message",
+  "nameLabel": "Nom complet",
+  "emailPlaceholder": "email@example.com",
+  "subjectLabel": "Sujet",
+  "subjectPlaceholder": "Sujet de votre message",
+  "messageLabel": "Message",
+  "messagePlaceholder": "Rédigez votre message ici...",
+  "sendButton": "Envoyer le message",
+  "sending": "Envoi en cours...",
+  "successMessage": "Message envoyé avec succès !",
+  "errorMessage": "Une erreur est survenue. Veuillez réadapter ou réessayer."
+},
+
+"footer": {
+  "tagline": "Développeuse passionnée, spécialisée dans la création d’interfaces modernes et de solutions techniques innovantes.",
+  "navigation": "Navigation",
+  "passions": "Mes Passions",
+  "competences": "competences",
+  "expertise": "Expertise",
+  "socialTitle": "Restons en contact",
+  "copyright": "© 2026 Fabie Rav. Développé avec passion."
+}
+
+}
