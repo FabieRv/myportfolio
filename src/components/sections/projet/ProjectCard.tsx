@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import type { Project } from "../../../types/project";
-import Container from "../../common/Container";
+
 import CurrentColor from "../../icons/CurrentColor";
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
