@@ -49,17 +49,16 @@ export const atous = [
 ]
 
 export const frontendSkills = [
-  {name: "React", image: "/images/Reactt.png"},
-  {name: "TypeScript", image: "/images/ts.png"},
-  { name: "Next.js", image:"images/logo_next.png"},
-  { name: "TailwindCSS", image: "/images/tailwind.webp" },
-  { name: "Vue.JS", image: "/images/vue.js.jpg" },
-  {name: "Angular.js", image: "/images/angular.js.png"}
+  { name: "React", image: "/images/Reactt.png" },
+  { name: "TypeScript", image: "/images/ts.png" },
+  { name: "Next.js", image: "/images/logoss_next.png" },
+  { name: "Tailwind CSS", image: "/images/tailwind.webp" },
+  { name: "Vue.js", image: "/images/vue.js.jpg" },
+  { name: "Angular", image: "/images/angular.js.png" },
 ]
 
 // BACKEND
 export const backendSkills = [
-  { name: "PHP", image: "/images/php.webp" },
   { name: "Laravel", image: "/images/laravel.webp" },
   { name: "Symfony", image: "/images/symfony.webp" },
   {name: "Node.js", image : "/images/node_js.png" },
@@ -131,7 +130,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.rafiacraft.description",
     demoLink: "https://frontrafia.vercel.app",
     repoLink: "#",
-    technologies: ["Next.js", "Nest.js", "TailwindCSS", "MySQL" ]
+    technologies: ["Next.js", "Nest.js", "Tailwind CSS", "MySQL" ]
   },
 
   { name: "LOGISPOT",
@@ -140,16 +139,16 @@ export const ImageProject = [
   descriptionKey: "projects.items.Logispot.description",
   demoLink : "https://smartlogispot.com/",
   repoLink: "#",
-  technologies: ["Next.js", "TalwindCSS"],
+  technologies: ["Next.js", "Tailwind CSS"],
 },
 {
-  name: "o-temps-t-ika",
+  name: "O-temps-t-ika",
   image1: "/images/otemtik.png",
   titleKey: "projects.items.otemptika.title",
   descriptionKey: "projects.items.otemptika.description",
   demoLink: "https://o-temps-t-ika.vercel.app/",
   repoLink: "#",
-  technologies: ["React", "TailwindCss"],
+  technologies: ["React", "Tailwind CSS"],
 },
 
   {
@@ -159,7 +158,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.malagasycraft.description",
     demoLink: "https://malagasycraft.com/",
     repoLink: "#",
-    technologies: ["Laravel", "React", "TailwindCss", "MySQL"],
+    technologies: ["Laravel", "React", "Tailwind CSS", "MySQL"],
   },
   
   {
@@ -169,7 +168,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.taaz.description",
     demoLink: "https://taazcapital.mg/",
     repoLink: "#",
-    technologies: ["Next", "TailwindCss"],
+    technologies: ["Next", "Tailwind CSS"],
   },
   {
     name : "ZEWA Madagascar",
@@ -188,7 +187,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.cherry.description",
     demoLink: "https://cherrytd.com/",
     repoLink: "#",
-    technologies: ["Next", "TailwindCss", "MongoDb"],
+    technologies: ["Next", "Tailwind CSS", "MongoDb"],
   },
 
 
@@ -199,7 +198,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.imatex.description",
     demoLink: "https://imatex.mg/",
     repoLink: "#",
-    technologies: ["React", "TailwindCss"],
+    technologies: ["React", "Tailwind CSS"],
   },
   {
     name: "Hafavy",
@@ -208,7 +207,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.havafy.description",
     demoLink:"https://havafy.mg",
     repoLink: "#",
-    technologies: ["Next.js", "Supabase","TailwindCss"],
+    technologies: ["Next.js", "Supabase","Tailwind CSS"],
   },
   {
     name: "Ivoirpool",
@@ -217,7 +216,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.ivoirpool.description",
     demoLink: "https://ivoirpool.vercel.app/",
     repoLink: "#",
-    technologies: ["Next", "TailwindCss"],
+    technologies: ["Next", "Tailwind CSS"],
   },
   {
     name: "Soary",
@@ -235,7 +234,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.akitravel.description",
     demoLink: "https://akitravel.mg/",
     repoLink: "#",
-    technologies: ["React", "TailwindCss", "pgSql"], 
+    technologies: ["React", "Tailwind CSS", "pgSql"], 
   }
 ]
 // Types.ts (ou dans ton fichier constant)

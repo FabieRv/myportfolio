@@ -7,10 +7,10 @@ import { ImageProject } from "../../../constant"
 import ProjectCard from "./ProjectCard"
 
 const ProjectSection: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   const [currentPage, setCurrentPage] = useState(0)
-  const containerRef = useRef<HTMLDivElement>(null) 
+  const containerRef = useRef<HTMLDivElement>(null)
   const projectsPerPage = 3
 
   const totalPages = Math.ceil(ImageProject.length / projectsPerPage)
@@ -43,13 +43,15 @@ const ProjectSection: React.FC = () => {
   )
 
   return (
-    <section className=" py-16 px-6 overflow-hidden text-lg" id="projects">
+    <section className="py-16 px-6 overflow-hidden text-lg" id="projects">
       <div className="max-w-6xl mx-auto" ref={containerRef}>
-        <div className="mb-12 text-center ">
-        <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 tracking-tight">{t("projects.sectionTitle")}</h2>
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
+            {t("projects.sectionTitle")}
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentProjects.map((project, index) => (
             <div
               key={`${project.name}-${currentPage}-${index}`}
@@ -61,34 +63,34 @@ const ProjectSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center mt-8">
-  {/* Pagination */}
-  <div className="flex justify-center items-center gap-3">
-    {[...Array(totalPages)].map((_, index) => (
-      <button
-        key={index}
-        onClick={() => setCurrentPage(index)}
-        className={`h-3 rounded-full transition-all duration-300 ${
-          currentPage === index
-            ? "w-8 bg-blue-600"
-            : "w-3 bg-gray-400 hover:bg-blue-300"
-        }`}
-        aria-label={`Page ${index + 1}`}
-      />
-    ))}
-  </div>
+          {/* Pagination */}
+          <div className="flex justify-center items-center gap-3">
+            {[...Array(totalPages)].map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentPage(index)}
+                className={`h-3 rounded-full transition-all duration-300 ${
+                  currentPage === index
+                    ? "w-8 bg-blue-600"
+                    : "w-3 bg-gray-400 hover:bg-blue-300"
+                }`}
+                aria-label={`Page ${index + 1}`}
+              />
+            ))}
+          </div>
 
-  {/* Voir plus */}
-  {currentPage === totalPages - 1 && (
-    <a
-      href="https://github.com/FabieRv"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="  flex  w-fit  items-center  justify-center gap-2 px-6 py-3 mt-6 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-[#5DA9E9] transition-all  duration-300 hover:shadow-md "
-    >
-      Voir plus de projets
-    </a>
-  )}
-</div>
+          {/* Voir plus */}
+          {currentPage === totalPages - 1 && (
+            <a
+              href="https://github.com/FabieRv"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-fit items-center justify-center gap-2 px-6 py-3 mt-6 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-[#5DA9E9] transition-all duration-300 hover:shadow-md"
+            >
+              {t("projects.viewMore")}
+            </a>
+          )}
+        </div>
       </div>
     </section>
   )

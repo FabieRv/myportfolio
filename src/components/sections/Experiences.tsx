@@ -105,7 +105,7 @@ function Experiences() {
                         </div>
 
                         {/* TITRE */}
-                        <h3 className="text-sm lg:text-lg font-primary font-bold uppercase tracking-wider text-gray-900">
+                        <h3 className="text-sm lg:text-lg font-header font-bold uppercase tracking-wider text-gray-900">
                           {exp.title}
                         </h3>
 

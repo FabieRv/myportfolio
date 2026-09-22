@@ -9,7 +9,7 @@
     "about":"À propos",
     "formation": "Formation",
     "skills": "Compétences",
-    "experience": "Expérience",
+    "experience": "Expériences",
     "projects": "Projets",
     "contact": "Contact"
   },
@@ -84,25 +84,25 @@
         "title": "Licence professionnelle en Informatique",
         "school": "Institut Supérieur d’Informatique (IS-INFO), Antananarivo",
         "date": "2024 - 2025",
-        "description": "Titulaire de diplômée d’une licence en Informatique,"
+        "description": "Diplômée d’une Licence professionnelle en Informatique,"
       },
       "2": {
         "title": "Formation en Développement Web",
         "school": "Centre de Formation Professionnelle : GASY-TECH, Antananarivo",
         "date": "Août - Janvier 2025",
-        "description": "Formation approfondie en développement web PHP (Laravel)."
+        "description": "Formation approfondie en développement web PHP (Laravel),"
       },
       "3": {
         "title": "Formation en Développement Mobile",
         "school": "Orange Digital Center",
-        "date": "June 2024",
-        "description": "Formation en développement mobile cross-platform avec FLUTTER."
+        "date": "Juin 2024",
+        "description": "Formation en développement mobile cross-platform avec FLUTTER,"
       },
       "4": {
         "title": "Baccalauréat Scientifique",
         "school": "Lycée Marovoay",
         "date": "2016",
-        "description": "Titulaire du Baccalauréat – Série D"
+        "description": "Titulaire d’un Baccalauréat – Série D"
       }
     }
   },
@@ -129,7 +129,7 @@
     },
   "projects": {
       "sectionTitle": "Mes Projets",
-      "viewMore": "View more projects",
+      "viewMore": "Voir plus de projets",
       "items": {
         "rafiacraft": {
           "name": "Rafiacraft",
@@ -217,37 +217,38 @@
     },
     {
       "year": "Octobre 2024 — Janvier 2025",
-      "title": "Stagiaire Développeur Frontend",
+      "title": "Stagiaire Développeur JAVASCRIPT",
       "place": "Cherry Tech and Design",
-      "desc1": "Stage Développeur JavaScript — 3 mois",
+      "desc1": "Stage — 3 mois",
       "desc2": [
-        "Contribution à la création d’interfaces utilisateur modernes et réactives en React ou Next.js,",
-        "Optimisation de l’expérience utilisateur sur mobile,",
+        "Conception et intégration d’interfaces web modernes et responsives,",
+        "Optimisation des performances et de l’expérience utilisateur,",
+        "Amélioration et maintenance des interfaces existantes,",
         "Déploiement et mise en production d’applications web robustes."
       ],
       "icon": "✓"
     },
     {
       "year": "Juin – Novembre 2024",
-      "title": "Stagiaire Développeur Backend",
+      "title": "Stagiaire Développeur SYMFONY",
       "place": "Tolia Madagascar",
-      "desc1": "Stage Développeur Symfony — 6 mois",
+      "desc1": "Stage  — 6 mois",
       "desc2": [
-        "Travail sur des projets commerciaux comme ‘Soary Project’,",
-        "Gestion de stock,",
-        "Gestion de l’export et de l’import."
+        "Participation au développement de modules de gestion des stocks, ventes et achats,",
+        "Gestion des processus d’import et d’export des produits,",
+        "Participation au déploiement et à la mise en production de l’application."
       ],
       "icon": "✓"
     },
     {
       "year": "Novembre 2023 — Mai 2024",
-      "title": "Stagiaire Développeur Backend",
+      "title": "Stagiaire Développeur LARAVEL",
       "place": "MalagasyCraft",
-      "desc1": "Stage Développeur Laravel — 6 mois",
+      "desc1": "Stage — 6 mois",
       "desc2": [
-        "Travail sur des projets commerciaux comme ‘MalagasyCraft’,",
-        "Développement des fonctionnalités de l’application (ventes, stock, achats),",
-        "Gestion des exports et imports des produits artisanaux."
+        "Conception d’une application CRM pour la gestion des clients, produits et commandes,",
+        "Développement des fonctionnalités de l’application (ventes, produits et achats),",
+        "Gestion et suivi des produits artisanaux destinés à l’exportation."
       ],
       "icon": "✓"
     }

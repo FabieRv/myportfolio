@@ -19,8 +19,8 @@
       "Full Stack Developer",
       "Web, Mobile and Digital Solutions"
     ],
-    "job": "Developer",
-    "webMobile": "Full Stack",
+    "job": "Full Stack",
+    "webMobile": "Developer",
     "description": "Holding a degree in Computer Science and passionate about web and mobile development, I enjoy designing complete, smooth, and well-structured applications. Curious and rigorous, I am now looking to get involved in concrete projects, take on stimulating technical challenges, and keep growing within a dynamic team.",
     "stats": {
       "experience": "Years of experience",
@@ -82,7 +82,7 @@
         "title": "Bachelor's Degree in Computer Science",
         "school": "Higher Institute of Computer Science (IS-INFO)",
         "date": "2024 - 2025",
-        "description": "Holder of a Bachelor's Degree in Computer Science at IS-INFO, Antananarivo."
+        "description": "Professional Bachelor’s degree in Computer Science,"
       },
       "2": {
         "title": "Web Development Training",
@@ -156,7 +156,7 @@
             "description": "Showcase website presenting digital services and solutions offered by Cherry Tech & Design."
           },
           "otemptika": {
-            "name": "o-temps-t-ika",
+            "name": "O-temps-t-ika",
             "title": "E-Commerce Platform",
             "description": "Showcase platform dedicated to highlighting products and handling client transaction management."
           },
@@ -198,71 +198,60 @@
         }
   },
   "experiences": {
-      "sectionTitle": "Experience",
-        "items": [
-          {
-            "year": "July 2025 — May 2026",
-            "title": "Freelance JavaScript Developer",
-            "place": "Rafiacraft",
-            "desc1": "Next.js / Node.js Developer",
-            "desc2": [
-              "Design and development of the Rafiacraft website,",
-              "Development of CRM features within Rafiacraft,",
-              "Development of sales and product management modules,",
-              "Testing, bug fixing, and deployment of the Rafiacraft application."
-              ],
-            "icon": "✓"
-            },
-            {
-            "year": "October 2024 — January 2025",
-            "title": "Frontend Developer Intern",
-            "place": "Cherry Tech and Design",
-            "desc1": "JavaScript Developer Internship — 3 months",
-            "desc2": [
-              "Contributed to creating modern, responsive user interfaces using React and Next.js,",
-              "Mobile user experience optimization,",
-              "Deployment and production release of robust web applications."
-            ],
-            "icon": "✓"
-           },
-          {
-            "year": "June – November 2024",
-            "title": "Backend Developer Intern",
-            "place": "Tolia Madagascar",
-            "desc1": "Symfony Developer Internship — 6 months",
-            "desc2": [
-              "Worked on commercial projects such as ‘Soary Project’,",
-              "Inventory and stock management,",
-              "Import and export operations management."
-            ],
-            "icon": "✓"
-          },
-          {
-            "year": "November 2023 — May 2024",
-            "title": "Backend Developer Intern",
-            "place": "MalagasyCraft",
-              "desc1": "Laravel Developer Internship — 6 months",
-              "desc2": [
-                "Worked on commercial software applications like ‘MalagasyCraft’,",
-                "Built core application features (sales, inventory, purchasing),",
-                "Managed import/export tracking for handcrafted artisanal goods."
-              ],
-              "icon": "✓"
-            },
-            {
-              "year": "September - November 2023",
-              "title": "Python Developer Intern",
-              "place": "Travel Agency",
-              "desc1": "Python Developer Internship — 3 months",
-              "desc2": [
-                "Developed a French language learning application,",
-                "Designed and implemented core software features,",
-                "Ensured smooth system operation (courses, payment processing, and real-time chat)."
-              ],
-              "icon": "✓"
-            }
-          ]
- },
+    "sectionTitle": "Experience",
+    "items": [
+      {
+        "year": "July 2025 — May 2026",
+        "title": "Freelance JavaScript Developer",
+        "place": "Rafiacraft",
+        "desc1": "Next.js / Node.js Developer",
+        "desc2": [
+          "Designed and developed the Rafiacraft website.",
+          "Developed CRM features for Rafiacraft.",
+          "Developed sales and product management modules.",
+          "Tested, debugged, and deployed the Rafiacraft application."
+        ],
+        "icon": "✓"
+      },
+      {
+        "year": "October 2024 — January 2025",
+        "title": "JavaScript Developer Intern",
+        "place": "Cherry Tech and Design",
+        "desc1": "Internship — 3 months",
+        "desc2": [
+          "Designed and integrated modern, responsive web interfaces.",
+          "Optimized performance and user experience.",
+          "Improved and maintained existing interfaces.",
+          "Deployed robust web applications to production."
+        ],
+        "icon": "✓"
+      },
+      {
+        "year": "June — November 2024",
+        "title": "Symfony Developer Intern",
+        "place": "Tolia Madagascar",
+        "desc1": "Internship — 6 months",
+        "desc2": [
+          "Contributed to the development of inventory, sales, and purchasing management modules.",
+          "Managed product import and export processes.",
+          "Contributed to the deployment and production release of the application."
+        ],
+        "icon": "✓"
+      },
+      {
+        "year": "November 2023 — May 2024",
+        "title": "Laravel Developer Intern",
+        "place": "MalagasyCraft",
+        "desc1": "Internship — 6 months",
+        "desc2": [
+          "Designed a CRM application for managing customers, products, and orders.",
+          "Developed application features for sales, products, and purchasing.",
+          "Managed and monitored handcrafted products intended for export."
+        ],
+        "icon": "✓"
+      }
+    ]
+  },
   "contact": {
     "sectionTitle": "Contact Me",
     "subtitle": "Have a project in mind or an opportunity? Feel free to leave a message!",

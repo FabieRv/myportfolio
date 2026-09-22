@@ -10,6 +10,7 @@ import SkillsSection from "./components/sections/Skills"
 import ProjectSection from "./components/sections/projet/ProjectSection"
 
 
+
 const App = () => {
   return (
     <div>
