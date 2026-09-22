@@ -94,7 +94,7 @@ export const toolsSkills = [
 
 export const mobileSkills = [
   { name: "Flutter", image: "images/Flutter.webp" }, 
-  { name: "React Native", image: "/public/images/ract_n.webp"},
+  { name: "React Native", image: "/images/ract_n.webp"},
   { name: "JAVA", image: "/images/java.webp" },
 ]
 
