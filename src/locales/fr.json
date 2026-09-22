@@ -134,31 +134,27 @@
         "rafiacraft": {
           "name": "Rafiacraft",
           "title": "Application web CRM",
-          "description": "Plateforme web CRM dédiée à l’artisanat malgache, intégrant la gestion des ventes, le suivi des stocks et la gestion des catalogues produits."
+          "description": "Application web CRM dédiée à l’artisanat malgache, permettant le suivi des clients, la gestion des ventes et des produits destinés à l’exportation."
         },
         "soary": {
           "name": "Soary Project",
           "title": "Application web ERP",
-          "description": "Solution de gestion d’entreprise développée avec Symfony, conçue pour le suivi des stocks, des ventes et des opérations d’import-export."
+          "description": "Solution de gestion d’entreprise, conçue pour le suivi des achats, des stocks, des ventes et des opérations d’import-export."
         },
         "malagasycraft": {
           "name": "MalagasyCraft",
-          "title": "Plateforme e-commerce",
-          "description": "Plateforme e-commerce avec gestion intégrée des ventes, des stocks, des achats et suivi des exportations et importations des produits artisanaux."
+          "title": "Application web CRM",
+          "description": "Application web CRM dédiée à la gestion des clients et des produits artisanaux, intégrant les achats en ligne et le suivi des exportations."
         },
-        "Coin":{
-          "name": "Coin de Gadget",
-          "title":"site e-commerce",
-          "description":"Site web permettant la gestion et la vente de produits électroniques en ligne."
-        },
+    
         "cherry":{
           "name":"Cherry Tech and Design",
           "title":"Site web vitrine ",
-          "description":"Un site web vitrine présentant les services et les solutions digitales proposés par Cherry Tech & Design."
+          "description":"Un site web vitrine présentant les services et les solutions digitales proposés par Cherry Tech and Design."
         },
         "otemptika":{
           "name": "o-temps-t-ika",
-          "title": "Plateforme e-commerce",
+          "title": "Site web vitrine ",
           "description":"Une plateforme vitrine dédiée à la présentation des produits et à la gestion des transactions clients."
         },
         "zewa":{
@@ -169,7 +165,7 @@
         "taaz":{
           "name":"Taaz Capital",
           "title": "Site web de formation",
-          "description": "Un site web présentant les formations et les services proposés par Taaz Capital dans le domaine du trading."
+          "description": "Un site web vitrine présentant les formations et les services proposés par Taaz Capital dans le domaine du trading."
         },
      
         "imatex":{
@@ -180,22 +176,22 @@
         "ivoirpool":{
           "name":"Ivoirpool",
           "title":"Site vitrine ",
-          "description":"Un site web présentant les solutions de piscines modernes et durables proposées par Ivoire Pool."
+          "description":"Présentation des solutions de piscines modernes et durables, conçues pour répondre aux besoins de chaque projet."
         },
         "havafy":{
           "name":"Havafy",
           "title":"Site e-commerce",
-          "description":"Un plateforme e-commerce permettant aux vendeurs locaux de créer leur boutique en ligne, gérer leurs produits et développer leur activité."
+          "description":"Un plateforme e-commerce permettant aux vendeurs locaux de créer leur boutique en ligne, gérer leurs produits et développer leurs activités."
         },
         "Logispot":{
           "name":"LOGISPOT",
-          "title":"site e-commerce",
+          "title":"Plateforme e-commerce",
           "description":"LOGISPOT accompagne les entreprises dans la gestion et l’optimisation de leurs stocks et inventaires, tout en sécurisant leurs opérations."
         },
         "akitravel":{
           "name": "Aki Travel",
           "title": "Site d’agence de voyage",
-          "description":"Aki Travel Madagascar est une agence de voyage spécialisée dans l’organisation de circuits et de séjours personnalisés à Madagascar, avec des services de transport, hébergement et accompagnement touristique."
+          "description":"Une agence de voyage spécialisée dans l’organisation de circuits et de séjours personnalisés à Madagascar, avec des services de transport et hébergement."
       }
   }
 },

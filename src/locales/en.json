@@ -88,19 +88,19 @@
         "title": "Web Development Training",
         "school": "Vocational Training Center: GASY-TECH, Antananarivo",
         "date": "August 2024 - January 2025",
-        "description": "In-depth training in PHP web development (Laravel)."
+        "description": "In-depth training in PHP web development (Laravel),"
       },
       "3": {
         "title": "Mobile Development Training",
         "school": "Orange Digital Center",
         "date": "June 2024",
-        "description": "Cross-platform mobile development training using Flutter."
+        "description": "Cross-platform mobile development training using Flutter,"
       },
       "4": {
         "title": "High School Diploma in Science",
         "school": "Lycée Marovoay",
         "date": "2016",
-        "description": "High School Diploma recipient."
+        "description": "Completed secondary education."
       }
     }
   },
@@ -125,78 +125,74 @@
         }
       }
     },
+  
+    "projects": {
+      "sectionTitle": "My Projects",
+      "viewMore": "View More Projects",
+      "items": {
+        "rafiacraft": {
+          "name": "Rafiacraft",
+          "title": "Web CRM Application",
+          "description": "A CRM application for the Malagasy handicraft industry, managing customers, sales, and export products."
+        },
+        "soary": {
+          "name": "Soary Project",
+          "title": "Web ERP Application",
+          "description": "A business management application for managing purchases, inventory, sales, and import-export operations."
+        },
+        "malagasycraft": {
+          "name": "MalagasyCraft",
+          "title": "Web CRM Application",
+          "description": "A CRM application for managing customers and handicraft products, with online purchasing and export tracking features."
+        },
+        "cherry": {
+          "name": "Cherry Tech and Design",
+          "title": "Business Website",
+          "description": "A professional website showcasing the digital services and solutions offered by Cherry Tech and Design."
+        },
+        "otemptika": {
+          "name": "o-temps-t-ika",
+          "title": "Business Website",
+          "description": "A showcase platform presenting products and supporting customer transaction management."
+        },
+        "zewa": {
+          "name": "ZEWA Madagascar",
+          "title": "Business Website",
+          "description": "A website presenting ZEWA Madagascar’s services, environmental initiatives, and electronic waste recycling solutions."
+        },
+        "taaz": {
+          "name": "Taaz Capital",
+          "title": "Training Website",
+          "description": "A website showcasing the training programs and services offered by Taaz Capital in the trading sector."
+        },
+        "imatex": {
+          "name": "Imatex",
+          "title": "Business Website",
+          "description": "A website introducing IMATEX, its expertise in handcrafted products, its work, and its activities."
+        },
+        "ivoirpool": {
+          "name": "Ivoirpool",
+          "title": "Showcase Website",
+          "description": "A website showcasing modern and sustainable swimming pool solutions designed to meet different project needs."
+        },
+        "havafy": {
+          "name": "Havafy",
+          "title": "E-commerce Website",
+          "description": "An e-commerce platform that enables local sellers to create online stores, manage their products, and grow their businesses."
+        },
+        "Logispot": {
+          "name": "LOGISPOT",
+          "title": "E-commerce Platform",
+          "description": "A platform helping businesses manage and optimize their inventory while improving the security and efficiency of their operations."
+        },
+        "akitravel": {
+          "name": "Aki Travel",
+          "title": "Travel Agency Website",
+          "description": "A travel agency website offering personalized tours and trips in Madagascar, along with transportation and accommodation services."
+        }
+      }
+    },
     
-  "projects": {
-        "sectionTitle": "My Projects",
-        "viewMore": "View more projects",
-        "items": {
-          "rafiacraft": {
-            "name": "RafiaCraft",
-            "title": "CRM Web Application",
-            "description": "Web CRM  platform dedicated to Malagasy handicrafts, featuring sales management, stock tracking, and product catalog management."
-          },
-          "soary": {
-            "name": "Soary Project",
-            "title": "ERP Web Application",
-            "description": "Business management solution developed with Symfony, designed for inventory tracking, sales, and import-export operations."
-          },
-          "malagasycraft": {
-            "name": "MalagasyCraft",
-            "title": "E-Commerce Platform",
-            "description": "E-commerce platform with integrated management of sales, stock, purchases, and tracking of artisanal product exports and imports."
-          },
-          "Coin": {
-            "name": "Coin de Gadget",
-            "title": "E-Commerce Website",
-            "description": "E-commerce website dedicated to managing and selling electronic products online."
-          },
-          "cherry": {
-            "name": "Cherry Tech and Design",
-            "title": "Showcase Website",
-            "description": "Showcase website presenting digital services and solutions offered by Cherry Tech & Design."
-          },
-          "otemptika": {
-            "name": "O-temps-t-ika",
-            "title": "E-Commerce Platform",
-            "description": "Showcase platform dedicated to highlighting products and handling client transaction management."
-          },
-          "zewa": {
-            "name": "ZEWA Madagascar",
-            "title": "Showcase Website",
-            "description": "Website presenting the services, environmental commitments, and e-waste recycling solutions of ZEWA Madagascar."
-          },
-          "taaz": {
-            "name": "Taaz Capital",
-            "title": "Training Platform",
-            "description": "Educational website presenting trading courses and training services provided by Taaz Capital."
-          },
-          "imatex": {
-            "name": "Imatex",
-            "title": "Showcase Website",
-            "description": "Website introducing IMATEX, highlighting its expertise in raffia product manufacturing, portfolio, and company operations."
-          },
-          "ivoirpool": {
-            "name": "Ivoirpool",
-            "title": "Showcase Website",
-            "description": "Corporate website presenting modern and sustainable swimming pool solutions offered by Ivoire Pool."
-          },
-          "havafy": {
-            "name": "Havafy",
-            "title": "E-Commerce Platform",
-            "description": "E-commerce platform enabling local vendors to set up their online shop, manage products, and grow their business."
-          },
-          "Logispot": 
-            { "name": "LOGISPOT", 
-            "title": "E-commerce Website", 
-            "description": "LOGISPOT helps businesses manage and optimize their inventory and stock levels while securing their operations." 
-          },
-          "akitravel":{
-            "name": "Aki Travel",
-            "title": "Travel Website",
-            "description":"Aki Travel Madagascar is a travel agency specializing in customized tours and trips across Madagascar, offering transportation, accommodation, and travel assistance."
-        }
-        }
-  },
   "experiences": {
     "sectionTitle": "Experience",
     "items": [
