@@ -70,7 +70,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
         {project.technologies?.map((tech, index) => (
           <span
             key={index}
-            className="px-3 py-1.5 bg-[#EBF9FF] text-slate-600 text-xs font-medium rounded-full border border-[#5DA9E9]/25"
+            className="px-3 py-1.5 bg-[#EBF9FF] text-slate-600 text-xs font-medium rounded-full border border-[#5DA9E9]/25 mt-2"
           >
             {tech}
           </span>

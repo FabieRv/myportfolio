@@ -1,9 +1,10 @@
-import React, { useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { useTranslation } from "react-i18next"
 import { ImageProject } from "../../../constant"
+import Container from "../../common/Container"
 import ProjectCard from "./ProjectCard"
 
 const ProjectSection: React.FC = () => {
@@ -11,7 +12,26 @@ const ProjectSection: React.FC = () => {
 
   const [currentPage, setCurrentPage] = useState(0)
   const containerRef = useRef<HTMLDivElement>(null)
-  const projectsPerPage = 3
+  const [projectsPerPage, setProjectsPerPage] = useState(3)
+  useEffect(() => {
+    const updateProjectsPerPage = () => {
+      const width = window.innerWidth
+      if (width >= 768 && width < 1024) {
+        setProjectsPerPage(4) 
+      } else {
+        setProjectsPerPage(3) 
+      }
+    }
+
+    updateProjectsPerPage()
+    window.addEventListener("resize", updateProjectsPerPage)
+    return () => window.removeEventListener("resize", updateProjectsPerPage)
+  }, [])
+
+  // Réinitialise la page lors des changements de résolution
+  useEffect(() => {
+    setCurrentPage(0)
+  }, [projectsPerPage])
 
   const totalPages = Math.ceil(ImageProject.length / projectsPerPage)
   const startIndex = currentPage * projectsPerPage
@@ -43,7 +63,8 @@ const ProjectSection: React.FC = () => {
   )
 
   return (
-    <section className="py-16 px-6 overflow-hidden text-lg" id="projects">
+ <Container className=" px-6 " >
+     
       <div className="max-w-6xl mx-auto" ref={containerRef}>
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
@@ -62,7 +83,7 @@ const ProjectSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex flex-col items-center mt-8">
+        <div className="flex flex-col items-center mt-8 mb-10">
           {/* Pagination */}
           <div className="flex justify-center items-center gap-3">
             {[...Array(totalPages)].map((_, index) => (
@@ -92,7 +113,8 @@ const ProjectSection: React.FC = () => {
           )}
         </div>
       </div>
-    </section>
+   
+ </Container>
   )
 }
 

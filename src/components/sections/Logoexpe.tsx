@@ -28,8 +28,8 @@ function Logoexpe() {
   }, [])
 
   return (
-    <div className="overflow-hidden border-y border-blue-100/30 py-4 bg-[#F8FAFC]">
-      <Container className="py-4  pt-0!">
+    <div className="overflow-hidden border-y border-blue-100/30 py-4 bg-[#F8FAFC] dark:bg-slate-900  ">
+      <Container className="py-4  pt-0! dark:bg-slate-900 ">
         <div className="w-full relative">
           <div
             ref={marqueeRef}

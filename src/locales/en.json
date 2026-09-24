@@ -95,12 +95,6 @@
         "school": "Orange Digital Center",
         "date": "June 2024",
         "description": "Cross-platform mobile development training using Flutter,"
-      },
-      "4": {
-        "title": "High School Diploma in Science",
-        "school": "Lycée Marovoay",
-        "date": "2016",
-        "description": "Completed secondary education."
       }
     }
   },
@@ -200,7 +194,7 @@
         "year": "July 2025 — May 2026",
         "title": "Freelance JavaScript Developer",
         "place": "Rafiacraft",
-        "desc1": "Next.js / Node.js Developer",
+        "desc1": "Next.js / Nest.js Developer",
         "desc2": [
           "Designed and developed the Rafiacraft website.",
           "Developed CRM features for Rafiacraft.",

@@ -145,7 +145,7 @@ const Timeline: React.FC = () => {
           {educationData.map((item, index) => (
             <div
               key={index}
-              className="timeline-item relative mb-6 flex items-start justify-between w-full min-h-25 "
+              className="timeline-item relative mb-10 lg:mb-6 flex items-start justify-between w-full min-h-25 "
             >
               {/* GAUCHE */}
               <div

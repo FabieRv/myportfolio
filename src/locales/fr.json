@@ -32,15 +32,15 @@
     "services": {
       "frontend": {
         "title": "Développement frontend",
-        "description": "Conception d'interfaces modernes, fluide et responsive."
+        "description": "Développement d’interfaces web modernes, ergonomiques et responsives, avec des animations dynamiques."
       },
       "backend": {
         "title": "Développement Backend",
-        "description": "Creation de systeme backend sécurisé et d'API performante."
+        "description": "Conception de systèmes backend sécurisés et développement d'API hautes performances."
       },
       "mobile": {
         "title": "Développement Mobile",
-        "description": "Création d'applications mobiles moderne et multiplateformes."
+        "description": "Conception d'applications mobiles fluides et intuitives, pensées pour offrir une expérience utilisateur."
       }
     }
   },
@@ -96,14 +96,9 @@
         "title": "Formation en Développement Mobile",
         "school": "Orange Digital Center",
         "date": "Juin 2024",
-        "description": "Formation en développement mobile cross-platform avec FLUTTER,"
-      },
-      "4": {
-        "title": "Baccalauréat Scientifique",
-        "school": "Lycée Marovoay",
-        "date": "2016",
-        "description": "Titulaire d’un Baccalauréat – Série D"
+        "description": "Formation en développement mobile cross-platform avec FLUTTER."
       }
+    
     }
   },
   "philosophy": {
@@ -202,7 +197,7 @@
       "year": "Juillet 2025 — Mai 2026",
       "title": "Développeur JavaScript Freelance",
       "place": "Rafiacraft",
-      "desc1": "Développeur Next.js / Node.js",
+      "desc1": "Développeur Next.js / Nest.js",
       "desc2": [
         "Conception et développement du site web Rafiacraft,",
         "Développement de fonctionnalités de CRM en Rafiacraft,",

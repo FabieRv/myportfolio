@@ -1,7 +1,7 @@
 "use client"
 
-import { Languages } from "lucide-react"
-import { useState } from "react"
+import { Languages, Moon, Sun } from "lucide-react"
+import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
 import Container from "../components/common/Container"
 import MyMenu from "../components/common/MyMenu"
@@ -9,17 +9,42 @@ import { headerLinks } from "../constant"
 
 function Header() {
   const { t, i18n } = useTranslation()
-  const currentLang = i18n.language
-
+  
+  // Normalisation du code langue (supporte "fr", "fr-FR", "en-US", etc.)
+  const isFr = i18n.language?.startsWith("fr")
   const [open, setOpen] = useState(false)
+  const [darkMode, setDarkMode] = useState<boolean>(false)
+  
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme")
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
 
+    if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
+      setDarkMode(true)
+      document.documentElement.classList.add("dark")
+    } else {
+      setDarkMode(false)
+      document.documentElement.classList.remove("dark")
+    }
+  }, [])
+  const toggleTheme = () => {
+    if (darkMode) {
+      document.documentElement.classList.remove("dark")
+      localStorage.setItem("theme", "light")
+      setDarkMode(false)
+    } else {
+      document.documentElement.classList.add("dark")
+      localStorage.setItem("theme", "dark")
+      setDarkMode(true)
+    }
+  }
   const toggleLanguage = () => {
-    const newLang = currentLang === "fr" ? "en" : "fr"
+    const newLang = isFr ? "en" : "fr"
     i18n.changeLanguage(newLang)
   }
 
   return (
-    <div className="shadow-sm bg-white dark:bg-slate-900 w-full sticky top-0 z-100 transition-colors duration-300">
+    <div className="shadow-sm bg-white dark:bg-slate-900 w-full sticky top-0 z-100 border-b border-transparent dark:border-slate-700  transition-colors duration-300">
       <Container
         tag="header"
         className="flex flex-row justify-between items-center py-2! font-base"
@@ -29,7 +54,7 @@ function Header() {
           <a href="/">
             <h1 className="m-0 leading-none text-button dark:text-white">
               Fabie
-              <span className="text-gray-600 dark:text-gray-700">.Rav</span>
+              <span className="text-gray-600 dark:text-blue-400">.Rav</span>
             </h1>
           </a>
         </div>
@@ -51,7 +76,7 @@ function Header() {
               transition-transform duration-500
               z-100
               lg:z-auto
-              text-xl lg:text-sm
+              text-xl 
               ${
                 open
                   ? "translate-x-0"
@@ -65,7 +90,7 @@ function Header() {
                 <a
                   href={link.href}
                   className="
-                    text-xl lg:text-sm
+                    text-xl lg:text-[18px]
                     font-primary font-medium
                     text-black dark:text-white
                     hover:text-primary
@@ -92,39 +117,47 @@ function Header() {
             ))}
 
             {/* TRADUCTION MOBILE / TABLETTE */}
-            <li className="lg:hidden mt-2">
+            <li className="lg:hidden mt-2 flex flex-row justify-between gap-8">
               <button
                 type="button"
                 onClick={toggleLanguage}
                 className="
-                  flex items-center gap-2
-                  text-lg
-                  font-primary font-medium
+                  flex items-center gap-1.5
+                  text-xs tracking-wider uppercase
+                  font-primary
                   text-black dark:text-white
-                  hover:text-primary
+                  hover:opacity-80
                   transition-all duration-300
                 "
               >
-                <Languages size={20} />
+                <Languages size={18} className="text-gray-600 dark:text-gray-300" />
                 <span
                   className={
-                    currentLang === "fr"
-                      ? "font-bold text-primary"
-                      : "text-gray-400"
+                    isFr
+                      ? "font-semibold text-primary"
+                      : "font-normal text-gray-400"
                   }
                 >
                   FR
                 </span>
-                <span className="text-gray-400">/</span>
+                <span className="text-gray-300 dark:text-gray-400">/</span>
                 <span
                   className={
-                    currentLang === "en"
-                      ? "font-bold text-primary"
-                      : "text-gray-400"
+                    !isFr
+                      ? "font-semibold text-primary"
+                      : "font-normal text-gray-400"
                   }
                 >
                   EN
                 </span>
+              </button>
+              <button
+                type="button"
+                onClick={toggleTheme}
+                className="p-2 rounded-full text-gray-700 dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-slate-800 transition-all duration-300"
+                aria-label="Changer de thème"
+              >
+                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
               </button>
             </li>
 
@@ -147,44 +180,51 @@ function Header() {
         <div className="hidden lg:flex items-center gap-4">
           {/* TRADUCTION DESKTOP */}
           <button
-            type="button"
-            onClick={toggleLanguage}
-            className="
-              flex items-center gap-2
-              px-3 py-2
-              rounded-full
-              text-sm
-              font-primary font-medium
-              text-black dark:text-white
-              hover:bg-gray-100
-              dark:hover:bg-slate-800
-              transition-all duration-300
-            "
-          >
-            <Languages size={18} />
-            <span
-              className={
-                currentLang === "fr"
-                  ? "font-bold text-primary"
-                  : "text-gray-400"
-              }
+              type="button"
+              onClick={toggleLanguage}
+              className="
+                flex items-center gap-1.5
+                px-2.5 py-1.5
+                rounded-full
+                text-[16px] tracking-wider uppercase
+                font-primary font-medium
+                text-black dark:text-white
+                hover:bg-gray-100
+                dark:hover:bg-slate-800
+                transition-all duration-300
+              "
             >
-              FR
-            </span>
-            <span className="text-gray-400">/</span>
-            <span
-              className={
-                currentLang === "en"
-                  ? "font-bold text-primary"
-                  : "text-gray-400"
-              }
-            >
-              EN
-            </span>
+              <Languages size={16} />
+              <span
+                className={
+                  isFr
+                    ? "font-semibold text-primary"
+                    : "text-gray-400"
+                }
+              >
+                FR
+              </span>
+              <span className="text-gray-300 dark:text-gray-400">/</span>
+              <span
+        className={
+          !isFr
+            ? "font-semibold text-primary"
+            : "text-gray-400"
+        }
+      >
+        EN
+              </span>
           </button>
-
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="p-2 rounded-full text-gray-700 dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-slate-800 transition-all duration-300"
+            aria-label="Changer de thème"
+          >
+            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
           {/* CV DESKTOP */}
-          <div className="font-bold text-sm bg-[#3B82F6] py-2 px-4 rounded-full hover:bg-[#1D4ED8] ">
+          <div className="font-bold text-sm bg-[#3B82F6] py-2 px-4 rounded-full hover:bg-[#1D4ED8]">
             <a
               className="text-white"
               href="/cv/cv_Fabienne_RAZAFIMAHARAVO.pdf"

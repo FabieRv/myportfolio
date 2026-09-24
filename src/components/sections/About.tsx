@@ -11,8 +11,9 @@ const AboutMe = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'about' })
 
   return (
-    <Container
-      className="relative overflow-hidden mb-24 py-8"
+  <div className="dark:bg-slate-900 dark:text-white">
+      <Container
+      className="relative overflow-hidden mb-24 py-8 "
       id="about"
     >
       {/* Halo lumineux d'arrière-plan très subtil */}
@@ -61,7 +62,7 @@ const AboutMe = () => {
             {t('tag')}<br />
             </span>
 
-            <h2 className="text-3xl md:text-3xl lg:text-4xl font-primary font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+            <h2 className="text-3xl md:text-3xl lg:text-4xl font-primary font-bold text-slate-900 mb-6 leading-tight tracking-tight  dark:text-white">
               {t('titleLine2')} <br />
               <span className="italic font-serif font-normal text-[#1A56DB]">
               {t('titleLine1')} <br />
@@ -69,43 +70,48 @@ const AboutMe = () => {
              
             </h2>
 
-            <div className="font-primary text-slate-600 text-base leading-relaxed max-w-2xl mb-8">
+            <div className="font-primary text-slate-700 text-base leading-relaxed max-w-2xl mb-8 dark:bg-slate-900 dark:text-white">
               <p>
               {t('description')} <br />
               </p>
             </div>
 
             {/* GRILLE D'INFORMATIONS */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-100">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-200 dark:border-slate-600">
 
               {/* TELEPHONE */}
               <div className="border-l-2 pl-4 border-[#1A56DB]">
-                <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
+                <h5 className="font-primary text-xs font-bold text-slate-400 dark:text-white uppercase tracking-wider">
                   {t('phone')}
                 </h5>
-                <p className="text-slate-800 text-sm font-semibold mt-1">
+
+                <p className="text-slate-800 text-sm font-semibold mt-1 dark:text-slate-400">
                   034 78 984 75
                 </p>
               </div>
 
               {/* LINKEDIN */}
-              <div className="border-l-2 pl-4 border-[#1A56DB] ">
-                <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
+              <div className="border-l-2 pl-4 border-[#1A56DB]  ">
+                <h5 className="font-primary text-xs font-bold text-slate-400 dark:text-white uppercase tracking-wider">
                   {t('linkedin')}
                 </h5>
                 <a
                   href="https://www.linkedin.com/in/fabienne-razafimaharavo-911520309/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#1A56DB]  text-sm mt-1 block transition-colors"
+                  className="text-[#1A56DB]  text-sm mt-1 block transition-colors "
                 >
-                  <Linkedin className="w-5 h-5 hover:text-[#5DA9E9]" />
+                <Linkedin
+                    className="w-7 h-7 rounded-lg bg-blue-600 p-1.5 text-white
+                              transition-all duration-300 ease-in-out
+                              hover:scale-110 hover:bg-blue-700"
+                  />
                 </a>
               </div>
 
               {/* LOCALISATION */}
-              <div className="border-l-2 pl-4 border-[#1A56DB]">
-                <h5 className="font-primary text-xs font-bold text-slate-400 uppercase tracking-wider">
+              <div className="border-l-2 pl-4 border-[#1A56DB] dark:text-white">
+                <h5 className="font-primary text-xs font-bold text-slate-400 dark:text-white uppercase tracking-wider">
                   {t('location')}
                 </h5>
                 <p className="text-slate-800 text-sm font-semibold mt-1">
@@ -119,6 +125,7 @@ const AboutMe = () => {
         </div>
       </div>
     </Container>
+  </div>
   )
 }
 

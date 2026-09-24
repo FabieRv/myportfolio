@@ -57,7 +57,7 @@ function Profile() {
   }, [])
 
   return (
-    <div className="bg-[#F3F4F6] overflow-hidden">
+    <div className="bg-[#F3F4F6] overflow-hidden dark:bg-slate-900 ">
       <Container className="py-0!">
         <div
           className=" flex flex-col md:flex-row  items-center  justify-center  lg:block lg:relative  min-h-fit  lg:min-h-115  md:py-12 lg:py-0
@@ -68,7 +68,7 @@ function Profile() {
             ref={imageContainerRef}
             className="flex justify-center z-10 order-1 md:order-2 w-full md:w-1/2 lg:w-full"
           >
-            <div className="relative w-48 h-64 sm:w-52 sm:h-50 md:w-60 md:h-80 lg:w-75 lg:h-98 bg-[#b3b8c1] rounded-b-full overflow-hidden shadow-sm">
+            <div className="relative w-48 h-64 sm:w-52 sm:h-50 md:w-60 md:h-80 lg:w-80 lg:h-98 bg-[#b3b8c1] rounded-b-full overflow-hidden shadow-sm">
               <img
                 src="/images/backg-removebg-preview.png"
                 alt="Profil"
@@ -105,7 +105,7 @@ function Profile() {
 
               {/* TITRE */}
               <h1
-                className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-bold leading-[0.9] tracking-tighter  "
+                className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-bold leading-[0.9] tracking-tighter dark:text-[#e7dede] "
               >
                 {t("Profile.job")} <br />
                 <span
@@ -130,11 +130,7 @@ function Profile() {
                 </span>
               </h1>
 
-              <p
-                className="  mt-5  md:mt-4  lg:mt-6 text-gray-700 text-sm  sm:text-[15px] lg:text-[16px] max-w-xs sm:max-w-sm md:max-w-xs mx-auto
-                  md:mx-0 font-primary
-                "
-              >
+              <p className="mt-5 md:mt-4 lg:mt-6 text-gray-700  text-sm sm:text-[15px] lg:text-[16px] max-w-xs sm:max-w-sm md:max-w-xs mx-auto md:mx-0 font-primary">
                 {t("Profile.description")}
               </p>
             </div>
@@ -152,7 +148,7 @@ function Profile() {
 
           {/* ================= STATS ================= */}
           <div
-            className=" absolute top-20 right-0 z-20 hidden lg:flex  flex-col items-end space-y-12 text-right md:pr-10
+            className=" absolute top-20 right-0 z-20 hidden lg:flex  flex-col items-end space-y-12 text-right md:pr-30
             "
           >
             <div>
@@ -190,29 +186,29 @@ function Profile() {
           "
         >
           {/* FRONTEND */}
-          <div className="border-l pl-4 border-gray-400">
+          <div className="border-l pl-4 border-gray-400 dark:text-blue-400">
             <h5 className="text-sm font-bold uppercase">
               {t("Profile.services.frontend.title")}
             </h5>
 
-            <p className="text-gray-700 text-sm font-primary">
+            <p className="text-gray-700 text-sm font-primary ">
               {t("Profile.services.frontend.description")}
             </p>
           </div>
 
           {/* BACKEND */}
-          <div className="border-l pl-4 border-gray-400">
-            <h5 className="text-sm font-bold uppercase">
+          <div className="border-l pl-4 border-gray-400 ">
+            <h5 className="text-sm font-bold uppercase dark:text-blue-400">
               {t("Profile.services.backend.title")}
             </h5>
 
-            <p className="text-gray-700 text-sm font-primary">
+            <p className="text-gray-700 text-sm font-primary ">
               {t("Profile.services.backend.description")}
             </p>
           </div>
 
           {/* MOBILE */}
-          <div className="border-l pl-4 border-gray-400">
+          <div className="border-l pl-4 border-gray-400 dark:text-blue-400">
             <h5 className="text-sm font-bold uppercase">
               {t("Profile.services.mobile.title")}
             </h5>
