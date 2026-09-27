@@ -44,7 +44,7 @@ function Header() {
   }
 
   return (
-    <div className="shadow-sm bg-white dark:bg-slate-900 w-full sticky top-0 z-100 border-b border-transparent dark:border-slate-700  transition-colors duration-300">
+    <div className="shadow-sm bg-white dark:bg-[#13101E] w-full sticky top-0 z-100 border-b border-transparent dark:border-slate-700  transition-colors duration-300">
       <Container
         tag="header"
         className="flex flex-row justify-between items-center py-2! font-base"

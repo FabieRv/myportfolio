@@ -51,7 +51,7 @@ function Experiences() {
   )
 
   return (
-    <div className="bg-[#F3F4F6] pb-10">
+    <div className="bg-[#F3F4F6] pb-10 dark:bg-[#13101E]  dark:text-white">
       <Container className="text-lg" id="experience">
         <div ref={sectionRef}>
           <div className="text-center">
@@ -71,7 +71,7 @@ function Experiences() {
           {/* TIMELINE */}
           <div className="relative">
             {/* Ligne centrale */}
-            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-blue-200" />
+            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-blue-200 " />
 
             <div className="space-y-12">
               {experiences.map((exp, index) => {
@@ -87,9 +87,9 @@ function Experiences() {
                     }`}
                   >
                     {/* CONTENU */}
-                    <div className="w-full md:w-[45%] pl-12 md:pl-0">
+                    <div className="w-full md:w-[45%] pl-12 md:pl-0 dark:text-white">
                       <div
-                        className={`flex flex-col text-left ${
+                        className={`flex flex-col text-left  ${
                           isEven ? "md:text-right" : "md:text-left"
                         }`}
                       >
@@ -105,17 +105,17 @@ function Experiences() {
                         </div>
 
                         {/* TITRE */}
-                        <h3 className="text-sm lg:text-lg font-header font-bold uppercase tracking-wider text-gray-900">
+                        <h3 className="text-sm lg:text-lg font-header font-bold uppercase tracking-wider text-gray-900 dark:text-white">
                           {exp.title}
                         </h3>
 
                         {/* LIEU */}
-                        <h4 className="text-xs lg:text-[14px] font-bold uppercase text-slate-600 mb-1 tracking-widest">
+                        <h4 className="text-xs lg:text-[14px] font-bold uppercase text-slate-600 dark:text-slate-400 mb-1 tracking-widest">
                           {exp.place}
                         </h4>
 
                         {/* DESCRIPTION 1 */}
-                        <p className="text-blue-500 text-[11px] lg:text-sm font-semibold italic mb-3">
+                        <p className="text-blue-500 text-[11px] lg:text-sm font-semibold italic mb-3 dark:text-white">
                           {exp.desc1}
                         </p>
 
@@ -130,13 +130,13 @@ function Experiences() {
                               exp.desc2.map((line, i) => (
                                 <li
                                   key={i}
-                                  className={`flex items-start gap-2.5 text-slate-600 text-xs sm:text-sm leading-relaxed ${
+                                  className={`flex items-start gap-2.5 text-slate-600 text-xs sm:text-sm leading-relaxed dark:text-white ${
                                     isEven
                                       ? "md:flex-row-reverse md:text-right"
                                       : "md:flex-row md:text-left"
                                   }`}
                                 >
-                                  <div className="p-0.5 rounded-full bg-blue-50 shrink-0 mt-0.5">
+                                  <div className="p-0.5 rounded-full bg-blue-50 shrink-0 mt-0.5 dark:bg-transparent">
                                     <CheckCircle2 className="w-4 h-4 text-blue-600" />
                                   </div>
                                   <span>{line}</span>
@@ -162,7 +162,7 @@ function Experiences() {
                     </div>
 
                     {/* POINT CENTRAL */}
-                    <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-600 border-4 border-white rounded-full flex items-center justify-center z-10 shadow-md">
+                    <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-600 border-4 border-white rounded-full flex items-center justify-center z-10 shadow-md dark:bg-blue-600">
                       <span className="text-white text-[10px] font-bold">
                         {exp.icon}
                       </span>

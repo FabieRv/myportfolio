@@ -6,28 +6,29 @@ import Container from "../components/common/Container";
 function Footer() {
   const { t } = useTranslation()
   return (
-    <footer className="bg-[#082d9d] text-white">
+    <footer className="bg-[#082d9d]  dark:bg-[#13101E]  ">
       <Container>
         {/* Main Grid F4EDEA*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 ">
        
           <div className="space-y-4 text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start gap-2 mb-2">
-              <h1 className="text-sm font-header font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
+              <h1 className="text-lg font-header font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
                 Portfolio
               </h1>
             </div>
-            <p className="text-[12px] opacity-60 leading-relaxed max-w-50 mx-auto sm:mx-0 font-medium text-white!">
-            {t("footer.tagline")}
+            <p className="text-[14px] leading-relaxed max-w-50 mx-auto sm:mx-0 font-medium !text-white">
+
+              {t("footer.tagline")}
             </p>
           </div>
 
           {/* Column 2: Navigation */}
           <div className="space-y-4 text-center sm:text-left">
-            <h1 className="text-sm  font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
+            <h1 className="text-lg  font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
             {t("footer.navigation")}
             </h1>
-            <ul className="text-[13px] space-y-2 opacity-70 font-medium font-primary">
+            <ul className="text-[14px] space-y-2 opacity-70 font-medium font-primary text-white dark:text-white">
               <li className="hover:opacity-100 hover:translate-x-1 cursor-pointer transition-all" id="about">
                 <a href="#about">{t("nav.accueil")}</a>
               </li>
@@ -54,10 +55,10 @@ function Footer() {
 
           {/* Column 3: Expertise */}
           <div className="space-y-4 text-center sm:text-left font-primary font-medium text-sm md:text-sm lg:text-lg">
-            <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
+            <h1 className="text-lg font-primary font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
             {t("footer.expertise")}
             </h1>
-            <ul className="text-[12px] space-y-2 opacity-70 font-medium">
+            <ul className="text-[14px] space-y-2 opacity-70 font-medium text-white dark:text-white">
               <li className="flex items-center justify-center sm:justify-start gap-2">
               {t("Profile.services.frontend.title")}
               </li>
@@ -72,7 +73,7 @@ function Footer() {
 
           {/* Column 4 - Social Media */}
           <div className="flex flex-col items-center  space-y-6">
-            <h1 className="text-sm font-primary font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
+            <h1 className="text-lg font-primary font-bold uppercase tracking-[0.2em] text-[#5DA9E9]">
             {t("footer.socialTitle")}
             </h1>
             <div className="flex justify-between gap-3">
@@ -101,9 +102,9 @@ const SocialBtn = ({ Icon, link }: { Icon: any; link: string }) => (
     href={link}
     target="_blank"
     rel="noopener noreferrer"
-    className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-300 hover:text-[#ffff] transition-all cursor-pointer border border-white/5 shadow-lg group"
+    className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-400 hover:text-[#ffff] transition-all cursor-pointer border border-white/5 shadow-lg group text-lg"
   >
-    <Icon size={18} className="group-hover:scale-110 transition-transform" />
+    <Icon size={18} className="group-hover:scale-110 transition-transform text-white dark:text-white" />
   </a>
 )
 

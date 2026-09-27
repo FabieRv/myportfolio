@@ -98,15 +98,15 @@ const SectionContact: React.FC = () => {
 
   return (
     <section
-      className="bg-white text-slate-900 py-24 px-6 lg:px-24"
+      className="bg-white text-slate-900 py-24 px-6 lg:px-24 dark:bg-[#13101E]"
       id="contact"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* GAUCHE */}
         <div className="space-y-8">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold font-header mt-2 text-slate-900 leading-tight">
-              {t("contact.sectionTitle")}
+            <h2 className="text-3xl md:text-4xl font-bold font-header mt-2 text-slate-900 leading-tight dark:text-white">
+              {t("contact.sectionTitle")}  !
             </h2>
           </div>
 
@@ -129,9 +129,9 @@ const SectionContact: React.FC = () => {
         </div>
 
         {/* DROITE : FORMULAIRE */}
-        <div className="bg-[#C9F0FF]/30 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm font-primary">
-          <form onSubmit={gererSoumission} className="space-y-6 text-sm">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="bg-[#C9F0FF]/30 dark:bg-[#13101E] gap-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm font-primary">
+          <form onSubmit={gererSoumission} className="space-y-6 text-sm  dark:text-white">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4  dark:text-white">
               <ChampSaisie
                 label={t("contact.nameLabel")}
                 name="nom"
@@ -163,7 +163,7 @@ const SectionContact: React.FC = () => {
             <div className="flex flex-col space-y-2">
               <label
                 htmlFor={messageInputId}
-                className="text-sm font-semibold text-slate-700 ml-1"
+                className="text-sm font-semibold text-slate-600 ml-1 dark:text-white"
               >
                 {t("contact.messageLabel")}
               </label>
@@ -176,7 +176,7 @@ const SectionContact: React.FC = () => {
                 value={formData.message}
                 onChange={gererChangement}
                 required
-                className="w-full bg-white border border-slate-200 rounded-2xl p-4 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-500/5 transition-all text-slate-800 placeholder-slate-400 resize-none"
+                className="w-full bg-white border border-slate-200 rounded-2xl p-4 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-500/5 transition-all text-slate-800 placeholder-slate-400 resize-none darck-text-white:"
               />
             </div>
 
@@ -246,7 +246,7 @@ const ChampSaisie: React.FC<{
     <div className="flex flex-col space-y-2">
       <label
         htmlFor={inputId}
-        className="text-sm font-semibold text-slate-700 ml-1"
+        className="text-sm font-semibold text-slate-700 ml-1 dark:text-white "
       >
         {label}
       </label>
@@ -258,7 +258,7 @@ const ChampSaisie: React.FC<{
         value={value}
         onChange={onChange}
         required
-        className="w-full bg-white border border-slate-200 rounded-xl p-4 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-500/5 transition-all text-slate-800 placeholder-slate-400"
+        className="w-full bg-white border border-slate-200 rounded-xl p-4 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-500/5 transition-all text-slate-800 placeholder-slate-400 "
       />
     </div>
   )

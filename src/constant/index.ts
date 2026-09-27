@@ -49,28 +49,28 @@ export const atous = [
 ]
 
 export const frontendSkills = [
-  { name: "React", image: "/images/Reactt.png" },
-  { name: "TypeScript", image: "/images/ts.png" },
-  { name: "Next.js", image: "/images/logoss_next.png" },
-  { name: "Tailwind CSS", image: "/images/tailwind.webp" },
-  { name: "Vue.js", image: "/images/vue.js.jpg" },
-  { name: "Angular", image: "/images/angular.js.png" },
+  { name: "React", image: "/images/skils/react_native.png" },
+  { name: "TypeScript", image: "/images/skils/types.png" },
+  { name: "Next.js", image: "/images/skils/logoss_next.png" },
+  { name: "Tailwind CSS", image: "/images/skils/taillwindd.png" },
+  { name: "Vue.js", image: "/images/skils/vue.js.jpg" },
+  { name: "Angular", image: "/images/skils/angular.jpg" },
 ]
 
 // BACKEND
 export const backendSkills = [
-  { name: "Laravel", image: "/images/laravel.webp" },
-  { name: "Symfony", image: "/images/symfony.webp" },
-  {name: "Node.js", image : "/images/node_js.png" },
-  { name: "JAVA", image: "/images/java.webp" },
-  { name: "Python", image: "/images/pyhon.webp" },
+  { name: "Laravel", image: "/images/skils/laravel.webp" },
+  { name: "Symfony", image: "/images/skils/symfony.webp" },
+  {name: "Node.js", image : "/images/skils/node_js.png" },
+  { name: "JAVA", image: "/images/skils/java.webp" },
+  { name: "Python", image: "/images/skils/python.jpg" },
 ]
 
 // BASE DE DONNÉES
 export const databaseSkills = [
-  { name: "MySQL", image: "/images/mysql.png" },
-  { name: "PostgreSQL", image: "/images/pgsql.webp" },
-  { name: "MongoDB", image: "images/mongogb.webp" },
+  { name: "MySQL", image: "/images/skils/mysql.png" },
+  { name: "PostgreSQL", image: "/images/skils/pgsql.webp" },
+  { name: "MongoDB", image: "/images/skils/mongogb.webp" },
 ]
 
 export const Logicielle = [
@@ -79,23 +79,23 @@ export const Logicielle = [
 ]
 
 export const Design = [
-  { name: "Adobe Illustrator", image: "/images/adobe.png" },
-  { name: "Adobe Photoshop", image: "/images/photoshopp.jpg" },
-  { name: "Figma", image: "/images/figmas.png" },
+  { name: "Adobe Illustrator", image: "/images/skils/adobe.jpg" },
+  { name: "Adobe Photoshop", image: "/images/skils/photoshopp.jpg" },
+  { name: "Figma", image: "/images/skils/figma.webp" },
 ]
 
 // OUTILS
 export const toolsSkills = [
-  { name: "Git", image: "/images/git.webp" },
-  {name: "Github", image: "/images/github.png"},
-  { name: "Postman", image: "/images/postman.webp" },
+  { name: "Git", image: "/images/skils/git.webp" },
+  {name: "Github", image: "/images/skils/github.webp"},
+  { name: "Postman", image: "/images/skils/postman.webp" },
 
 ]
 
 export const mobileSkills = [
-  { name: "Flutter", image: "images/Flutter.webp" }, 
-  { name: "React Native", image: "/images/ract_n.webp"},
-  { name: "JAVA", image: "/images/java.webp" },
+  { name: "Flutter", image: "/images/skils/Flutter.webp" }, 
+  { name: "React Native", image: "/images/skils/react_native.png"},
+  { name: "JAVA", image: "/images/skils/java.webp" },
 ]
 
 export const skills = [

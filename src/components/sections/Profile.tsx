@@ -57,7 +57,7 @@ function Profile() {
   }, [])
 
   return (
-    <div className="bg-[#F3F4F6] overflow-hidden dark:bg-slate-900 ">
+    <div className="bg-[#F3F4F6] overflow-hidden dark:bg-[#13101E] ">
       <Container className="py-0!">
         <div
           className=" flex flex-col md:flex-row  items-center  justify-center  lg:block lg:relative  min-h-fit  lg:min-h-115  md:py-12 lg:py-0
@@ -186,7 +186,7 @@ function Profile() {
           "
         >
           {/* FRONTEND */}
-          <div className="border-l pl-4 border-gray-400 dark:text-blue-400">
+          <div className="border-l pl-4 border-gray-400 dark:text-slate-500">
             <h5 className="text-sm font-bold uppercase">
               {t("Profile.services.frontend.title")}
             </h5>
@@ -198,7 +198,7 @@ function Profile() {
 
           {/* BACKEND */}
           <div className="border-l pl-4 border-gray-400 ">
-            <h5 className="text-sm font-bold uppercase dark:text-blue-400">
+            <h5 className="text-sm font-bold uppercase dark:text-slate-500">
               {t("Profile.services.backend.title")}
             </h5>
 
@@ -208,7 +208,7 @@ function Profile() {
           </div>
 
           {/* MOBILE */}
-          <div className="border-l pl-4 border-gray-400 dark:text-blue-400">
+          <div className="border-l pl-4 border-gray-400 dark:text-slate-500">
             <h5 className="text-sm font-bold uppercase">
               {t("Profile.services.mobile.title")}
             </h5>

@@ -11,9 +11,9 @@ const AboutMe = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'about' })
 
   return (
-  <div className="dark:bg-slate-900 dark:text-white">
+  <div className="dark:bg-[#13101E] dark:text-white">
       <Container
-      className="relative overflow-hidden mb-24 py-8 "
+      className="relative overflow-hidden py-20 dark:bg-[#13101E]"
       id="about"
     >
       {/* Halo lumineux d'arrière-plan très subtil */}

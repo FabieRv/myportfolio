@@ -63,11 +63,11 @@ const ProjectSection: React.FC = () => {
   )
 
   return (
- <Container className=" px-6 " >
-     
+ <div className="dark:bg-[#13101E]">
+  <Container className="px-6 " >
       <div className="max-w-6xl mx-auto" ref={containerRef}>
         <div className="mb-12 text-center">
-          <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
+          <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight ">
             {t("projects.sectionTitle")}
           </h2>
         </div>
@@ -83,7 +83,7 @@ const ProjectSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex flex-col items-center mt-8 mb-10">
+        <div className="flex flex-col items-center mt-8 py-10">
           {/* Pagination */}
           <div className="flex justify-center items-center gap-3">
             {[...Array(totalPages)].map((_, index) => (
@@ -115,6 +115,7 @@ const ProjectSection: React.FC = () => {
       </div>
    
  </Container>
+ </div>
   )
 }
 

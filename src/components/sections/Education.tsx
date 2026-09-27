@@ -127,13 +127,13 @@ const Timeline: React.FC = () => {
   }, [])
 
   return (
-    <Container>
+   <div className="dark:bg-[#13101E] dark:text-white">
+     <Container >
       <div
         ref={timelineRef}
         className="max-w-4xl mx-auto p-8 font-sans"
         id="formation"
       >
-       
          <Title label={t("education.sectionTitle")} />
      
         <div className="relative mt-12">
@@ -151,7 +151,7 @@ const Timeline: React.FC = () => {
               <div
                 className="  timeline-left  w-[45%]  text-right pt-1"
               >
-                <h4 className="text-lg font-bold text-gray-800 leading-tight">
+                <h4 className="text-lg font-bold text-gray-800 leading-tight dark:text-blue-400">
                 {t(`education.items.${item.id}.school`)}
                 </h4>
 
@@ -184,7 +184,7 @@ const Timeline: React.FC = () => {
                   pt-1
                 "
               >
-                <h4 className="text-lg font-bold text-gray-800 leading-tight">
+                <h4 className="text-lg font-bold text-gray-800 leading-tight dark:text-blue-400">
                 {t(`education.items.${item.id}.title`)}
                 </h4>
 
@@ -197,6 +197,7 @@ const Timeline: React.FC = () => {
         </div>
       </div>
     </Container>
+   </div>
   )
 }
 
