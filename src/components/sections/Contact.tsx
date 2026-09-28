@@ -6,6 +6,7 @@ import React, {
   type FormEvent,
 } from "react"
 import { useTranslation } from "react-i18next"
+import Container from "../common/Container"
 
 interface FormState {
   nom: string
@@ -97,20 +98,18 @@ const SectionContact: React.FC = () => {
   }
 
   return (
-    <section
-      className="bg-white text-slate-900 py-24 px-6 lg:px-24 dark:bg-[#13101E]"
-      id="contact"
-    >
+   <div className="dark:bg-[#13101E] ">
+     <Container id="contact" className="bg-white text-slate-900 dark:bg-[#13101E]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* GAUCHE */}
         <div className="space-y-8">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold font-header mt-2 text-slate-900 leading-tight dark:text-white">
-              {t("contact.sectionTitle")}  !
+              {t("contact.sectionTitle")} !
             </h2>
           </div>
 
-          <p className="text-slate-500 text-lg leading-relaxed max-w-md font-primary">
+          <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed max-w-md font-primary">
             {t("contact.subtitle")}
           </p>
 
@@ -129,9 +128,9 @@ const SectionContact: React.FC = () => {
         </div>
 
         {/* DROITE : FORMULAIRE */}
-        <div className="bg-[#C9F0FF]/30 dark:bg-[#13101E] gap-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm font-primary">
-          <form onSubmit={gererSoumission} className="space-y-6 text-sm  dark:text-white">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4  dark:text-white">
+        <div className="bg-[#C9F0FF]/30 dark:bg-[#1C182E] p-6 md:p-12 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm font-primary">
+          <form onSubmit={gererSoumission} className="space-y-6 text-sm dark:text-white">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 dark:text-white">
               <ChampSaisie
                 label={t("contact.nameLabel")}
                 name="nom"
@@ -176,7 +175,7 @@ const SectionContact: React.FC = () => {
                 value={formData.message}
                 onChange={gererChangement}
                 required
-                className="w-full bg-white border border-slate-200 rounded-2xl p-4 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-500/5 transition-all text-slate-800 placeholder-slate-400 resize-none darck-text-white:"
+                className="w-full bg-white dark:bg-[#13101E] border border-slate-200 dark:border-slate-700 rounded-2xl p-4 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-500/5 transition-all text-slate-800 dark:text-white placeholder-slate-400 resize-none"
               />
             </div>
 
@@ -185,8 +184,8 @@ const SectionContact: React.FC = () => {
               <div
                 className={`p-4 rounded-xl text-sm font-medium ${
                   statutMessage.type === "succes"
-                    ? "bg-green-100 text-green-800 border border-green-200"
-                    : "bg-red-100 text-red-800 border border-red-200"
+                    ? "bg-green-100 text-green-800 border border-green-200 dark:bg-green-900/30 dark:text-green-300 dark:border-green-800"
+                    : "bg-red-100 text-red-800 border border-red-200 dark:bg-red-900/30 dark:text-red-300 dark:border-red-800"
                 }`}
               >
                 {statutMessage.texte}
@@ -196,11 +195,11 @@ const SectionContact: React.FC = () => {
             <button
               type="submit"
               disabled={envoiEnCours}
-              className={`w-60 flex items-center justify-center ${
+              className={`w-52 flex items-center justify-center ${
                 envoiEnCours
                   ? "bg-slate-400 cursor-not-allowed"
                   : "bg-[#3B82F6] hover:bg-blue-700"
-              } text-white text-sm   font-header py-2 w-50 rounded-full transition-all shadow-lg shadow-blue-600/10  gap-3`}
+              } text-white text-sm font-header py-3 rounded-full transition-all shadow-lg shadow-blue-600/10 gap-3`}
             >
               {envoiEnCours
                 ? t("contact.sending")
@@ -210,7 +209,8 @@ const SectionContact: React.FC = () => {
           </form>
         </div>
       </div>
-    </section>
+    </Container>
+   </div>
   )
 }
 
@@ -220,14 +220,14 @@ const ElementInfo: React.FC<{
   valeur: string
 }> = ({ icone, titre, valeur }) => (
   <div className="flex items-center gap-4">
-    <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-xl shadow-sm">
+    <div className="w-12 h-12 bg-blue-50 dark:bg-[#1C182E] rounded-xl flex items-center justify-center text-xl shadow-sm">
       {icone}
     </div>
     <div>
-      <p className="text-[10px] text-slate-400 uppercase font-black tracking-tighter">
+      <p className="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-tighter">
         {titre}
       </p>
-      <p className="text-slate-800 font-semibold">{valeur}</p>
+      <p className="text-slate-800 dark:text-slate-200 font-semibold">{valeur}</p>
     </div>
   </div>
 )
@@ -246,7 +246,7 @@ const ChampSaisie: React.FC<{
     <div className="flex flex-col space-y-2">
       <label
         htmlFor={inputId}
-        className="text-sm font-semibold text-slate-700 ml-1 dark:text-white "
+        className="text-sm font-semibold text-slate-700 ml-1 dark:text-white"
       >
         {label}
       </label>
@@ -258,7 +258,7 @@ const ChampSaisie: React.FC<{
         value={value}
         onChange={onChange}
         required
-        className="w-full bg-white border border-slate-200 rounded-xl p-4 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-500/5 transition-all text-slate-800 placeholder-slate-400 "
+        className="w-full bg-white dark:bg-[#13101E] border border-slate-200 dark:border-slate-700 rounded-xl p-4 focus:outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-500/5 transition-all text-slate-800 dark:text-white placeholder-slate-400"
       />
     </div>
   )
