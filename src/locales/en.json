@@ -29,18 +29,20 @@
     },
     "services": {
       "frontend": {
-        "title": "Frontend Development",
-        "description": "Designing modern, smooth, and responsive interfaces."
+      "title": "Frontend Development",
+      "description": "Building modern, responsive, and user-friendly web interfaces with smooth and engaging animations."
       },
+      
       "backend": {
-        "title": "Backend Development",
-        "description": "Building secure backend systems and high-performance APIs."
+      "title": "Backend Development",
+      "description": "Designing secure and scalable backend systems while developing reliable, high-performance APIs."
       },
+      
       "mobile": {
-        "title": "Mobile Development",
-        "description": "Creating modern cross-platform mobile applications."
+      "title": "Mobile App Development",
+      "description": "Creating smooth and intuitive mobile applications designed to provide a seamless and enjoyable user experience."
       }
-    }
+      }
   },
   "about": {
     "badge": "Available",
