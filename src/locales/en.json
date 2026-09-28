@@ -81,22 +81,34 @@
     "sectionTitle": "Education",
     "items": {
       "1": {
-        "title": "Bachelor's Degree in Computer Science",
-        "school": "Higher Institute of Computer Science (IS-INFO)",
-        "date": "2024 - 2025",
-        "description": "Professional Bachelor’s degree in Computer Science,"
+        "title": "Master’s in Computer Science",
+        "school": "Institut Supérieur d’Informatique (IS-INFO), Antananarivo",
+        "date": "2025 - 2026",
+        "description": "First year of a Master’s program in Computer Science, with a focus on software development and design."
       },
       "2": {
-        "title": "Web Development Training",
-        "school": "Vocational Training Center: GASY-TECH, Antananarivo",
-        "date": "August 2024 - January 2025",
-        "description": "In-depth training in PHP web development (Laravel),"
+        "title": "Bachelor’s Degree in Computer Science",
+        "school": "Institut Supérieur d’Informatique (IS-INFO), Antananarivo",
+        "date": "2024 - 2025",
+        "description": "Bachelor’s degree in Computer Science."
       },
       "3": {
+        "title": "Web Development Training",
+        "school": "GASY-TECH Professional Training Center, Antananarivo",
+        "date": "August 2024 - January 2025",
+        "description": "Practical training in web development using PHP and Laravel."
+      },
+      "4": {
         "title": "Mobile Development Training",
         "school": "Orange Digital Center",
         "date": "June 2024",
-        "description": "Cross-platform mobile development training using Flutter,"
+        "description": "Training in cross-platform mobile development using Flutter."
+      },
+      "5": {
+        "title": "Baccalaureate",
+        "school": "Lycée Marovoay",
+        "date": "2016",
+        "description": "Baccalaureate, Series D."
       }
     }
   },

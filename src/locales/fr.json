@@ -80,23 +80,35 @@
   "education": {
     "sectionTitle": "Mes formations",
     "items": {
-      "1": {
+      "1":{
+        "title":"Master en Informatique",
+        "school":"Institut Supérieur d’Informatique (IS-INFO), Antananarivo",
+        "date": "2025 - 2026",
+        "description": "Master I en Informatique, avec un intérêt particulier pour le développement et la conception de logiciels."
+      },
+      "2": {
         "title": "Licence professionnelle en Informatique",
         "school": "Institut Supérieur d’Informatique (IS-INFO), Antananarivo",
         "date": "2024 - 2025",
         "description": "Diplômée d’une Licence professionnelle en Informatique,"
       },
-      "2": {
+      "3": {
         "title": "Formation en Développement Web",
         "school": "Centre de Formation Professionnelle : GASY-TECH, Antananarivo",
         "date": "Août - Janvier 2025",
         "description": "Formation approfondie en développement web PHP (Laravel),"
       },
-      "3": {
+      "4": {
         "title": "Formation en Développement Mobile",
         "school": "Orange Digital Center",
         "date": "Juin 2024",
         "description": "Formation en développement mobile cross-platform avec FLUTTER."
+      },
+      "5":{
+        "title":"Baccalaureat",
+        "school":"Lycée Marovoay",
+        "date": "2016",
+        "description":"Obtention du Baccalauréat Serie D."
       }
     
     }

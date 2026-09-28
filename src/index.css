@@ -25,8 +25,15 @@ h1 {
   @apply font-header;
 }
 
+/* Remplacer le @apply avec dark: par du CSS standard */
 p {
-  @apply font-primary font-medium text-[#4B5563] dark:text-slate-200;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: #4B5563;
+}
+
+.dark p {
+  color: #e2e8f0; 
 }
 
 @keyframes fadeIn {
