@@ -44,14 +44,14 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 
       {/* Nom */}
       <div>
-        <h3 className="text-lg font-bold text-[#334155] mb-2">
+        <h3 className="text-lg font-bold text-[#334155] dark:text-blue-400 mb-2">
           {project.name}
         </h3>
       </div>
 
       {/* Titre */}
       <div className="flex items-center gap-2 mb-3">
-        <span className="w-8 h-0.5 bg-blue-400 rounded-full"></span>
+        <span className="w-8 h-0.5 bg-blue-400 dark:bg-blue-500 rounded-full"></span>
 
         <h4 className="text-sm font-header text-blue-500 uppercase tracking-wider">
         {t(project.titleKey ?? "")}

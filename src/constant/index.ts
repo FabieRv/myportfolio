@@ -130,7 +130,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.rafiacraft.description",
     demoLink: "https://frontrafia.vercel.app",
     repoLink: "#",
-    technologies: ["Next.js", "Nest.js", "Tailwind CSS", "MySQL" ]
+    technologies: ["Next.js", "NestJS", "Tailwind CSS", "MySQL" ]
   },
 
   { name: "LOGISPOT",
@@ -168,7 +168,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.taaz.description",
     demoLink: "https://taazcapital.mg/",
     repoLink: "#",
-    technologies: ["Next", "Tailwind CSS"],
+    technologies: ["Next.js", "Tailwind CSS"],
   },
   {
     name : "ZEWA Madagascar",
@@ -177,7 +177,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.zewa.description",
     demoLink: "https://zewa.mg/",
     repoLink: "#",
-    technologies: ["Next.js", "Nest.js", "Prisma", "PostgreSql"],
+    technologies: ["Next.js", "NestJS", "Prisma", "PostgreSql"],
   },
   
   {
@@ -187,7 +187,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.cherry.description",
     demoLink: "https://cherrytd.com/",
     repoLink: "#",
-    technologies: ["Next", "Tailwind CSS", "MongoDb"],
+    technologies: ["Next.js", "Tailwind CSS", "MongoDb"],
   },
 
 
@@ -216,7 +216,7 @@ export const ImageProject = [
     descriptionKey: "projects.items.ivoirpool.description",
     demoLink: "https://ivoirpool.vercel.app/",
     repoLink: "#",
-    technologies: ["Next", "Tailwind CSS"],
+    technologies: ["Next.js", "Tailwind CSS"],
   },
   {
     name: "Soary",
